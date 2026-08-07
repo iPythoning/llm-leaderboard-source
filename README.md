@@ -10,9 +10,9 @@ monthly-generate.yml (每月 27 日 cron，无人值守)
   └─ scripts/validate.mjs   zod 校验，任何不合法输出都不落盘
   └─ commit data/YYYY-MM.json → main
         └─ sync.yml (push 触发)
-             └─ scripts/sync.mjs  POST 全部月份到两个平台的鉴权 ingest 端点
-                  ├─ pulseagent.io  POST /api/leaderboard/ingest → D1，页面即时更新，无需部署
-                  └─ paibao-portal  POST /api/leaderboard/ingest → 文件 overlay，revalidate 即时生效
+             └─ scripts/sync.mjs  POST 全部月份到两个平台的鉴权端点
+                  ├─ pulseagent.io  POST /api/leaderboard/ingest  → D1，页面即时更新，无需部署
+                  └─ paibao-portal  POST /api/leaderboard/publish → 持久卷 overlay + revalidate，即时生效
 ```
 
 ## Schema
@@ -28,8 +28,8 @@ en + zh 必填；ar/pt/es/id/fr/tr 可选，消费端渲染时回退 en。9 个�
 | `ANTHROPIC_API_KEY` | secret | 月度生成 |
 | `PULSEAGENT_INGEST_URL` | var | `https://pulseagent.io/api/leaderboard/ingest` |
 | `PULSEAGENT_INGEST_TOKEN` | secret | 与 pulseagent-io worker secret `LEADERBOARD_INGEST_TOKEN` 同值 |
-| `PAIBAO_INGEST_URL` | var | `https://paibao.ai/api/leaderboard/ingest` |
-| `PAIBAO_INGEST_TOKEN` | secret | 与 portal 容器 env `LEADERBOARD_INGEST_TOKEN` 同值 |
+| `PAIBAO_INGEST_URL` | var | `https://paibao.ai/api/leaderboard/publish` |
+| `PAIBAO_INGEST_TOKEN` | secret | 与 portal 容器 env `LEADERBOARD_API_KEY` 同值 |
 
 ## 本地命令
 
