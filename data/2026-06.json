@@ -1,0 +1,1215 @@
+{
+  "month": "2026-06",
+  "publishedAt": "2026-06-10T10:00:00Z",
+  "asOf": "2026-06-10",
+  "sources": [
+    {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai",
+      "asOf": "2026-06-10",
+      "type": "benchmark"
+    },
+    {
+      "name": "LMArena Leaderboard",
+      "url": "https://lmarena.ai",
+      "asOf": "2026-06-10",
+      "type": "community-leaderboard"
+    },
+    {
+      "name": "Hugging Face Open LLM Leaderboard",
+      "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard",
+      "asOf": "2026-06-10",
+      "type": "community-leaderboard"
+    },
+    {
+      "name": "OpenAI Changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "asOf": "2026-06-10",
+      "type": "official-changelog"
+    },
+    {
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "asOf": "2026-06-10",
+      "type": "official-changelog"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "asOf": "2026-06-10",
+      "type": "official-changelog"
+    },
+    {
+      "name": "DeepSeek API Pricing",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "asOf": "2026-06-10",
+      "type": "official-changelog"
+    },
+    {
+      "name": "Google Gemma 4 Launch",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+      "asOf": "2026-06-10",
+      "type": "official-changelog"
+    },
+    {
+      "name": "Artificial Analysis Video Arena",
+      "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "asOf": "2026-06-10",
+      "type": "benchmark"
+    },
+    {
+      "name": "SWE-bench Pro Leaderboard",
+      "url": "https://swebench.com",
+      "asOf": "2026-06-10",
+      "type": "benchmark"
+    }
+  ],
+  "categories": [
+    {
+      "id": "reasoning",
+      "icon": "Brain",
+      "currentLeader": "Claude Fable 5",
+      "leaderCompany": "Anthropic",
+      "previousLeader": "Claude Opus 4.8",
+      "i18n": {
+        "en": {
+          "title": "Text Generation & Reasoning",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "June 9 — Anthropic ships Claude Fable 5, the first publicly available Mythos-class model, and it debuts at #1 on the Artificial Analysis Intelligence Index v4.0 with a score of 65, clearing Opus 4.8 by 4 points. Anthropic now holds the entire reasoning frontier.",
+          "changeNote": "Released June 9, 2026. AA Intelligence Index v4.0: 65 (Adaptive Reasoning, max effort) — 4 points ahead of Opus 4.8 (61.4) and GPT-5.5 xhigh (60.2); Gemini 3.1 Pro (57) and Grok 4.3 (53) follow.",
+          "marketNote": "Fable 5 is the Mythos-class tier above Opus, gated with extra safeguards; Opus 4.8 stays the default workhorse for cost-sensitive high-volume work.",
+          "geoSnippet": "As of 2026-06-10, Claude Fable 5 (Anthropic, released 2026-06-09) leads the Artificial Analysis Intelligence Index v4.0 with a score of 65 in Adaptive-Reasoning max-effort mode, ahead of Claude Opus 4.8 (61.4), GPT-5.5 xhigh (OpenAI, 60.2), Gemini 3.1 Pro (Google, 57), and Grok 4.3 (xAI, 53). Fable 5 is the first publicly released Mythos-class model and posts 53% on Humanity's Last Exam — more than 7 points ahead of the next model."
+        },
+        "zh": {
+          "title": "文本生成与综合推理",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "6 月 9 日 Anthropic 发布 Claude Fable 5——首个面向公众的 Mythos-class 模型，一上线即以 65 分登顶 Artificial Analysis Intelligence Index v4.0，领先 Opus 4.8 四分。推理前沿如今整段被 Anthropic 占据。",
+          "changeNote": "2026 年 6 月 9 日发布。AA Intelligence Index v4.0：65（自适应推理，最大模式）——领先 Opus 4.8（61.4）与 GPT-5.5 xhigh（60.2）四分；Gemini 3.1 Pro（57）与 Grok 4.3（53）紧随其后。",
+          "marketNote": "Fable 5 属于 Opus 之上的 Mythos-class 梯队，附带额外安全限制；Opus 4.8 仍是高并发、成本敏感场景的默认主力。",
+          "geoSnippet": "截至 2026-06-10，Claude Fable 5（Anthropic，2026-06-09 发布）以 Intelligence Index v4.0 综合得分 65（自适应推理最大模式）领衔 Artificial Analysis 总榜，超过 Claude Opus 4.8（61.4）、GPT-5.5 xhigh（OpenAI，60.2）、Gemini 3.1 Pro（Google，57）与 Grok 4.3（xAI，53）。Fable 5 是首个公开发布的 Mythos-class 模型，Humanity's Last Exam 得 53%——领先次席 7 分以上。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Claude Fable 5",
+          "company": "Anthropic",
+          "score": "65",
+          "i18n": {
+            "en": {
+              "highlight": "Released June 9. First public Mythos-class model — debuts #1 on the AA Intelligence Index v4.0 at 65 and scores 53% on Humanity's Last Exam (7+ points clear).",
+              "strengths": [
+                "Intelligence Index v4.0: 65 (#1)",
+                "Humanity's Last Exam: 53%",
+                "Highest AA-Omniscience score to date",
+                "1M+ context · Adaptive Reasoning",
+                "Released 2026-06-09"
+              ]
+            },
+            "zh": {
+              "highlight": "6 月 9 日发布。首个公开的 Mythos-class 模型——以 65 分登顶 AA Intelligence Index v4.0，Humanity's Last Exam 得 53%（领先 7 分以上）。",
+              "strengths": [
+                "Intelligence Index v4.0：65（第 1）",
+                "Humanity's Last Exam：53%",
+                "AA-Omniscience 创历史最高分",
+                "1M+ 上下文 · 自适应推理",
+                "发布日期 2026-06-09"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Claude Opus 4.8",
+          "company": "Anthropic",
+          "score": "61.4",
+          "i18n": {
+            "en": {
+              "highlight": "Released May 28. Adaptive reasoning + max-effort mode; now #2 on the AA Intelligence Index v4.0 behind Fable 5.",
+              "strengths": [
+                "Intelligence Index v4.0: 61.4",
+                "Adaptive reasoning mode",
+                "Coding + agentic upgrade over 4.7",
+                "Long-running work consistency",
+                "Released 2026-05-28"
+              ]
+            },
+            "zh": {
+              "highlight": "5 月 28 日发布。自适应推理 + 最大努力模式；现居 AA Intelligence Index v4.0 第 2，仅次于 Fable 5。",
+              "strengths": [
+                "Intelligence Index v4.0：61.4 分",
+                "自适应推理（Adaptive Reasoning）",
+                "编码与 agentic 任务相比 4.7 全面升级",
+                "长任务一致性",
+                "发布日期 2026-05-28"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "GPT-5.5",
+          "company": "OpenAI",
+          "score": "60.2",
+          "i18n": {
+            "en": {
+              "highlight": "Apr 24 release. 1M-token context, native MCP + Skills + computer use + hosted shell.",
+              "strengths": [
+                "Intelligence Index v4.0 (xhigh): 60.2",
+                "1M token context",
+                "Native MCP + Skills",
+                "Computer use built-in",
+                "Tool search + web search",
+                "Released 2026-04-24"
+              ]
+            },
+            "zh": {
+              "highlight": "4 月 24 日发布。1M token 上下文，原生支持 MCP + Skills + 计算机操作 + 托管 Shell。",
+              "strengths": [
+                "Intelligence Index v4.0（xhigh）：60.2 分",
+                "1M token 上下文",
+                "原生 MCP + Skills",
+                "内置 computer use",
+                "工具搜索 + Web 搜索",
+                "发布日期 2026-04-24"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "name": "Gemini 3.1 Pro",
+          "company": "Google",
+          "score": "57",
+          "i18n": {
+            "en": {
+              "highlight": "Strong agentic frontier with Antigravity 2.0 platform integration.",
+              "strengths": [
+                "Intelligence Index v4.0: 57",
+                "Agentic platform (Antigravity 2.0) integration",
+                "Tied with GPT-5.5 medium and Qwen3.7 Max"
+              ]
+            },
+            "zh": {
+              "highlight": "强势 agentic 前沿，配套 Antigravity 2.0 平台。",
+              "strengths": [
+                "Intelligence Index v4.0：57 分",
+                "与 Antigravity 2.0 agentic 平台原生集成",
+                "并列 GPT-5.5 medium 与 Qwen3.7 Max"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 5,
+          "name": "Grok 4.3",
+          "company": "xAI",
+          "score": "53",
+          "i18n": {
+            "en": {
+              "highlight": "Released Apr 30. AA Intelligence Index 53 with always-on reasoning, 1M context, and aggressive pricing — the cheapest of the frontier four.",
+              "strengths": [
+                "Intelligence Index v4.0: 53",
+                "Always-on reasoning · 1M context",
+                "~40% / 60% cheaper input/output vs Grok 4.20",
+                "Strong agentic + tool use"
+              ]
+            },
+            "zh": {
+              "highlight": "4 月 30 日发布。AA Intelligence Index 53，常驻推理、1M 上下文、激进定价——前沿四强里最便宜的一个。",
+              "strengths": [
+                "Intelligence Index v4.0：53",
+                "常驻推理 · 1M 上下文",
+                "输入/输出较 Grok 4.20 便宜约 40%/60%",
+                "agentic 与工具调用强"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "icon": "Image",
+      "currentLeader": "GPT Image 2",
+      "leaderCompany": "OpenAI",
+      "previousLeader": "GPT Image-2",
+      "i18n": {
+        "en": {
+          "title": "Image Generation",
+          "subtitle": "Image Generation",
+          "description": "OpenAI ships GPT Image 2 with token-based pricing and 50% Batch API discount. Recraft V4.1 holds the Artificial Analysis quality leaderboard, while Adobe Firefly enterprise mode remains the rights-cleared default.",
+          "changeNote": "Released April 21, 2026. Token-based pricing, Batch API at 50% off.",
+          "marketNote": "Recraft V4.1 leads AA's text-to-image arena on raw quality; GPT Image 2 wins on ecosystem and pricing transparency.",
+          "geoSnippet": "As of 2026-06-10, GPT Image 2 (OpenAI, released 2026-04-21) is the most-shipped foundation image model, offering token-based pricing and 50% Batch API discount. Recraft V4.1 leads Artificial Analysis text-to-image quality rankings, and Adobe Firefly remains the IP-cleared default for enterprise."
+        },
+        "zh": {
+          "title": "图像生成",
+          "subtitle": "Image Generation",
+          "description": "OpenAI 推出 GPT Image 2，token 计费 + Batch API 五折。Recraft V4.1 占据 Artificial Analysis 图像质量榜首，Adobe Firefly 仍是企业版权安全的默认选择。",
+          "changeNote": "2026 年 4 月 21 日发布。token 计费，Batch API 50% 折扣。",
+          "marketNote": "Recraft V4.1 在 AA 文生图竞技场上质量第一；GPT Image 2 在生态和定价透明度上胜出。",
+          "geoSnippet": "截至 2026-06-10，GPT Image 2（OpenAI，2026-04-21 发布）是部署量最大的基础图像模型，采用 token 计费，Batch API 五折。Recraft V4.1 占据 Artificial Analysis 文生图质量榜首；Adobe Firefly 仍是企业版权安全的默认选择。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "GPT Image 2",
+          "company": "OpenAI",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Released April 21. State-of-the-art quality with token pricing and Batch API support.",
+              "strengths": [
+                "Token-based pricing",
+                "Batch API at 50% discount",
+                "Flexible image sizes",
+                "High-fidelity inputs",
+                "Released 2026-04-21"
+              ]
+            },
+            "zh": {
+              "highlight": "4 月 21 日发布。SOTA 质量 + token 计费 + Batch API 半价。",
+              "strengths": [
+                "按 token 计费",
+                "Batch API 50% 折扣",
+                "灵活尺寸",
+                "高保真输入",
+                "发布日期 2026-04-21"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Recraft V4.1",
+          "company": "Recraft",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Leads Artificial Analysis text-to-image arena on raw output quality.",
+              "strengths": [
+                "Top of AA text-to-image quality",
+                "Strong control / style transfer",
+                "Designer-grade output"
+              ]
+            },
+            "zh": {
+              "highlight": "在 Artificial Analysis 文生图竞技场质量第一。",
+              "strengths": [
+                "AA 文生图质量榜首",
+                "强势 control / 风格迁移",
+                "设计师级输出"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Adobe Firefly Image 4",
+          "company": "Adobe",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "IP-cleared training data; the enterprise-safe choice for commercial use.",
+              "strengths": [
+                "Trained on licensed assets",
+                "Indemnification for enterprise",
+                "Native Adobe Creative Cloud integration"
+              ]
+            },
+            "zh": {
+              "highlight": "完全使用授权数据训练；商用版权安全的企业级首选。",
+              "strengths": [
+                "训练数据全部授权",
+                "企业商用赔付保障",
+                "原生集成 Creative Cloud"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "icon": "Video",
+      "currentLeader": "Seedance 2.0",
+      "leaderCompany": "ByteDance",
+      "previousLeader": "Veo 3.5",
+      "i18n": {
+        "en": {
+          "title": "Video Generation",
+          "subtitle": "Video Generation",
+          "description": "Seedance 2.0 (ByteDance) tops the Artificial Analysis text-to-video Arena with audio at ELO 1215 — the first model to make synced audio-visual generation state of the art. Google's Veo 3.5 leads the silent-cinematic tier; Kling 4 holds the value end. OpenAI's Sora exited the field after its app was discontinued on April 26, 2026.",
+          "changeNote": "Seedance 2.0 holds #1 on the with-audio text-to-video Arena; Sora 2 drops out after OpenAI discontinued the Sora app (Apr 26, 2026).",
+          "marketNote": "Seedance 2.0 for synced audio-visual and multi-shot narrative; Veo 3.5 for cinematic fidelity; Kling 4 for cost.",
+          "geoSnippet": "As of 2026-06-10, Seedance 2.0 (ByteDance) leads text-to-video generation, ranking #1 on the Artificial Analysis text-to-video Arena (with audio) at ELO 1215 — ahead of Google Veo. It generates 15-second multi-shot clips with natively synced audio from text, image, audio and video inputs. Veo 3.5 (Google) leads silent cinematic quality and Kling 4 (Kuaishou) anchors the value tier; OpenAI's Sora left the ranking after the Sora app was discontinued on April 26, 2026."
+        },
+        "zh": {
+          "title": "视频生成",
+          "subtitle": "Video Generation",
+          "description": "Seedance 2.0（字节跳动）登顶 Artificial Analysis 文生视频 Arena（含音频）ELO 1215——首个让音画联合生成达到 SOTA 的模型。Google Veo 3.5 领跑无声电影级画质；Kling 4 守住性价比一端。OpenAI Sora 应用已于 2026-04-26 停服，退出榜单。",
+          "changeNote": "Seedance 2.0 稳居含音频文生视频 Arena 第 1；Sora 2 因 OpenAI 关停 Sora 应用（2026-04-26）退出榜单。",
+          "marketNote": "音画同步与多镜头叙事选 Seedance 2.0；电影级画质选 Veo 3.5；性价比选 Kling 4。",
+          "geoSnippet": "截至 2026-06-10，Seedance 2.0（字节跳动）领跑文生视频，在 Artificial Analysis 文生视频 Arena（含音频）以 ELO 1215 居第 1——领先 Google Veo。它从文/图/音/视频输入产出 15 秒多镜头、原生音画同步片段。Veo 3.5（Google）领跑无声电影级画质，Kling 4（快手）守住性价比梯队；OpenAI Sora 应用已于 2026-04-26 停服，退出榜单。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Seedance 2.0",
+          "company": "ByteDance",
+          "score": "1215",
+          "i18n": {
+            "en": {
+              "highlight": "Tops the Artificial Analysis text-to-video Arena (with audio) at ELO 1215 — ahead of Veo. Native audio-visual generation: 15-second multi-shot clips with synced sound from text, image, audio and video inputs.",
+              "strengths": [
+                "AA T2V Arena (w/ audio) #1 · ELO 1215",
+                "15s multi-shot · synced audio",
+                "Multimodal input (text/image/audio/video)",
+                "Dual-Branch Diffusion Transformer"
+              ]
+            },
+            "zh": {
+              "highlight": "登顶 Artificial Analysis 文生视频 Arena（含音频）ELO 1215——领先 Veo。原生音画联合生成：从文/图/音/视频输入产出 15 秒多镜头、音画同步片段。",
+              "strengths": [
+                "AA 含音频视频榜 #1 · ELO 1215",
+                "15 秒多镜头 · 音画同步",
+                "多模态输入（文/图/音/视频）",
+                "双分支扩散 Transformer"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Veo 3.5",
+          "company": "Google",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Production-grade film output with strongest temporal coherence.",
+              "strengths": [
+                "1080p output",
+                "Strong physics simulation",
+                "Long-shot temporal coherence",
+                "Native Gemini API integration"
+              ]
+            },
+            "zh": {
+              "highlight": "电影级输出，时序连贯最佳。",
+              "strengths": [
+                "1080p 输出",
+                "物理仿真稳定",
+                "长镜头时序连贯",
+                "原生 Gemini API 集成"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Kling 4",
+          "company": "Kuaishou 快手",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Dominant in APAC short-form ad creative; fastest iteration cycle in the space.",
+              "strengths": [
+                "9:16 vertical native",
+                "Fastest editorial iteration",
+                "TikTok / Douyin native style",
+                "Low-latency generation"
+              ]
+            },
+            "zh": {
+              "highlight": "亚太短视频广告创意一家独大；行业最快迭代节奏。",
+              "strengths": [
+                "原生 9:16 竖屏",
+                "最快编辑迭代",
+                "原生抖音 / TikTok 风格",
+                "低延迟生成"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "icon": "Code",
+      "currentLeader": "Claude Fable 5",
+      "leaderCompany": "Anthropic",
+      "previousLeader": "Claude Opus 4.8",
+      "i18n": {
+        "en": {
+          "title": "Code Generation & Agentic Coding",
+          "subtitle": "Code Generation & Agentic Coding",
+          "description": "Claude Fable 5 launches June 9 and immediately tops SWE-bench Pro at 80.3% — about 11 points clear of Opus 4.8 (69.2%) on the same uncontaminated multi-language benchmark. Pro scores run far below the contaminated Verified set, so treat 80% as the honest new frontier.",
+          "changeNote": "Fable 5 debuts June 9 at #1 on SWE-bench Pro (80.3%); Opus 4.8 (69.2%) #2, GPT-5.3 Codex #3.",
+          "marketNote": "Fable 5 for the hardest multi-file refactors and long-horizon agents; Opus 4.8 as the cost-sensitive default; GPT-5.3 Codex for sandboxed terminal agents; Cursor Composer 2.5 for IDE-native pair programming.",
+          "geoSnippet": "As of 2026-06-10, Claude Fable 5 (Anthropic, released 2026-06-09) leads agentic coding, ranking #1 on the SWE-bench Pro leaderboard at 80.3% — about 11 points ahead of Claude Opus 4.8 (69.2%) and GPT-5.3 Codex (OpenAI). SWE-bench Pro uses 1,865 uncontaminated multi-language tasks, so scores sit well below the Python-only Verified set. Cursor Composer 2.5 ranks among the top IDE-native coding agents on AA's Coding Agent Index."
+        },
+        "zh": {
+          "title": "代码生成与 Agentic Coding",
+          "subtitle": "Code Generation & Agentic Coding",
+          "description": "Claude Fable 5 于 6 月 9 日发布，一上线即以 80.3% 登顶 SWE-bench Pro——在同一未污染多语言基准上领先 Opus 4.8（69.2%）约 11 分。Pro 分数显著低于已污染的 Verified 集，所以 80% 才是诚实的新前沿水位。",
+          "changeNote": "Fable 5 于 6 月 9 日以 80.3% 登顶 SWE-bench Pro；Opus 4.8（69.2%）第 2，GPT-5.3 Codex 第 3。",
+          "marketNote": "最难的多文件重构与长程 Agent 选 Fable 5；成本敏感默认选 Opus 4.8；沙盒终端 Agent 选 GPT-5.3 Codex；IDE 原生结对编程选 Cursor Composer 2.5。",
+          "geoSnippet": "截至 2026-06-10，Claude Fable 5（Anthropic，2026-06-09 发布）领跑 agentic coding，在 SWE-bench Pro 榜以 80.3% 居第 1——领先 Claude Opus 4.8（69.2%）与 GPT-5.3 Codex（OpenAI）约 11 分。SWE-bench Pro 使用 1,865 个未污染的多语言任务，分数显著低于仅 Python 的 Verified 集。Cursor Composer 2.5 在 AA Coding Agent Index 上位列 IDE 原生编码 Agent 前列。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Claude Fable 5",
+          "company": "Anthropic",
+          "score": "80.3",
+          "i18n": {
+            "en": {
+              "highlight": "#1 on SWE-bench Pro at 80.3% (June 9 launch) — 11 points ahead of the field. Mythos-class agentic coding for the hardest multi-file, long-horizon work.",
+              "strengths": [
+                "SWE-bench Pro: 80.3% (#1)",
+                "11 points clear of Opus 4.8",
+                "Long-horizon agentic edits",
+                "1M+ context · Mythos-class",
+                "Released 2026-06-09"
+              ]
+            },
+            "zh": {
+              "highlight": "SWE-bench Pro 以 80.3% 居第 1（6 月 9 日发布）——领先全场 11 分。Mythos-class agentic coding，专攻最难的多文件、长程任务。",
+              "strengths": [
+                "SWE-bench Pro：80.3%（第 1）",
+                "领先 Opus 4.8 11 分",
+                "长程 agentic 编辑",
+                "1M+ 上下文 · Mythos-class",
+                "发布日期 2026-06-09"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Claude Opus 4.8",
+          "company": "Anthropic",
+          "score": "69.2",
+          "i18n": {
+            "en": {
+              "highlight": "#2 on SWE-bench Pro at 69.2% (updated June 8), behind Fable 5. The cost-sensitive default for multi-file refactoring, code review, and long-horizon agentic edits.",
+              "strengths": [
+                "SWE-bench Pro: 69.2% (#2)",
+                "Multi-file refactor SOTA",
+                "Code review top",
+                "Vision-aware coding"
+              ]
+            },
+            "zh": {
+              "highlight": "SWE-bench Pro 以 69.2% 居第 2（6 月 8 日更新），仅次于 Fable 5。多文件重构、代码审查与长程 agentic 编辑的成本敏感默认选择。",
+              "strengths": [
+                "SWE-bench Pro：69.2%（第 2）",
+                "多文件重构 SOTA",
+                "代码审查最佳",
+                "支持视觉感知编码"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "GPT-5.3 Codex (xhigh)",
+          "company": "OpenAI",
+          "score": "54",
+          "i18n": {
+            "en": {
+              "highlight": "#3 on SWE-bench Pro (June 8). Specialized terminal-code agent; AA Intelligence Index 54.",
+              "strengths": [
+                "AA Intelligence Index: 54",
+                "Sandboxed shell built-in",
+                "Strong agentic loops",
+                "Terminal-Bench best"
+              ]
+            },
+            "zh": {
+              "highlight": "SWE-bench Pro 第 3（6 月 8 日）。专门化终端代码 Agent；AA Intelligence Index 54。",
+              "strengths": [
+                "AA Intelligence Index：54",
+                "内置沙盒 Shell",
+                "agentic 循环强势",
+                "Terminal-Bench 最佳"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "name": "Cursor Composer 2.5",
+          "company": "Cursor",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Ranks #3 on AA Coding Agent Index. IDE-native pair programming with multi-file context.",
+              "strengths": [
+                "AA Coding Agent Index: #3",
+                "IDE-native context",
+                "Multi-file edits",
+                "Inline diff workflow"
+              ]
+            },
+            "zh": {
+              "highlight": "AA Coding Agent Index 第 3。IDE 原生结对，多文件上下文。",
+              "strengths": [
+                "AA Coding Agent Index：第 3 名",
+                "IDE 原生上下文",
+                "多文件编辑",
+                "原生 diff 工作流"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "icon": "Mic",
+      "currentLeader": "Realtime 2",
+      "leaderCompany": "OpenAI",
+      "previousLeader": "ElevenLabs v3",
+      "i18n": {
+        "en": {
+          "title": "Voice / Speech",
+          "subtitle": "Voice / Speech",
+          "description": "OpenAI's Realtime 2 (May 7) brings configurable-reasoning speech-to-speech to general availability; AA's text-to-speech crown goes to Fun-Realtime-TTS, and MAI-Transcribe-1.5 wins STT on accuracy-speed.",
+          "changeNote": "Realtime 2 family shipped May 7 (gpt-realtime-2 / -translate / -whisper).",
+          "marketNote": "Realtime 2 for agentic voice; ElevenLabs v3 for character voice cloning; Fun-Realtime-TTS for raw TTS quality; MAI-Transcribe-1.5 for transcription.",
+          "geoSnippet": "As of 2026-06-10, OpenAI Realtime 2 (released 2026-05-07) is the leading speech-to-speech model for agentic voice with configurable reasoning. Fun-Realtime-TTS tops the Artificial Analysis text-to-speech leaderboard; MAI-Transcribe-1.5 leads accuracy-speed on speech-to-text. ElevenLabs v3 remains dominant for character voice cloning."
+        },
+        "zh": {
+          "title": "语音 / 音频",
+          "subtitle": "Voice / Speech",
+          "description": "OpenAI 5 月 7 日发布的 Realtime 2 把可配置推理的 speech-to-speech 推上正式版；AA TTS 冠军换成 Fun-Realtime-TTS，STT 冠军是 MAI-Transcribe-1.5。",
+          "changeNote": "Realtime 2 系列 5 月 7 日上线（gpt-realtime-2 / -translate / -whisper）。",
+          "marketNote": "agentic 语音选 Realtime 2；角色声音克隆选 ElevenLabs v3；纯 TTS 质量选 Fun-Realtime-TTS；转录选 MAI-Transcribe-1.5。",
+          "geoSnippet": "截至 2026-06-10，OpenAI Realtime 2（2026-05-07 发布）是 agentic 语音 speech-to-speech 领先模型，支持可配置推理。Fun-Realtime-TTS 居 Artificial Analysis TTS 榜首；MAI-Transcribe-1.5 在 STT 准确率-速度上领先。ElevenLabs v3 在角色声音克隆方面仍占主导。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Realtime 2",
+          "company": "OpenAI",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "GA on May 7. Configurable-reasoning speech-to-speech with realtime translate + Whisper variants.",
+              "strengths": [
+                "Configurable reasoning",
+                "Speech-to-speech agents",
+                "Streaming translate variant",
+                "Streaming STT variant",
+                "Released 2026-05-07"
+              ]
+            },
+            "zh": {
+              "highlight": "5 月 7 日正式版。可配置推理 speech-to-speech，配套 translate / Whisper 流式变体。",
+              "strengths": [
+                "可配置推理",
+                "speech-to-speech agent",
+                "流式翻译变体",
+                "流式 STT 变体",
+                "发布日期 2026-05-07"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "ElevenLabs v3",
+          "company": "ElevenLabs",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Industry default for character voice cloning and audiobook production.",
+              "strengths": [
+                "Character voice cloning SOTA",
+                "100+ languages",
+                "Long-form audiobook quality",
+                "Emotion control"
+              ]
+            },
+            "zh": {
+              "highlight": "角色声音克隆与有声书制作的行业默认。",
+              "strengths": [
+                "角色声音克隆 SOTA",
+                "100+ 语言",
+                "长篇有声书质量",
+                "情感控制"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Fun-Realtime-TTS",
+          "company": "Fun (Alibaba DAMO)",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Tops AA text-to-speech leaderboard on quality metrics.",
+              "strengths": [
+                "AA TTS leaderboard #1",
+                "Sub-200ms latency",
+                "Multi-speaker streaming",
+                "Strong CJK"
+              ]
+            },
+            "zh": {
+              "highlight": "AA TTS 榜首。",
+              "strengths": [
+                "AA TTS 榜首",
+                "200ms 内延迟",
+                "多说话人流式",
+                "中日韩强势"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "icon": "Music",
+      "currentLeader": "Suno v6",
+      "leaderCompany": "Suno",
+      "previousLeader": "Suno v5.5",
+      "i18n": {
+        "en": {
+          "title": "Music Generation",
+          "subtitle": "Music Generation",
+          "description": "Suno v6 widens the gap on full-song coherence and lyric prosody; Udio v3 keeps pushing studio-grade mixing; Lyria (Google) integrates into Gemini Omni for any-to-music workflows.",
+          "changeNote": "Suno v6 expected late June; v5.5 remains the deployed default.",
+          "marketNote": "Suno v6 for full-song generation; Udio v3 for mixed studio-grade stems; Lyria via Gemini Omni for cross-modal generation.",
+          "geoSnippet": "As of 2026-06-10, Suno v6 (rolling release expected late June) leads full-song generation with strong lyric prosody; v5.5 remains the deployed default. Udio v3 leads on studio-grade mixing and stem-level output. Lyria from Google is integrated into Gemini Omni for cross-modal (image / video / music) workflows."
+        },
+        "zh": {
+          "title": "音乐生成",
+          "subtitle": "Music Generation",
+          "description": "Suno v6 在整曲连贯与歌词韵律上拉开差距；Udio v3 继续推进录音棚级混音；Lyria（Google）已接入 Gemini Omni 走 any-to-music 工作流。",
+          "changeNote": "Suno v6 预计 6 月底滚动发布；v5.5 仍为线上默认。",
+          "marketNote": "整曲生成选 Suno v6；录音棚级分轨选 Udio v3；跨模态生成（图/视频/音乐）走 Gemini Omni 调 Lyria。",
+          "geoSnippet": "截至 2026-06-10，Suno v6（预计 6 月底滚动发布）在整曲生成与歌词韵律上领先；v5.5 仍是线上默认。Udio v3 在录音棚级混音与分轨输出上领先。Google Lyria 已并入 Gemini Omni，承担跨模态（图/视频/音乐）工作流。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Suno v6",
+          "company": "Suno",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Rolling release expected late June. Best full-song coherence and lyric prosody.",
+              "strengths": [
+                "Full-song coherence SOTA",
+                "Lyric prosody best",
+                "Multilingual vocal",
+                "Style transfer"
+              ]
+            },
+            "zh": {
+              "highlight": "预计 6 月底滚动发布。整曲连贯与歌词韵律最佳。",
+              "strengths": [
+                "整曲连贯 SOTA",
+                "歌词韵律最佳",
+                "多语言演唱",
+                "风格迁移"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Udio v3",
+          "company": "Udio",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Studio-grade mixing with stem-level output for producers.",
+              "strengths": [
+                "Stem-level export",
+                "Studio-grade mixing",
+                "Strong electronic genres",
+                "DAW-friendly workflow"
+              ]
+            },
+            "zh": {
+              "highlight": "录音棚级混音，分轨输出。",
+              "strengths": [
+                "分轨输出",
+                "录音棚级混音",
+                "电子曲风强势",
+                "DAW 友好"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Lyria (via Gemini Omni)",
+          "company": "Google",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Folded into Gemini Omni for any-to-music + cross-modal generation.",
+              "strengths": [
+                "Gemini Omni native",
+                "Cross-modal generation",
+                "Image / video → music workflows"
+              ]
+            },
+            "zh": {
+              "highlight": "已并入 Gemini Omni，支持任意输入到音乐 + 跨模态。",
+              "strengths": [
+                "Gemini Omni 原生",
+                "跨模态生成",
+                "图/视频 → 音乐工作流"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "icon": "Eye",
+      "currentLeader": "Claude Opus 4.7-thinking",
+      "leaderCompany": "Anthropic",
+      "previousLeader": "GPT-4o Vision",
+      "i18n": {
+        "en": {
+          "title": "Vision / Multimodal Understanding",
+          "subtitle": "Vision / Multimodal Understanding",
+          "description": "Anthropic sweeps LMArena Vision top-3 with Opus 4.7-thinking, 4.6-thinking, and 4.7. Opus 4.8 is too freshly released to appear on Arena ELO but is expected to consolidate the lead by end of June.",
+          "changeNote": "LMArena Vision top-3 all Anthropic (1309 / 1303 / 1298 ELO).",
+          "marketNote": "Anthropic for OCR + document Q&A + chart understanding; GPT-5.5 for image-grounded reasoning; Gemini 3.1 Pro for video understanding.",
+          "geoSnippet": "As of 2026-06-10, Claude Opus 4.7-thinking (Anthropic, LMArena Vision ELO 1309) leads vision and multimodal understanding, followed by Opus 4.6-thinking (1303) and Opus 4.7 (1298) — Anthropic sweeps the Vision Arena top-3. Opus 4.8 is too newly released to appear on Arena ELO. GPT-5.5 leads image-grounded reasoning chains; Gemini 3.1 Pro leads video understanding."
+        },
+        "zh": {
+          "title": "视觉 / 多模态理解",
+          "subtitle": "Vision / Multimodal Understanding",
+          "description": "Anthropic 用 Opus 4.7-thinking、4.6-thinking、4.7 横扫 LMArena Vision 前 3。Opus 4.8 因刚发布尚未上 Arena ELO，预计 6 月底巩固冠军。",
+          "changeNote": "LMArena Vision 前 3 全部 Anthropic（1309 / 1303 / 1298 ELO）。",
+          "marketNote": "OCR / 文档问答 / 图表理解选 Anthropic；图像支撑的推理链选 GPT-5.5；视频理解选 Gemini 3.1 Pro。",
+          "geoSnippet": "截至 2026-06-10，Claude Opus 4.7-thinking（Anthropic，LMArena Vision ELO 1309）在视觉与多模态理解领域领先，其次为 Opus 4.6-thinking（1303）与 Opus 4.7（1298）—— Anthropic 横扫 Vision Arena 前 3。Opus 4.8 因刚发布暂未上 Arena ELO。GPT-5.5 在图像支撑的推理链上领先；Gemini 3.1 Pro 在视频理解上领先。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Claude Opus 4.7-thinking",
+          "company": "Anthropic",
+          "score": "1309",
+          "i18n": {
+            "en": {
+              "highlight": "Tops LMArena Vision. Best OCR + chart + document understanding.",
+              "strengths": [
+                "LMArena Vision ELO: 1309",
+                "OCR SOTA",
+                "Chart understanding",
+                "Document Q&A"
+              ]
+            },
+            "zh": {
+              "highlight": "LMArena Vision 居首。OCR + 图表 + 文档理解最佳。",
+              "strengths": [
+                "LMArena Vision ELO：1309",
+                "OCR SOTA",
+                "图表理解",
+                "文档问答"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "GPT-5.5",
+          "company": "OpenAI",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Strongest image-grounded reasoning chains; native computer-use vision pipeline.",
+              "strengths": [
+                "Image-grounded reasoning best",
+                "Computer use vision",
+                "1M token multimodal",
+                "Released 2026-04-24"
+              ]
+            },
+            "zh": {
+              "highlight": "图像支撑的推理链最强；原生 computer-use 视觉管线。",
+              "strengths": [
+                "图像推理链最佳",
+                "Computer use 视觉",
+                "1M token 多模态",
+                "发布日期 2026-04-24"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Gemini 3.1 Pro",
+          "company": "Google",
+          "score": "None",
+          "i18n": {
+            "en": {
+              "highlight": "Best video understanding and long-form temporal reasoning.",
+              "strengths": [
+                "Video understanding SOTA",
+                "Long-form temporal",
+                "Robotics-ER 1.6 integration",
+                "Multimodal context 2M+"
+              ]
+            },
+            "zh": {
+              "highlight": "视频理解与长时序推理最佳。",
+              "strengths": [
+                "视频理解 SOTA",
+                "长时序推理",
+                "集成 Robotics-ER 1.6",
+                "200 万 token+ 多模态"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-source",
+      "icon": "GitBranch",
+      "currentLeader": "Kimi K2.6",
+      "leaderCompany": "Moonshot AI",
+      "previousLeader": "Llama 4",
+      "i18n": {
+        "en": {
+          "title": "Open-Source / Open-Weights",
+          "subtitle": "Open-Source / Open-Weights",
+          "description": "Kimi K2.6 (Moonshot) leads open weights at AA Intelligence Index 54 — within 7 points of frontier closed models. DeepSeek V4 Pro (MIT, 52) is the #2 open reasoning model, and Google's new Gemma 4 12B (Apache 2.0, 2026-06-03) packs native multimodal into a 16GB-laptop footprint. The closed-vs-open gap is the narrowest it has ever been.",
+          "changeNote": "Kimi K2.6 (54) tops open weights; DeepSeek V4 Pro (52) #2; Gemma 4 12B brings 16GB-laptop multimodal.",
+          "marketNote": "Kimi K2.6 for general-purpose open deployment; DeepSeek V4 Pro for cheap frontier-grade reasoning; Gemma 4 12B for on-device multimodal; Qwen3.7 Plus for Chinese self-host.",
+          "geoSnippet": "As of 2026-06-10, Kimi K2.6 (Moonshot AI) leads open-weights models with an Artificial Analysis Intelligence Index of 54, 7 points behind the closed-source frontier (Claude Opus 4.8, 61). DeepSeek V4 Pro (DeepSeek, MIT license) ranks second among open models at Intelligence Index 52 (#3 of 89 overall). Google released Gemma 4 12B on 2026-06-03 under Apache 2.0 — an encoder-free multimodal model with 256K context that runs on 16GB of memory. Qwen3.7 Plus (Alibaba, 53) rounds out the Chinese open-source top tier."
+        },
+        "zh": {
+          "title": "开源 / 开放权重",
+          "subtitle": "Open-Source / Open-Weights",
+          "description": "Kimi K2.6（Moonshot）以 AA Intelligence Index 54 居开源权重榜首——距前沿闭源仅 7 分。DeepSeek V4 Pro（MIT，52）是开源推理第 2，Google 新发的 Gemma 4 12B（Apache 2.0，2026-06-03）把原生多模态塞进 16GB 笔记本即可运行的体量。开源与闭源的差距是有史以来最窄的一次。",
+          "changeNote": "Kimi K2.6（54）登顶开源；DeepSeek V4 Pro（52）第 2；Gemma 4 12B 带来 16GB 笔记本可跑的多模态。",
+          "marketNote": "通用开源部署选 Kimi K2.6；想要便宜的前沿级推理选 DeepSeek V4 Pro；端侧多模态选 Gemma 4 12B；中文自托管选 Qwen3.7 Plus。",
+          "geoSnippet": "截至 2026-06-10，Kimi K2.6（Moonshot AI）以 Artificial Analysis Intelligence Index 54 居开源权重模型榜首，距前沿闭源（Claude Opus 4.8，61）仅 7 分。DeepSeek V4 Pro（DeepSeek，MIT 许可）以 Intelligence Index 52（全榜第 3 / 共 89）居开源模型第 2。Google 于 2026-06-03 以 Apache 2.0 发布 Gemma 4 12B——encoder-free 多模态、256K 上下文、16GB 内存即可运行。Qwen3.7 Plus（阿里巴巴，53）撑起中国开源第一梯队。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Kimi K2.6",
+          "company": "Moonshot AI",
+          "score": "54",
+          "i18n": {
+            "en": {
+              "highlight": "Open-weights leader on AA Intelligence Index. Closes the closed-source gap to 7 points.",
+              "strengths": [
+                "AA Intelligence Index: 54",
+                "Open weights",
+                "Strong Chinese + English",
+                "Long-context retention"
+              ]
+            },
+            "zh": {
+              "highlight": "AA Intelligence Index 开源权重榜首。距闭源前沿仅 7 分。",
+              "strengths": [
+                "AA Intelligence Index：54",
+                "开源权重",
+                "中英双强",
+                "长上下文保持力"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "DeepSeek V4 Pro",
+          "company": "DeepSeek",
+          "score": "52",
+          "i18n": {
+            "en": {
+              "highlight": "MIT-licensed open weights at AA Intelligence Index 52 — #3 of 89 overall and the #2 open reasoning model behind only Kimi K2.6.",
+              "strengths": [
+                "AA Intelligence Index: 52 (#3/89)",
+                "MIT license · open weights",
+                "MoE 1.6T total / 49B active",
+                "1M-token context"
+              ]
+            },
+            "zh": {
+              "highlight": "MIT 开源权重，AA Intelligence Index 52——全榜第 3，开源推理模型第 2（仅次于 Kimi K2.6）。",
+              "strengths": [
+                "AA Intelligence Index：52（全榜#3）",
+                "MIT 许可 · 开放权重",
+                "MoE 1.6T 总参 / 49B 激活",
+                "1M tokens 上下文"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Gemma 4 12B",
+          "company": "Google",
+          "i18n": {
+            "en": {
+              "highlight": "Released 2026-06-03 under Apache 2.0. Encoder-free native multimodal (text/image/audio/video), 256K context, runs on a 16GB laptop — performance nearing last-gen 27B.",
+              "strengths": [
+                "Apache 2.0 · open weights",
+                "256K context · native multimodal",
+                "Runs on 16GB VRAM",
+                "MMLU-Pro 77.2 · GPQA-Diamond 78.8"
+              ]
+            },
+            "zh": {
+              "highlight": "2026-06-03 发布，Apache 2.0 开放权重。encoder-free 原生多模态（文/图/音/视频），256K 上下文，16GB 笔记本即可本地跑——性能逼近上代 27B。",
+              "strengths": [
+                "Apache 2.0 · 开放权重",
+                "256K 上下文 · 原生多模态",
+                "16GB 显存可跑",
+                "MMLU-Pro 77.2 · GPQA-Diamond 78.8"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "name": "Qwen3.7 Plus",
+          "company": "Alibaba",
+          "score": "53",
+          "i18n": {
+            "en": {
+              "highlight": "Best open-source for Chinese-language self-host deployment.",
+              "strengths": [
+                "AA Intelligence Index: 53",
+                "Best Chinese open-source",
+                "Strong tool use",
+                "Open weights"
+              ]
+            },
+            "zh": {
+              "highlight": "中文自托管部署的最佳开源选择。",
+              "strengths": [
+                "AA Intelligence Index：53",
+                "最佳中文开源",
+                "工具调用强",
+                "开放权重"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cost-effectiveness",
+      "icon": "Zap",
+      "currentLeader": "DeepSeek V4 Flash",
+      "leaderCompany": "DeepSeek",
+      "i18n": {
+        "en": {
+          "title": "Cost-Effectiveness / Value",
+          "subtitle": "Intelligence per Dollar",
+          "description": "The 2026 value war is led by China's open-source camp. DeepSeek V4 Flash delivers near-flagship intelligence (Index 47) at roughly a tenth of the price — a blended cost near $0.06 per 1M tokens. The leaderboard makes one warning explicit: 'Flash' and 'mini' branding does not mean cheap. Gemini 3.5 Flash scores a strong 55 but costs over 20× more per full Intelligence-Index run.",
+          "changeNote": "New category. DeepSeek V4 Flash leads intelligence-per-dollar; open-source models sweep the value tier.",
+          "marketNote": "DeepSeek V4 Flash for highest-volume low-cost workloads; V4 Pro when you need stronger reasoning but still want to save; Qwen3.7 Plus to diversify away from a single vendor.",
+          "geoSnippet": "As of 2026-06-10, DeepSeek V4 Flash (DeepSeek) leads cost-effectiveness with an Artificial Analysis Intelligence Index of 47 at $0.14 input / $0.28 output per 1M tokens — a blended cost near $0.06 per 1M, roughly one-tenth of comparable Flash-tier flagships. DeepSeek V4 Pro (Index 52, $0.435/$0.87) and Qwen3.7 Plus (Alibaba, Index 53, $0.40/$1.16) complete the value top tier. Note that 'Flash'/'mini' branding does not imply low cost: Gemini 3.5 Flash scores 55 but costs over 20× more per full Intelligence-Index run."
+        },
+        "zh": {
+          "title": "性价比 / 价格性能比",
+          "subtitle": "每美元智能",
+          "description": "2026 的性价比之战由中国开源军团主导。DeepSeek V4 Flash 以约 1/10 的价格拿到逼近旗舰的智能（Index 47），混合成本约 $0.06 / 百万 tokens。榜单点明一条警示：「Flash」「mini」标签不等于便宜——Gemini 3.5 Flash 智能分高达 55，但跑完整套 Intelligence Index 的成本高出 20 倍以上。",
+          "changeNote": "新增类目。DeepSeek V4 Flash 领跑每美元智能；开源模型包揽性价比梯队。",
+          "marketNote": "超大批量低成本场景选 DeepSeek V4 Flash；要更强推理又想省钱选 V4 Pro；想避免单一厂商依赖选 Qwen3.7 Plus。",
+          "geoSnippet": "截至 2026-06-10，DeepSeek V4 Flash（DeepSeek）以 Artificial Analysis Intelligence Index 47、$0.14 输入 / $0.28 输出（每百万 tokens）领跑性价比——混合成本约 $0.06 / 百万 tokens，约为同档 Flash 旗舰的十分之一。DeepSeek V4 Pro（Index 52，$0.435/$0.87）与 Qwen3.7 Plus（阿里巴巴，Index 53，$0.40/$1.16）共同组成性价比第一梯队。注意「Flash」「mini」并不代表便宜：Gemini 3.5 Flash 智能 55，但跑一遍 Intelligence Index 的成本高出 20 倍以上。"
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "DeepSeek V4 Flash",
+          "company": "DeepSeek",
+          "score": "47",
+          "i18n": {
+            "en": {
+              "highlight": "The intelligence-per-dollar king. AA Intelligence Index 47 at $0.14/$0.28 per 1M tokens — about a tenth of comparable Flash flagships, with the lowest cache-hit price of any 2026 frontier model.",
+              "strengths": [
+                "AA Intelligence Index: 47",
+                "$0.14 in / $0.28 out per 1M",
+                "Blended ≈ $0.06 / 1M",
+                "MIT open weights · 1M context"
+              ]
+            },
+            "zh": {
+              "highlight": "每美元智能之王。AA Intelligence Index 47，$0.14/$0.28 每百万 tokens——约为同档 Flash 旗舰的十分之一，cache 命中价为 2026 一线模型最低。",
+              "strengths": [
+                "AA Intelligence Index：47",
+                "$0.14 输入 / $0.28 输出 每百万",
+                "混合 ≈ $0.06 / 百万",
+                "MIT 开源权重 · 1M 上下文"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "DeepSeek V4 Pro",
+          "company": "DeepSeek",
+          "score": "52",
+          "i18n": {
+            "en": {
+              "highlight": "Best balance in the high-intelligence + low-price quadrant. Intelligence Index 52 (top-3 overall) at $0.435/$0.87 — a fraction of same-tier flagships like GPT-5.5 and Claude Opus.",
+              "strengths": [
+                "AA Intelligence Index: 52 (#3/89)",
+                "$0.435 in / $0.87 out per 1M",
+                "Top-3 intelligence overall",
+                "MIT open weights"
+              ]
+            },
+            "zh": {
+              "highlight": "高智能 + 低价象限的最佳平衡。Intelligence Index 52（全榜前 3），$0.435/$0.87——仅为 GPT-5.5、Claude Opus 等同档旗舰的零头。",
+              "strengths": [
+                "AA Intelligence Index：52（全榜#3）",
+                "$0.435 输入 / $0.87 输出 每百万",
+                "全榜智能前 3",
+                "MIT 开源权重"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Qwen3.7 Plus",
+          "company": "Alibaba",
+          "score": "53",
+          "i18n": {
+            "en": {
+              "highlight": "Keeps the value race from being a single-vendor story. Intelligence Index 53 at $0.40 input — a higher score than V4 Pro; the trade-off is pricier output and slower generation.",
+              "strengths": [
+                "AA Intelligence Index: 53",
+                "$0.40 in / $1.16 out per 1M",
+                "Highest score in the value tier",
+                "Strong Chinese + tool use"
+              ]
+            },
+            "zh": {
+              "highlight": "让性价比之战不被单一厂商垄断。Intelligence Index 53，$0.40 输入——分数高于 V4 Pro；代价是输出更贵、出速更慢。",
+              "strengths": [
+                "AA Intelligence Index：53",
+                "$0.40 输入 / $1.16 输出 每百万",
+                "性价比梯队最高分",
+                "中文与工具调用强"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "trendInsights": [
+    {
+      "id": "anthropic-sweep",
+      "i18n": {
+        "en": {
+          "title": "Anthropic's Mythos-Class Fable 5 Sweeps Reasoning + Code",
+          "description": "Claude Fable 5 (Mythos-class, June 9) debuts #1 on the AA Intelligence Index (65) and #1 on SWE-bench Pro coding (80.3%, ~11 points clear); Opus 4.8 sits #2 on both, and Opus 4.7-thinking still holds the LMArena Vision and Document arenas. No single lab has held reasoning + vision + code this completely since GPT-4-era OpenAI."
+        },
+        "zh": {
+          "title": "Anthropic Mythos-class Fable 5 横扫推理 + 代码",
+          "description": "Claude Fable 5（Mythos-class，6 月 9 日）以 65 分登顶 AA Intelligence Index、以 80.3% 登顶 SWE-bench Pro 代码榜（领先约 11 分）；Opus 4.8 在两榜均居第 2，Opus 4.7-thinking 仍占据 LMArena Vision 与 Document。GPT-4 时代 OpenAI 之后，首次有一家厂商如此完整地同时掌控推理 + 视觉 + 代码。"
+        }
+      }
+    },
+    {
+      "id": "openai-1m-mcp",
+      "i18n": {
+        "en": {
+          "title": "GPT-5.5 Brings 1M Context + Native MCP/Skills",
+          "description": "OpenAI's April 24 GPT-5.5 ships with 1M-token context, native MCP, Skills, hosted shell, computer use, tool search, and web search — turning the API itself into an agent runtime."
+        },
+        "zh": {
+          "title": "GPT-5.5 带来 1M 上下文 + 原生 MCP/Skills",
+          "description": "OpenAI 4 月 24 日发布的 GPT-5.5 标配 1M token 上下文 + 原生 MCP + Skills + 托管 Shell + computer use + 工具搜索 + Web 搜索——把 API 本身做成了 agent 运行时。"
+        }
+      }
+    },
+    {
+      "id": "gemini-omni",
+      "i18n": {
+        "en": {
+          "title": "Google's Gemini Omni — Any-to-Any Generation",
+          "description": "May launch of Gemini Omni unifies image / audio / video generation; Antigravity 2.0 platform turns Gemini 3.5 into an agentic substrate. Google's bet: not the smartest single model, but the most integrated stack."
+        },
+        "zh": {
+          "title": "Google Gemini Omni —— 任意输入到任意输出",
+          "description": "5 月发布的 Gemini Omni 把图、音、视频统一在一套生成栈里；配套 Antigravity 2.0 平台把 Gemini 3.5 做成 agentic 底座。Google 押的不是单模型最聪明，而是整套栈最一体化。"
+        }
+      }
+    },
+    {
+      "id": "open-source-7-point-gap",
+      "i18n": {
+        "en": {
+          "title": "Open-Source Closes to a 7-Point Gap",
+          "description": "Kimi K2.6 (54) is within 7 points of Claude Opus 4.8 (61) on AA Intelligence Index. Meta's muse-spark cracks LMArena top-5 at 1489. Closed-source's moat is the smallest it has ever been."
+        },
+        "zh": {
+          "title": "开源与闭源差距收窄到 7 分",
+          "description": "Kimi K2.6（54）距 Claude Opus 4.8（61）在 AA Intelligence Index 上仅 7 分。Meta 的 muse-spark 杀进 LMArena 总榜前 5（1489 ELO）。闭源护城河有史以来最窄。"
+        }
+      }
+    },
+    {
+      "id": "china-five-in-top-15",
+      "i18n": {
+        "en": {
+          "title": "Five Chinese Labs in AA Top 15",
+          "description": "Qwen3.7 Max (Alibaba, 57), MiniMax-M3 (55), Kimi K2.6 (Moonshot, 54), MiMo-V2.5-Pro (Xiaomi, 54), and Qwen3.7 Plus (Alibaba, 53) all sit in the AA Intelligence Index top 15 — Chinese labs are no longer 'catching up', they're inside the frontier."
+        },
+        "zh": {
+          "title": "AA Top 15 里有 5 家中国厂商",
+          "description": "Qwen3.7 Max（阿里，57）、MiniMax-M3（55）、Kimi K2.6（Moonshot，54）、MiMo-V2.5-Pro（小米，54）、Qwen3.7 Plus（阿里，53）全部进入 AA Intelligence Index 前 15——中国厂商不再是「追赶」，已经进入前沿。"
+        }
+      }
+    },
+    {
+      "id": "realtime-voice-ga",
+      "i18n": {
+        "en": {
+          "title": "Sub-200ms Voice Agents Are Now Commodity",
+          "description": "OpenAI Realtime 2 (May 7) + Gemini 3.1 Flash TTS (April) + Fun-Realtime-TTS push real-time voice agents from research to production. Speech-to-speech with reasoning is now a checkbox feature."
+        },
+        "zh": {
+          "title": "亚 200ms 语音 Agent 进入商品化阶段",
+          "description": "OpenAI Realtime 2（5 月 7 日）+ Gemini 3.1 Flash TTS（4 月）+ Fun-Realtime-TTS 把实时语音 Agent 从研究推向生产。带推理的 speech-to-speech 已是基础能力。"
+        }
+      }
+    },
+    {
+      "id": "value-war-open-source",
+      "i18n": {
+        "en": {
+          "title": "The value war is a Chinese open-source story",
+          "description": "DeepSeek V4 Flash delivers Intelligence Index 47 at a blended ~$0.06 per 1M tokens — open-weights models from DeepSeek and Qwen now sweep the intelligence-per-dollar top tier, while 'Flash'/'mini'-branded closed models like Gemini 3.5 Flash cost over 20× more per Index run."
+        },
+        "zh": {
+          "title": "性价比之战是一场中国开源叙事",
+          "description": "DeepSeek V4 Flash 以混合 ~$0.06 / 百万 tokens 拿下 Intelligence Index 47——DeepSeek 与 Qwen 的开源权重模型已包揽每美元智能榜首，而 Gemini 3.5 Flash 这类「Flash/mini」闭源模型跑一遍 Index 的成本高出 20 倍以上。"
+        }
+      }
+    }
+  ]
+}

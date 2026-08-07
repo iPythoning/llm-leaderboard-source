@@ -1,0 +1,1535 @@
+{
+  "month": "2026-04",
+  "publishedAt": "2026-04-29T10:00:00Z",
+  "asOf": "2026-04-29",
+  "sources": [
+    {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai",
+      "asOf": "2026-04-29",
+      "type": "benchmark"
+    },
+    {
+      "name": "LMArena Leaderboard",
+      "url": "https://lmarena.ai",
+      "asOf": "2026-04-29",
+      "type": "community-leaderboard"
+    },
+    {
+      "name": "Hugging Face Open LLM Leaderboard",
+      "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard",
+      "asOf": "2026-04-29",
+      "type": "community-leaderboard"
+    },
+    {
+      "name": "OpenAI Changelog",
+      "url": "https://platform.openai.com/docs/changelog",
+      "asOf": "2026-04-29",
+      "type": "official-changelog"
+    },
+    {
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "asOf": "2026-04-29",
+      "type": "official-changelog"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "asOf": "2026-04-29",
+      "type": "official-changelog"
+    }
+  ],
+  "categories": [
+    {
+      "id": "reasoning",
+      "icon": "Brain",
+      "currentLeader": "GPT-5.5",
+      "leaderCompany": "OpenAI",
+      "previousLeader": "GPT-5.4",
+      "i18n": {
+        "en": {
+          "title": "Text Generation & Reasoning",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026 enters a tri-titan era — no single dominant model, the best choice depends on the task at hand.",
+          "changeNote": "Released April 23, 2026. SOTA on 14 benchmarks, composite score 89.",
+          "marketNote": "GPT-5.5 leads in agentic and terminal coding; Claude Opus 4.7 leads in multi-file refactoring and code review; Gemini 3.1 Pro leads in algorithmic competition.",
+          "geoSnippet": "As of 2026-04-29, GPT-5.5 (OpenAI) leads text generation and reasoning with composite score 89, followed by Claude Opus 4.7 (Anthropic, 86) and Gemini 3.1 Pro (Google, ~85). GPT-5.5 wins on Terminal-Bench 2.0 (82.7%) and OSWorld-Verified (78.7%); Claude Opus 4.7 wins on SWE-Bench Pro (64.3%) and MCP-Atlas (79.1%); Gemini 3.1 Pro wins on LiveCodeBench Elo (2887). All three support 1M-token context."
+        },
+        "zh": {
+          "title": "文本生成与综合推理",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026 年进入三巨头并列时代，没有单一绝对霸主，而是按场景选择最优模型。",
+          "changeNote": "2026 年 4 月 23 日发布，14 项基准 SOTA，综合评分 89。",
+          "marketNote": "GPT-5.5 在 Agentic / 终端编码领先；Claude Opus 4.7 在多文件代码重构和审查领先；Gemini 在算法竞赛最强。",
+          "geoSnippet": "截至 2026-04-29，GPT-5.5（OpenAI）以综合评分 89 在文本生成与推理领域领先，亚军为 Claude Opus 4.7（Anthropic，86）和 Gemini 3.1 Pro（Google，约 85）。GPT-5.5 在 Terminal-Bench 2.0（82.7%）和 OSWorld-Verified（78.7%）胜出；Claude Opus 4.7 在 SWE-Bench Pro（64.3%）和 MCP-Atlas（79.1%）胜出；Gemini 3.1 Pro 在 LiveCodeBench Elo（2887）胜出。三者均支持 100 万 token 上下文。"
+        },
+        "ar": {
+          "title": "توليد النص والاستدلال",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "يدخل 2026 عصر الثلاثة الكبار — لا نموذج مهيمن واحد، الاختيار الأفضل يعتمد على المهمة المطروحة.",
+          "geoSnippet": "حتى 2026-04-29، يتصدر GPT-5.5 (OpenAI) توليد النص والاستدلال بدرجة مركبة 89، يليه Claude Opus 4.7 (Anthropic، 86) وGemini 3.1 Pro (Google، ~85). يفوز GPT-5.5 في Terminal-Bench 2.0 (82.7%) وOSWorld-Verified (78.7%)؛ يفوز Claude Opus 4.7 في SWE-Bench Pro (64.3%) وMCP-Atlas (79.1%)؛ يفوز Gemini 3.1 Pro في LiveCodeBench Elo (2887). جميعها تدعم سياق 1M-token."
+        },
+        "pt": {
+          "title": "Geração de Texto e Raciocínio",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026 entra na era dos três titãs — sem modelo dominante único, a melhor escolha depende da tarefa em mãos.",
+          "geoSnippet": "Em 24/04/2026, GPT-5.5 (OpenAI) lidera geração de texto e raciocínio com pontuação composta 89, seguido por Claude Opus 4.7 (Anthropic, 86) e Gemini 3.1 Pro (Google, ~85). GPT-5.5 vence em Terminal-Bench 2.0 (82,7%) e OSWorld-Verified (78,7%); Claude Opus 4.7 vence em SWE-Bench Pro (64,3%) e MCP-Atlas (79,1%); Gemini 3.1 Pro vence em LiveCodeBench Elo (2887). Os três suportam contexto de 1M tokens."
+        },
+        "es": {
+          "title": "Generación de Texto y Razonamiento",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026 entra en la era de los tres titanes — sin un modelo dominante único, la mejor elección depende de la tarea.",
+          "geoSnippet": "Al 24/04/2026, GPT-5.5 (OpenAI) lidera la generación de texto y razonamiento con puntuación compuesta 89, seguido por Claude Opus 4.7 (Anthropic, 86) y Gemini 3.1 Pro (Google, ~85). GPT-5.5 gana en Terminal-Bench 2.0 (82,7%) y OSWorld-Verified (78,7%); Claude Opus 4.7 gana en SWE-Bench Pro (64,3%) y MCP-Atlas (79,1%); Gemini 3.1 Pro gana en LiveCodeBench Elo (2887). Los tres soportan contexto de 1M tokens."
+        },
+        "id": {
+          "title": "Pembuatan Teks & Penalaran",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026 memasuki era tiga raksasa — tidak ada model dominan tunggal, pilihan terbaik bergantung pada tugas yang dihadapi.",
+          "geoSnippet": "Per 2026-04-29, GPT-5.5 (OpenAI) memimpin pembuatan teks dan penalaran dengan skor komposit 89, diikuti Claude Opus 4.7 (Anthropic, 86) dan Gemini 3.1 Pro (Google, ~85). GPT-5.5 menang di Terminal-Bench 2.0 (82.7%) dan OSWorld-Verified (78.7%); Claude Opus 4.7 menang di SWE-Bench Pro (64.3%) dan MCP-Atlas (79.1%); Gemini 3.1 Pro menang di LiveCodeBench Elo (2887). Ketiganya mendukung konteks 1M-token."
+        },
+        "fr": {
+          "title": "Génération de Texte et Raisonnement",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026 entre dans l'ère des trois titans — pas de modèle dominant unique, le meilleur choix dépend de la tâche.",
+          "geoSnippet": "Au 24/04/2026, GPT-5.5 (OpenAI) domine la génération de texte et le raisonnement avec un score composite de 89, suivi par Claude Opus 4.7 (Anthropic, 86) et Gemini 3.1 Pro (Google, ~85). GPT-5.5 gagne sur Terminal-Bench 2.0 (82,7 %) et OSWorld-Verified (78,7 %) ; Claude Opus 4.7 gagne sur SWE-Bench Pro (64,3 %) et MCP-Atlas (79,1 %) ; Gemini 3.1 Pro gagne sur LiveCodeBench Elo (2887). Les trois supportent un contexte de 1M tokens."
+        },
+        "tr": {
+          "title": "Metin Üretimi ve Akıl Yürütme",
+          "subtitle": "Text Generation & Reasoning",
+          "description": "2026, üç dev modelin çağına giriyor — tek baskın model yok, en iyi seçim göreve bağlı.",
+          "geoSnippet": "2026-04-29 itibarıyla, GPT-5.5 (OpenAI) 89 bileşik puanla metin üretimi ve akıl yürütmede liderlik ediyor; Claude Opus 4.7 (Anthropic, 86) ve Gemini 3.1 Pro (Google, ~85) onu izliyor. GPT-5.5 Terminal-Bench 2.0'da (%82,7) ve OSWorld-Verified'da (%78,7) kazanıyor; Claude Opus 4.7 SWE-Bench Pro'da (%64,3) ve MCP-Atlas'ta (%79,1) kazanıyor; Gemini 3.1 Pro LiveCodeBench Elo'da (2887) kazanıyor. Üçü de 1M-token bağlamı destekliyor."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "GPT-5.5",
+          "company": "OpenAI",
+          "score": "89",
+          "i18n": {
+            "en": {
+              "highlight": "Released April 23, the first fully retrained foundation model since GPT-5.",
+              "strengths": [
+                "Terminal-Bench 2.0: 82.7%",
+                "OSWorld-Verified: 78.7%",
+                "GDPval: 84.9%",
+                "ARC-AGI-2: 85.0%",
+                "1M-token context"
+              ]
+            },
+            "zh": {
+              "highlight": "4 月 23 日发布，首个全量重训基础模型。",
+              "strengths": [
+                "Terminal-Bench 2.0: 82.7%",
+                "OSWorld-Verified: 78.7%",
+                "GDPval: 84.9%",
+                "ARC-AGI-2: 85.0%",
+                "100 万 token 上下文"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Claude Opus 4.7",
+          "company": "Anthropic",
+          "score": "86",
+          "i18n": {
+            "en": {
+              "highlight": "Released April 16, strongest at long-context and code review.",
+              "strengths": [
+                "SWE-Bench Pro: 64.3%",
+                "MCP-Atlas: 79.1%",
+                "Most reliable multi-step reasoning",
+                "Most thorough code-logic review",
+                "1M-token context"
+              ]
+            },
+            "zh": {
+              "highlight": "4 月 16 日发布，长上下文与代码审查最强。",
+              "strengths": [
+                "SWE-Bench Pro: 64.3%",
+                "MCP-Atlas: 79.1%",
+                "多步推理最稳定",
+                "代码逻辑审查最细致",
+                "100 万 token 上下文"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Gemini 3.1 Pro",
+          "company": "Google",
+          "score": "~85",
+          "i18n": {
+            "en": {
+              "highlight": "In preview, strongest at math and algorithmic competition.",
+              "strengths": [
+                "LiveCodeBench Elo: 2887",
+                "1M-token context",
+                "Lowest API price ($2/$12)",
+                "Leading video understanding",
+                "Best price-to-performance"
+              ]
+            },
+            "zh": {
+              "highlight": "预览中，数学与算法竞赛最强。",
+              "strengths": [
+                "LiveCodeBench Elo: 2887",
+                "100 万 token 上下文",
+                "价格最低（$2/$12）",
+                "视频理解领先",
+                "性价比最高"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "1M-token context",
+          "zh": "1M Token 上下文"
+        },
+        {
+          "en": "Agentic workflows",
+          "zh": "Agentic 工作流"
+        },
+        {
+          "en": "Multimodal understanding",
+          "zh": "多模态理解"
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "icon": "Image",
+      "currentLeader": "GPT Image-2",
+      "leaderCompany": "OpenAI",
+      "previousLeader": "Nano Banana 2",
+      "i18n": {
+        "en": {
+          "title": "Text-to-Image",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2 takes the throne with 99.2% text-rendering accuracy, while Nano Banana 2 keeps an edge in real-time generation.",
+          "changeNote": "Released April 2026, with major leads in text rendering and spatial reasoning.",
+          "marketNote": "GPT Image-2 wins on typography and physical correctness; Nano Banana 2 wins on speed and live web grounding — they complement rather than replace each other.",
+          "geoSnippet": "As of 2026-04-29, GPT Image-2 (OpenAI) leads text-to-image generation with 99.2% text-rendering accuracy, followed by Nano Banana 2 (Google, sub-15s 4K output) and Flux Pro (Black Forest Labs, strongest open-source ecosystem). GPT Image-2 wins on typography precision, character consistency, and spatial logic; Nano Banana 2 wins on Flash-architecture speed and real-time search integration."
+        },
+        "zh": {
+          "title": "文生图",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2 凭借 99.2% 文本渲染准确率夺得霸主地位，Nano Banana 2 仍在实时生成保持优势。",
+          "changeNote": "2026 年 4 月发布，文本渲染与空间逻辑大幅领先。",
+          "marketNote": "GPT Image-2 胜在排版精度和物理逻辑，Nano Banana 2 胜在速度和实时性，两者互补。",
+          "geoSnippet": "截至 2026-04-29，GPT Image-2（OpenAI）以 99.2% 文本渲染准确率在文生图领域领先，亚军为 Nano Banana 2（Google，4K 图像 4-15 秒生成）和 Flux Pro（Black Forest Labs，开源生态最完善）。GPT Image-2 在排版精度、角色一致性、空间逻辑胜出；Nano Banana 2 在 Flash 架构速度和实时联网搜索胜出。"
+        },
+        "ar": {
+          "title": "تحويل النص إلى صورة",
+          "subtitle": "Text-to-Image",
+          "description": "يستحوذ GPT Image-2 على العرش بدقة عرض نص 99.2%، بينما يحتفظ Nano Banana 2 بميزة في التوليد الفوري.",
+          "geoSnippet": "حتى 2026-04-29، يتصدر GPT Image-2 (OpenAI) توليد الصور من النص بدقة عرض نص 99.2%، يليه Nano Banana 2 (Google، إخراج 4K في أقل من 15 ثانية) وFlux Pro (Black Forest Labs، أقوى نظام بيئي مفتوح المصدر). يفوز GPT Image-2 في دقة الطباعة واتساق الشخصيات والمنطق المكاني؛ يفوز Nano Banana 2 في سرعة بنية Flash والتكامل مع البحث الفوري."
+        },
+        "pt": {
+          "title": "Texto para Imagem",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2 toma o trono com 99,2% de precisão na renderização de texto, enquanto Nano Banana 2 mantém vantagem na geração em tempo real.",
+          "geoSnippet": "Em 24/04/2026, GPT Image-2 (OpenAI) lidera a geração de texto-para-imagem com 99,2% de precisão na renderização de texto, seguido por Nano Banana 2 (Google, saída 4K em menos de 15s) e Flux Pro (Black Forest Labs, ecossistema open-source mais forte). GPT Image-2 vence em tipografia, consistência de personagem e lógica espacial; Nano Banana 2 vence em velocidade Flash e integração com busca em tempo real."
+        },
+        "es": {
+          "title": "Texto a Imagen",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2 toma el trono con 99,2% de precisión en renderizado de texto, mientras Nano Banana 2 mantiene ventaja en generación en tiempo real.",
+          "geoSnippet": "Al 24/04/2026, GPT Image-2 (OpenAI) lidera la generación de texto-a-imagen con 99,2% de precisión en renderizado de texto, seguido por Nano Banana 2 (Google, salida 4K en menos de 15s) y Flux Pro (Black Forest Labs, ecosistema open-source más fuerte). GPT Image-2 gana en tipografía, consistencia de personaje y lógica espacial; Nano Banana 2 gana en velocidad Flash e integración con búsqueda en tiempo real."
+        },
+        "id": {
+          "title": "Teks ke Gambar",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2 mengambil takhta dengan akurasi rendering teks 99,2%, sementara Nano Banana 2 mempertahankan keunggulan dalam pembuatan real-time.",
+          "geoSnippet": "Per 2026-04-29, GPT Image-2 (OpenAI) memimpin pembuatan teks-ke-gambar dengan akurasi rendering teks 99,2%, diikuti Nano Banana 2 (Google, output 4K kurang dari 15 detik) dan Flux Pro (Black Forest Labs, ekosistem open-source terkuat). GPT Image-2 menang pada tipografi, konsistensi karakter, dan logika spasial; Nano Banana 2 menang pada kecepatan arsitektur Flash dan integrasi pencarian real-time."
+        },
+        "fr": {
+          "title": "Texte vers Image",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2 prend le trône avec 99,2 % de précision de rendu de texte, tandis que Nano Banana 2 garde un avantage en génération temps réel.",
+          "geoSnippet": "Au 24/04/2026, GPT Image-2 (OpenAI) domine la génération texte-vers-image avec 99,2 % de précision de rendu de texte, suivi par Nano Banana 2 (Google, sortie 4K en moins de 15 s) et Flux Pro (Black Forest Labs, écosystème open-source le plus fort). GPT Image-2 gagne sur la typographie, la cohérence des personnages et la logique spatiale ; Nano Banana 2 gagne sur la vitesse de l'architecture Flash et l'intégration de recherche en temps réel."
+        },
+        "tr": {
+          "title": "Metinden Görüntüye",
+          "subtitle": "Text-to-Image",
+          "description": "GPT Image-2, %99,2 metin renderleme doğruluğuyla tahta çıkıyor; Nano Banana 2 ise gerçek zamanlı üretimde öne çıkıyor.",
+          "geoSnippet": "2026-04-29 itibarıyla, GPT Image-2 (OpenAI) %99,2 metin renderleme doğruluğuyla metinden-görüntüye üretiminde liderlik ediyor; Nano Banana 2 (Google, 15 saniye altında 4K çıktı) ve Flux Pro (Black Forest Labs, en güçlü açık kaynak ekosistem) onu izliyor. GPT Image-2 tipografi hassasiyeti, karakter tutarlılığı ve uzamsal mantıkta kazanıyor; Nano Banana 2 Flash mimari hızında ve gerçek zamanlı arama entegrasyonunda kazanıyor."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "GPT Image-2",
+          "company": "OpenAI",
+          "score": "99.2%",
+          "i18n": {
+            "en": {
+              "highlight": "Highest text-rendering accuracy.",
+              "strengths": [
+                "Text-rendering accuracy 99.2%",
+                "Chinese / Arabic support",
+                "Spatial logic & anatomical correctness",
+                "Character consistency",
+                "Thinking-mode reasoning engine"
+              ]
+            },
+            "zh": {
+              "highlight": "文本渲染准确率最高。",
+              "strengths": [
+                "文本渲染准确率 99.2%",
+                "支持中文 / 阿拉伯语",
+                "空间逻辑与解剖正确性",
+                "角色一致性",
+                "Thinking Mode 推理引擎"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Nano Banana 2",
+          "company": "Google",
+          "score": "4-15s",
+          "i18n": {
+            "en": {
+              "highlight": "Ultra-fast 4K generation with live web search.",
+              "strengths": [
+                "Flash architecture, ultra-fast generation",
+                "4K image in 4-15s",
+                "Live web-search integration",
+                "Fastest on the market",
+                "Deep Gemini-ecosystem integration"
+              ]
+            },
+            "zh": {
+              "highlight": "极速 4K 生成，实时联网搜索。",
+              "strengths": [
+                "Flash 架构极速生成",
+                "4K 图像 4-15 秒",
+                "实时联网搜索集成",
+                "速度最快",
+                "与 Gemini 生态深度集成"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Flux Pro",
+          "company": "Black Forest Labs",
+          "i18n": {
+            "en": {
+              "highlight": "Strongest open-source ecosystem.",
+              "strengths": [
+                "Open-source, commercial use",
+                "Rich community ecosystem",
+                "Style diversity",
+                "Local deployment"
+              ]
+            },
+            "zh": {
+              "highlight": "开源生态最强。",
+              "strengths": [
+                "开源可商用",
+                "社区生态丰富",
+                "风格多样性",
+                "本地部署能力"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "4K generation",
+          "zh": "4K 生成"
+        },
+        {
+          "en": "Multilingual text",
+          "zh": "多语言文本"
+        },
+        {
+          "en": "Character consistency",
+          "zh": "角色一致性"
+        },
+        {
+          "en": "Real-time generation",
+          "zh": "实时生成"
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "icon": "Video",
+      "currentLeader": "Veo 3.1",
+      "leaderCompany": "Google",
+      "previousLeader": "Sora 2",
+      "i18n": {
+        "en": {
+          "title": "Text-to-Video",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 has exited; Google Veo 3.1 now leads in overall capability, while Seedance 2.0 and Kling 3.0 lead in specific niches.",
+          "changeNote": "Sora 2 deprecated. Veo 3.1 takes the overall lead.",
+          "marketNote": "Veo 3.1 best overall; Seedance for multi-shot storyboarding; Kling for cinematic visuals and lip-sync; Pika for social creators.",
+          "geoSnippet": "As of 2026-04-29, Google Veo 3.1 leads text-to-video generation with native audio and multi-shot narrative, followed by Seedance 2.0 (ByteDance, strongest multi-shot storyboarding) and Kling 3.0 Omni (Kuaishou, cinematic-grade visuals and most accurate lip-sync). Sora 2 has been deprecated."
+        },
+        "zh": {
+          "title": "文生视频",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 已退出竞争，当前 Google Veo 3.1 综合实力最强，国产模型 Seedance 2.0 和 Kling 3.0 在特定领域领先。",
+          "changeNote": "Sora 2 已停用，Veo 3.1 成为综合最强。",
+          "marketNote": "Veo 3.1 综合最佳，Seedance 多镜头最强，Kling 电影级 + 对口型最强，Pika 是社交创作者首选。",
+          "geoSnippet": "截至 2026-04-29，Google Veo 3.1 凭借原生音频和多镜头叙事在文生视频领域领先，亚军为 Seedance 2.0（字节跳动，多镜头故事板最强）和 Kling 3.0 Omni（快手，电影级画质 + 对口型最精准）。Sora 2 已停用退出。"
+        },
+        "ar": {
+          "title": "تحويل النص إلى فيديو",
+          "subtitle": "Text-to-Video",
+          "description": "خرج Sora 2 من المنافسة؛ يقود Google Veo 3.1 الآن في القدرة الإجمالية، بينما يقود Seedance 2.0 وKling 3.0 في تخصصات محددة.",
+          "geoSnippet": "حتى 2026-04-29، يتصدر Google Veo 3.1 توليد النص إلى فيديو بصوت أصلي وسرد متعدد اللقطات، يليه Seedance 2.0 (ByteDance، أقوى لوحة قصة متعددة اللقطات) وKling 3.0 Omni (Kuaishou، صور سينمائية وأدق مزامنة شفاه). تم إيقاف Sora 2."
+        },
+        "pt": {
+          "title": "Texto para Vídeo",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 saiu de cena; Google Veo 3.1 agora lidera em capacidade geral, enquanto Seedance 2.0 e Kling 3.0 lideram em nichos específicos.",
+          "geoSnippet": "Em 24/04/2026, Google Veo 3.1 lidera geração de texto-para-vídeo com áudio nativo e narrativa multi-cena, seguido por Seedance 2.0 (ByteDance, storyboarding multi-cena mais forte) e Kling 3.0 Omni (Kuaishou, qualidade visual cinematográfica e sincronia labial mais precisa). Sora 2 foi descontinuado."
+        },
+        "es": {
+          "title": "Texto a Vídeo",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 ha salido de escena; Google Veo 3.1 ahora lidera en capacidad general, mientras Seedance 2.0 y Kling 3.0 lideran en nichos específicos.",
+          "geoSnippet": "Al 24/04/2026, Google Veo 3.1 lidera la generación de texto-a-vídeo con audio nativo y narrativa multi-toma, seguido por Seedance 2.0 (ByteDance, storyboarding multi-toma más fuerte) y Kling 3.0 Omni (Kuaishou, calidad cinematográfica y sincronización labial más precisa). Sora 2 ha sido descontinuado."
+        },
+        "id": {
+          "title": "Teks ke Video",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 telah keluar; Google Veo 3.1 kini memimpin kemampuan keseluruhan, sementara Seedance 2.0 dan Kling 3.0 memimpin di niche tertentu.",
+          "geoSnippet": "Per 2026-04-29, Google Veo 3.1 memimpin pembuatan teks-ke-video dengan audio native dan narasi multi-shot, diikuti Seedance 2.0 (ByteDance, storyboarding multi-shot terkuat) dan Kling 3.0 Omni (Kuaishou, visual kualitas sinematik dan lip-sync paling akurat). Sora 2 telah dihentikan."
+        },
+        "fr": {
+          "title": "Texte vers Vidéo",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 est sorti de la course ; Google Veo 3.1 mène désormais en capacité globale, tandis que Seedance 2.0 et Kling 3.0 dominent dans des niches spécifiques.",
+          "geoSnippet": "Au 24/04/2026, Google Veo 3.1 domine la génération texte-vers-vidéo avec audio natif et narration multi-plans, suivi par Seedance 2.0 (ByteDance, storyboarding multi-plans le plus fort) et Kling 3.0 Omni (Kuaishou, qualité visuelle cinématographique et lip-sync le plus précis). Sora 2 a été déprécié."
+        },
+        "tr": {
+          "title": "Metinden Videoya",
+          "subtitle": "Text-to-Video",
+          "description": "Sora 2 yarıştan çekildi; Google Veo 3.1 artık genel yetenekte liderlik ederken, Seedance 2.0 ve Kling 3.0 belirli nişlerde lider.",
+          "geoSnippet": "2026-04-29 itibarıyla, Google Veo 3.1 yerel ses ve çoklu sahne anlatımıyla metinden-videoya üretiminde liderlik ediyor; Seedance 2.0 (ByteDance, en güçlü çoklu sahne storyboard'u) ve Kling 3.0 Omni (Kuaishou, sinematik görsel kalitesi ve en isabetli dudak senkronizasyonu) onu izliyor. Sora 2 kullanımdan kaldırıldı."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Veo 3.1",
+          "company": "Google",
+          "i18n": {
+            "en": {
+              "highlight": "Native audio + multi-shot, strongest overall.",
+              "strengths": [
+                "Native audio generation",
+                "Multi-shot narrative",
+                "Excellent physics simulation",
+                "YouTube-ecosystem integration"
+              ]
+            },
+            "zh": {
+              "highlight": "原生音频 + 多镜头，综合实力最强。",
+              "strengths": [
+                "原生音频生成",
+                "多镜头叙事",
+                "物理模拟优秀",
+                "与 YouTube 生态集成"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Seedance 2.0",
+          "company": "ByteDance",
+          "i18n": {
+            "en": {
+              "highlight": "Strongest multi-shot storyboarding.",
+              "strengths": [
+                "Multi-shot storyboarding",
+                "Professional cinematic language",
+                "Leading domestic Chinese model",
+                "Douyin/TikTok ecosystem integration"
+              ]
+            },
+            "zh": {
+              "highlight": "多镜头故事板能力最强。",
+              "strengths": [
+                "多镜头故事板",
+                "镜头语言专业",
+                "国产模型代表",
+                "抖音生态集成"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Kling 3.0 Omni",
+          "company": "Kuaishou",
+          "i18n": {
+            "en": {
+              "highlight": "Cinematic-grade visuals + most accurate lip-sync.",
+              "strengths": [
+                "Cinematic-grade visuals",
+                "Most accurate lip-sync",
+                "Kuaishou ecosystem integration",
+                "Optimized for Chinese scenarios"
+              ]
+            },
+            "zh": {
+              "highlight": "电影级画质 + 对口型最强。",
+              "strengths": [
+                "电影级画质",
+                "对口型最精准",
+                "快手生态集成",
+                "中文场景优化"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "Native audio",
+          "zh": "原生音频"
+        },
+        {
+          "en": "Multi-shot narrative",
+          "zh": "多镜头叙事"
+        },
+        {
+          "en": "Cinematic visuals",
+          "zh": "电影级画质"
+        },
+        {
+          "en": "Lip-sync",
+          "zh": "对口型"
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "icon": "Code",
+      "currentLeader": "GPT-5.5 (Agentic)",
+      "leaderCompany": "OpenAI",
+      "previousLeader": "Claude Opus 4.6",
+      "i18n": {
+        "en": {
+          "title": "Code Generation",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5 retakes the lead in terminal-agent coding; Claude Opus 4.7 still owns multi-file refactoring and tool orchestration.",
+          "changeNote": "GPT-5.5 released April 23, leading Terminal-Bench 2.0 by 13 percentage points.",
+          "marketNote": "Use GPT-5.5 for terminal agentic coding, Claude Opus 4.7 for multi-file refactoring and review, Gemini for whole-repo analysis.",
+          "geoSnippet": "As of 2026-04-29, GPT-5.5 (OpenAI) leads code generation with 82.7% on Terminal-Bench 2.0, followed by Claude Opus 4.7 (Anthropic, SWE-Bench Pro 64.3%) and Gemini 3.1 Pro (Google, LiveCodeBench Elo 2887). Choose GPT-5.5 for autonomous agentic coding, Claude Opus 4.7 for multi-file refactoring, Gemini for whole-repo analysis with 1M-token context."
+        },
+        "zh": {
+          "title": "代码生成",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5 在终端 Agent 编码夺回领先，Claude Opus 4.7 在多文件代码重构和工具编排仍有优势。",
+          "changeNote": "4 月 23 日 GPT-5.5 发布，Terminal-Bench 2.0 领先 13 个百分点。",
+          "marketNote": "GPT-5.5 做终端 Agentic 编码，Claude Opus 4.7 做多文件重构审查，Gemini 做全仓库分析。",
+          "geoSnippet": "截至 2026-04-29，GPT-5.5（OpenAI）以 Terminal-Bench 2.0 82.7% 在代码生成领域领先，亚军为 Claude Opus 4.7（Anthropic，SWE-Bench Pro 64.3%）和 Gemini 3.1 Pro（Google，LiveCodeBench Elo 2887）。终端 Agentic 编码选 GPT-5.5；多文件重构选 Claude Opus 4.7；全仓库分析（100 万 token 上下文）选 Gemini。"
+        },
+        "ar": {
+          "title": "توليد الكود",
+          "subtitle": "Code Generation",
+          "description": "يستعيد GPT-5.5 الصدارة في برمجة الوكيل الطرفي؛ لا يزال Claude Opus 4.7 يمتلك إعادة البناء متعدد الملفات وتنسيق الأدوات.",
+          "geoSnippet": "حتى 2026-04-29، يتصدر GPT-5.5 (OpenAI) توليد الكود بـ 82.7% في Terminal-Bench 2.0، يليه Claude Opus 4.7 (Anthropic، SWE-Bench Pro 64.3%) وGemini 3.1 Pro (Google، LiveCodeBench Elo 2887). اختر GPT-5.5 للبرمجة الوكيلية المستقلة، Claude Opus 4.7 لإعادة بناء متعدد الملفات، Gemini للتحليل الكامل للمستودع بسياق 1M-token."
+        },
+        "pt": {
+          "title": "Geração de Código",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5 retoma a liderança em codificação agente-terminal; Claude Opus 4.7 ainda domina refatoração multi-arquivo e orquestração de ferramentas.",
+          "geoSnippet": "Em 24/04/2026, GPT-5.5 (OpenAI) lidera geração de código com 82,7% em Terminal-Bench 2.0, seguido por Claude Opus 4.7 (Anthropic, SWE-Bench Pro 64,3%) e Gemini 3.1 Pro (Google, LiveCodeBench Elo 2887). Escolha GPT-5.5 para codificação agente autônoma, Claude Opus 4.7 para refatoração multi-arquivo, Gemini para análise de repositório completo com contexto de 1M tokens."
+        },
+        "es": {
+          "title": "Generación de Código",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5 recupera el liderazgo en codificación agente-terminal; Claude Opus 4.7 aún domina refactorización multi-archivo y orquestación de herramientas.",
+          "geoSnippet": "Al 24/04/2026, GPT-5.5 (OpenAI) lidera la generación de código con 82,7% en Terminal-Bench 2.0, seguido por Claude Opus 4.7 (Anthropic, SWE-Bench Pro 64,3%) y Gemini 3.1 Pro (Google, LiveCodeBench Elo 2887). Elija GPT-5.5 para codificación agente autónoma, Claude Opus 4.7 para refactorización multi-archivo, Gemini para análisis de repo completo con contexto de 1M tokens."
+        },
+        "id": {
+          "title": "Pembuatan Kode",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5 merebut kembali kepemimpinan dalam coding agen-terminal; Claude Opus 4.7 masih menguasai refactoring multi-file dan orkestrasi tool.",
+          "geoSnippet": "Per 2026-04-29, GPT-5.5 (OpenAI) memimpin pembuatan kode dengan 82,7% pada Terminal-Bench 2.0, diikuti Claude Opus 4.7 (Anthropic, SWE-Bench Pro 64,3%) dan Gemini 3.1 Pro (Google, LiveCodeBench Elo 2887). Pilih GPT-5.5 untuk coding agentik otonom, Claude Opus 4.7 untuk refactoring multi-file, Gemini untuk analisis repo penuh dengan konteks 1M-token."
+        },
+        "fr": {
+          "title": "Génération de Code",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5 reprend la tête en codage agent-terminal ; Claude Opus 4.7 garde le refactoring multi-fichiers et l'orchestration d'outils.",
+          "geoSnippet": "Au 24/04/2026, GPT-5.5 (OpenAI) domine la génération de code avec 82,7 % sur Terminal-Bench 2.0, suivi par Claude Opus 4.7 (Anthropic, SWE-Bench Pro 64,3 %) et Gemini 3.1 Pro (Google, LiveCodeBench Elo 2887). Choisissez GPT-5.5 pour le codage agentique autonome, Claude Opus 4.7 pour le refactoring multi-fichiers, Gemini pour l'analyse de dépôt complet avec contexte de 1M tokens."
+        },
+        "tr": {
+          "title": "Kod Üretimi",
+          "subtitle": "Code Generation",
+          "description": "GPT-5.5, terminal-ajan kodlamada liderliği geri alıyor; Claude Opus 4.7 hâlâ çok dosyalı refaktörleme ve araç orkestrasyonunda hâkim.",
+          "geoSnippet": "2026-04-29 itibarıyla, GPT-5.5 (OpenAI) Terminal-Bench 2.0'da %82,7 ile kod üretiminde liderlik ediyor; Claude Opus 4.7 (Anthropic, SWE-Bench Pro %64,3) ve Gemini 3.1 Pro (Google, LiveCodeBench Elo 2887) onu izliyor. Otonom ajantik kodlama için GPT-5.5'i, çok dosyalı refaktörleme için Claude Opus 4.7'yi, 1M-token bağlamla tüm-repo analizi için Gemini'yi seçin."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "GPT-5.5",
+          "company": "OpenAI",
+          "score": "82.7%",
+          "i18n": {
+            "en": {
+              "highlight": "Terminal-Bench 2.0 #1, strongest agentic coding.",
+              "strengths": [
+                "Terminal-Bench 2.0: 82.7%",
+                "Expert-SWE: 73.1%",
+                "Autonomous coding judgment",
+                "Fewer tokens for the same task"
+              ]
+            },
+            "zh": {
+              "highlight": "Terminal-Bench 2.0 第一，Agentic 编码最强。",
+              "strengths": [
+                "Terminal-Bench 2.0: 82.7%",
+                "Expert-SWE: 73.1%",
+                "自主编码判断力",
+                "相同任务 token 更少"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Claude Opus 4.7",
+          "company": "Anthropic",
+          "score": "64.3%",
+          "i18n": {
+            "en": {
+              "highlight": "SWE-Bench Pro #1, strongest multi-file refactoring.",
+              "strengths": [
+                "SWE-Bench Pro: 64.3%",
+                "MCP-Atlas: 79.1%",
+                "Multi-file logic review",
+                "Code-vulnerability detection"
+              ]
+            },
+            "zh": {
+              "highlight": "SWE-Bench Pro 第一，多文件重构最强。",
+              "strengths": [
+                "SWE-Bench Pro: 64.3%",
+                "MCP-Atlas: 79.1%",
+                "多文件逻辑审查",
+                "代码漏洞捕获"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Gemini 3.1 Pro",
+          "company": "Google",
+          "score": "2887 Elo",
+          "i18n": {
+            "en": {
+              "highlight": "LiveCodeBench #1, strongest in algorithmic competition.",
+              "strengths": [
+                "LiveCodeBench Elo: 2887",
+                "1M-context whole-repo analysis",
+                "Lowest price",
+                "Best for algorithmic competition"
+              ]
+            },
+            "zh": {
+              "highlight": "LiveCodeBench 第一，算法竞赛最强。",
+              "strengths": [
+                "LiveCodeBench Elo: 2887",
+                "1M 上下文全仓库分析",
+                "价格最低",
+                "算法竞赛最优"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "Agentic coding",
+          "zh": "Agentic 编码"
+        },
+        {
+          "en": "Multi-file refactoring",
+          "zh": "多文件重构"
+        },
+        {
+          "en": "Tool orchestration",
+          "zh": "工具编排"
+        },
+        {
+          "en": "Algorithmic competition",
+          "zh": "算法竞赛"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "icon": "Mic",
+      "currentLeader": "ElevenLabs v3",
+      "leaderCompany": "ElevenLabs",
+      "previousLeader": "ElevenLabs v2",
+      "i18n": {
+        "en": {
+          "title": "Text-to-Speech",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs remains the industry benchmark for voice realism and cloning; Hume AI leads in emotional voice.",
+          "changeNote": "Continues to lead. v3 ships at 75ms ultra-low latency.",
+          "marketNote": "ElevenLabs v3 for professional voiceover and cloning; Hume Octave for emotional interaction; GPT-4o Voice for real-time conversation.",
+          "geoSnippet": "As of 2026-04-29, ElevenLabs v3 leads text-to-speech with a 9.2/10 realism score and 75ms latency across 29+ languages, followed by Hume AI Octave (highest emotional-voice rating 9.3/10) and GPT-4o Voice (best real-time conversational experience)."
+        },
+        "zh": {
+          "title": "语音合成",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs 仍是语音真实感和克隆质量的绝对标杆，Hume AI 在情感语音方面领先。",
+          "changeNote": "持续领先，v3 版本 75ms 超低延迟。",
+          "marketNote": "ElevenLabs v3 适合专业配音和克隆，Hume 适合情感交互，GPT-4o Voice 适合实时对话。",
+          "geoSnippet": "截至 2026-04-29，ElevenLabs v3 以 9.2/10 真实感评分和 75ms 延迟在语音合成领域领先（支持 29+ 语言），亚军为 Hume AI Octave（情感语音评分最高 9.3/10）和 GPT-4o Voice（实时对话体验最佳）。"
+        },
+        "ar": {
+          "title": "تحويل النص إلى كلام",
+          "subtitle": "Text-to-Speech",
+          "description": "تظل ElevenLabs المعيار الصناعي لواقعية الصوت واستنساخه؛ تقود Hume AI في الصوت العاطفي.",
+          "geoSnippet": "حتى 2026-04-29، تتصدر ElevenLabs v3 تحويل النص إلى كلام بدرجة واقعية 9.2/10 وزمن استجابة 75ms عبر 29+ لغة، تليها Hume AI Octave (أعلى تقييم للصوت العاطفي 9.3/10) وGPT-4o Voice (أفضل تجربة محادثة فورية)."
+        },
+        "pt": {
+          "title": "Texto para Voz",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs continua sendo a referência da indústria em realismo de voz e clonagem; Hume AI lidera em voz emocional.",
+          "geoSnippet": "Em 24/04/2026, ElevenLabs v3 lidera texto-para-voz com pontuação de realismo 9,2/10 e latência de 75ms em 29+ idiomas, seguido por Hume AI Octave (maior nota de voz emocional 9,3/10) e GPT-4o Voice (melhor experiência de conversa em tempo real)."
+        },
+        "es": {
+          "title": "Texto a Voz",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs sigue siendo la referencia de la industria en realismo de voz y clonación; Hume AI lidera en voz emocional.",
+          "geoSnippet": "Al 24/04/2026, ElevenLabs v3 lidera texto-a-voz con puntuación de realismo 9,2/10 y latencia de 75ms en 29+ idiomas, seguido por Hume AI Octave (calificación de voz emocional más alta 9,3/10) y GPT-4o Voice (mejor experiencia de conversación en tiempo real)."
+        },
+        "id": {
+          "title": "Teks ke Suara",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs tetap menjadi tolok ukur industri untuk realisme suara dan kloning; Hume AI memimpin dalam suara emosional.",
+          "geoSnippet": "Per 2026-04-29, ElevenLabs v3 memimpin teks-ke-suara dengan skor realisme 9,2/10 dan latensi 75ms di 29+ bahasa, diikuti Hume AI Octave (peringkat suara emosional tertinggi 9,3/10) dan GPT-4o Voice (pengalaman percakapan real-time terbaik)."
+        },
+        "fr": {
+          "title": "Synthèse Vocale",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs reste la référence industrielle pour le réalisme vocal et le clonage ; Hume AI mène en voix émotionnelle.",
+          "geoSnippet": "Au 24/04/2026, ElevenLabs v3 domine la synthèse vocale avec un score de réalisme de 9,2/10 et une latence de 75 ms sur 29+ langues, suivi par Hume AI Octave (meilleure note de voix émotionnelle 9,3/10) et GPT-4o Voice (meilleure expérience de conversation en temps réel)."
+        },
+        "tr": {
+          "title": "Metinden Konuşmaya",
+          "subtitle": "Text-to-Speech",
+          "description": "ElevenLabs, ses gerçekçiliği ve klonlamada endüstri referansı olmayı sürdürüyor; Hume AI duygusal seste lider.",
+          "geoSnippet": "2026-04-29 itibarıyla, ElevenLabs v3 9,2/10 gerçekçilik puanı ve 75ms gecikmeyle 29+ dilde metinden-konuşmaya alanında liderlik ediyor; Hume AI Octave (en yüksek duygusal ses puanı 9,3/10) ve GPT-4o Voice (en iyi gerçek zamanlı konuşma deneyimi) onu izliyor."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "ElevenLabs v3",
+          "company": "ElevenLabs",
+          "score": "9.2/10",
+          "i18n": {
+            "en": {
+              "highlight": "Industry-benchmark voice realism.",
+              "strengths": [
+                "Realism score 9.2/10",
+                "75ms ultra-low latency",
+                "29+ languages",
+                "Professional Clone quality",
+                "Enterprise-grade API"
+              ]
+            },
+            "zh": {
+              "highlight": "行业标杆级语音真实感。",
+              "strengths": [
+                "真实感评分 9.2/10",
+                "75ms 超低延迟",
+                "29+ 语言支持",
+                "Professional Clone 质量",
+                "企业级 API"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Hume AI Octave",
+          "company": "Hume AI",
+          "score": "9.3/10",
+          "i18n": {
+            "en": {
+              "highlight": "Top of the emotional-voice leaderboard.",
+              "strengths": [
+                "Emotion recognition 9.3/10",
+                "Emotional response capability",
+                "Empathetic interaction",
+                "Precise affect awareness"
+              ]
+            },
+            "zh": {
+              "highlight": "情感 AI 语音第一。",
+              "strengths": [
+                "情感识别 9.3/10",
+                "情感回应能力",
+                "共情交互",
+                "情绪感知精准"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "GPT-4o Voice",
+          "company": "OpenAI",
+          "i18n": {
+            "en": {
+              "highlight": "Best real-time conversational experience.",
+              "strengths": [
+                "Low-latency real-time conversation",
+                "Natural voice output",
+                "Multilingual real-time translation",
+                "Deep ChatGPT integration"
+              ]
+            },
+            "zh": {
+              "highlight": "实时对话体验最佳。",
+              "strengths": [
+                "低延迟实时对话",
+                "自然语音输出",
+                "多语言实时翻译",
+                "与 ChatGPT 深度集成"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "Ultra-low latency",
+          "zh": "超低延迟"
+        },
+        {
+          "en": "Emotional voice",
+          "zh": "情感语音"
+        },
+        {
+          "en": "Voice cloning",
+          "zh": "语音克隆"
+        },
+        {
+          "en": "Multilingual",
+          "zh": "多语言"
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "icon": "Music",
+      "currentLeader": "Suno v5.5",
+      "leaderCompany": "Suno",
+      "previousLeader": "Suno v5",
+      "i18n": {
+        "en": {
+          "title": "AI Music Generation",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5 remains the most-used platform; tools differentiate on speed, post-production, and enterprise deployment.",
+          "changeNote": "Continuous iteration. v5.5 Studio adds multi-track editing and MIDI export.",
+          "marketNote": "Suno is fastest to a finished song, Udio is strongest in editing, Lyria is safest for enterprise deployment, ElevenMusic / StableAudio are clearest on commercial rights.",
+          "geoSnippet": "As of 2026-04-29, Suno v5.5 leads AI music generation by user adoption with multi-track Studio editing and MIDI export, followed by Udio v1.5 (strongest stem-level editing and post-production) and Lyria 3 Pro (Google DeepMind, best for enterprise / API deployment via Vertex AI)."
+        },
+        "zh": {
+          "title": "AI 音乐生成",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5 仍是使用最广泛的平台，各工具在快速出歌、后期编辑和企业部署各有优势。",
+          "changeNote": "持续迭代，v5.5 Studio 支持多轨编辑和 MIDI 导出。",
+          "marketNote": "Suno 最快出歌，Udio 编辑最强，Lyria 企业部署最安全，ElevenMusic / StableAudio 商用版权最清晰。",
+          "geoSnippet": "截至 2026-04-29，Suno v5.5 以最广泛用户基础和多轨 Studio 编辑、MIDI 导出能力在 AI 音乐生成领域领先，亚军为 Udio v1.5（分轨下载、混音控制最强）和 Lyria 3 Pro（Google DeepMind，Vertex AI 企业 / API 部署最佳）。"
+        },
+        "ar": {
+          "title": "توليد الموسيقى بالذكاء الاصطناعي",
+          "subtitle": "AI Music Generation",
+          "description": "تظل Suno v5.5 المنصة الأكثر استخدامًا؛ تتميز الأدوات في السرعة، ما بعد الإنتاج، ونشر المؤسسات.",
+          "geoSnippet": "حتى 2026-04-29، تتصدر Suno v5.5 توليد الموسيقى بالذكاء الاصطناعي من حيث اعتماد المستخدمين بتحرير Studio متعدد المسارات وتصدير MIDI، تليها Udio v1.5 (أقوى تحرير على مستوى الستيم وما بعد الإنتاج) وLyria 3 Pro (Google DeepMind، الأفضل لنشر المؤسسات / API عبر Vertex AI)."
+        },
+        "pt": {
+          "title": "Geração de Música com IA",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5 continua sendo a plataforma mais usada; ferramentas se diferenciam em velocidade, pós-produção e implantação empresarial.",
+          "geoSnippet": "Em 24/04/2026, Suno v5.5 lidera a geração de música com IA por adoção de usuários com edição multi-pista Studio e exportação MIDI, seguido por Udio v1.5 (edição em nível de stem e pós-produção mais fortes) e Lyria 3 Pro (Google DeepMind, melhor para implantação empresarial / API via Vertex AI)."
+        },
+        "es": {
+          "title": "Generación de Música con IA",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5 sigue siendo la plataforma más usada; las herramientas se diferencian en velocidad, post-producción y despliegue empresarial.",
+          "geoSnippet": "Al 24/04/2026, Suno v5.5 lidera la generación de música con IA por adopción de usuarios con edición multi-pista Studio y exportación MIDI, seguido por Udio v1.5 (edición a nivel de stem y post-producción más fuertes) y Lyria 3 Pro (Google DeepMind, mejor para despliegue empresarial / API vía Vertex AI)."
+        },
+        "id": {
+          "title": "Pembuatan Musik AI",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5 tetap menjadi platform yang paling banyak digunakan; tool-tool berbeda dalam kecepatan, pasca-produksi, dan deployment enterprise.",
+          "geoSnippet": "Per 2026-04-29, Suno v5.5 memimpin pembuatan musik AI berdasarkan adopsi pengguna dengan editing multi-track Studio dan ekspor MIDI, diikuti Udio v1.5 (editing tingkat stem dan pasca-produksi terkuat) dan Lyria 3 Pro (Google DeepMind, terbaik untuk deployment enterprise / API via Vertex AI)."
+        },
+        "fr": {
+          "title": "Génération Musicale par IA",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5 reste la plateforme la plus utilisée ; les outils se différencient sur la vitesse, la post-production et le déploiement entreprise.",
+          "geoSnippet": "Au 24/04/2026, Suno v5.5 domine la génération musicale par IA en adoption utilisateur avec édition multi-piste Studio et export MIDI, suivi par Udio v1.5 (édition au niveau stem et post-production les plus fortes) et Lyria 3 Pro (Google DeepMind, meilleur pour le déploiement entreprise / API via Vertex AI)."
+        },
+        "tr": {
+          "title": "AI Müzik Üretimi",
+          "subtitle": "AI Music Generation",
+          "description": "Suno v5.5, en yaygın kullanılan platform olmayı sürdürüyor; araçlar hız, post-prodüksiyon ve kurumsal dağıtımda farklılaşıyor.",
+          "geoSnippet": "2026-04-29 itibarıyla, Suno v5.5 çok izli Studio düzenleme ve MIDI dışa aktarmayla kullanıcı benimsemesinde AI müzik üretimine liderlik ediyor; Udio v1.5 (en güçlü stem-seviye düzenleme ve post-prodüksiyon) ve Lyria 3 Pro (Google DeepMind, Vertex AI üzerinden kurumsal / API dağıtım için en iyi) onu izliyor."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Suno v5.5",
+          "company": "Suno",
+          "i18n": {
+            "en": {
+              "highlight": "Most widely used AI music platform.",
+              "strengths": [
+                "Largest user base",
+                "Studio multi-track editing",
+                "MIDI export",
+                "Fastest to a finished song"
+              ]
+            },
+            "zh": {
+              "highlight": "使用最广泛的 AI 音乐平台。",
+              "strengths": [
+                "最广泛用户基础",
+                "Studio 多轨编辑",
+                "MIDI 导出",
+                "最快出成品歌曲"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Udio v1.5",
+          "company": "Udio",
+          "i18n": {
+            "en": {
+              "highlight": "Strongest post-production and stem control.",
+              "strengths": [
+                "Stem download",
+                "Mix control",
+                "Key adjustment",
+                "Professional post-production"
+              ]
+            },
+            "zh": {
+              "highlight": "后期编辑与分轨控制最强。",
+              "strengths": [
+                "分轨下载",
+                "混音控制",
+                "调性调整",
+                "专业后期编辑"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Lyria 3 Pro",
+          "company": "Google DeepMind",
+          "i18n": {
+            "en": {
+              "highlight": "Best for enterprise / API deployment.",
+              "strengths": [
+                "Vertex AI delivery",
+                "Structured generation",
+                "Clear copyright posture",
+                "Enterprise-grade deployment"
+              ]
+            },
+            "zh": {
+              "highlight": "企业 / API 部署最佳。",
+              "strengths": [
+                "Vertex AI 输出",
+                "结构化生成",
+                "版权清晰",
+                "企业级部署"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "Multi-track editing",
+          "zh": "多轨编辑"
+        },
+        {
+          "en": "MIDI export",
+          "zh": "MIDI 导出"
+        },
+        {
+          "en": "Stem control",
+          "zh": "分轨控制"
+        },
+        {
+          "en": "Copyright safety",
+          "zh": "版权安全"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "icon": "Eye",
+      "currentLeader": "GPT-4o Vision",
+      "leaderCompany": "OpenAI",
+      "previousLeader": "GPT-4o Vision",
+      "i18n": {
+        "en": {
+          "title": "Vision Understanding",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision keeps the strongest general-purpose lead; Gemini Vision leads on video understanding and long-document parsing.",
+          "changeNote": "Continues to lead — strongest on UI parsing and live visual conversation.",
+          "marketNote": "GPT-4o Vision for general-purpose; Gemini Vision for long video / documents; Qwen-VL for the strongest open-source Chinese option.",
+          "geoSnippet": "As of 2026-04-29, GPT-4o Vision (OpenAI) leads general-purpose vision understanding with strongest UI parsing and live visual conversation, followed by Gemini Vision (Google, leading 1M-token long-document and video understanding) and Qwen-VL (Alibaba, strongest open-source Chinese-scenario model)."
+        },
+        "zh": {
+          "title": "视觉理解",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision 保持通用性最强地位，Gemini Vision 在视频理解和长文档解析方面领先。",
+          "changeNote": "持续领先，UI 解析与实时视觉对话最强。",
+          "marketNote": "GPT-4o Vision 通用性最强，Gemini Vision 长视频 / 文档最强，Qwen-VL 是国产开源最佳。",
+          "geoSnippet": "截至 2026-04-29，GPT-4o Vision（OpenAI）以最强 UI 解析和实时视觉对话在视觉理解领域领先，亚军为 Gemini Vision（Google，100 万 token 长文档和视频理解领先）和 Qwen-VL（阿里巴巴，国产开源中文场景最优）。"
+        },
+        "ar": {
+          "title": "فهم الرؤية",
+          "subtitle": "Vision Understanding",
+          "description": "يحتفظ GPT-4o Vision بأقوى ريادة عامة الأغراض؛ يقود Gemini Vision في فهم الفيديو وتحليل المستندات الطويلة.",
+          "geoSnippet": "حتى 2026-04-29، يتصدر GPT-4o Vision (OpenAI) فهم الرؤية العام الأغراض بأقوى تحليل واجهة مستخدم ومحادثة بصرية فورية، يليه Gemini Vision (Google، الرائد في فهم الفيديو والمستندات الطويلة بـ 1M-token) وQwen-VL (علي بابا، أقوى نموذج مفتوح المصدر للسيناريوهات الصينية)."
+        },
+        "pt": {
+          "title": "Compreensão Visual",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision mantém a liderança em uso geral; Gemini Vision lidera em compreensão de vídeo e análise de documentos longos.",
+          "geoSnippet": "Em 24/04/2026, GPT-4o Vision (OpenAI) lidera a compreensão visual de uso geral com a mais forte análise de UI e conversa visual em tempo real, seguido por Gemini Vision (Google, líder em documentos longos e compreensão de vídeo com 1M tokens) e Qwen-VL (Alibaba, modelo open-source mais forte para cenários em chinês)."
+        },
+        "es": {
+          "title": "Comprensión Visual",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision mantiene el liderazgo de uso general; Gemini Vision lidera en comprensión de vídeo y análisis de documentos largos.",
+          "geoSnippet": "Al 24/04/2026, GPT-4o Vision (OpenAI) lidera la comprensión visual de uso general con el análisis de UI y conversación visual en tiempo real más fuertes, seguido por Gemini Vision (Google, líder en documentos largos y comprensión de vídeo con 1M tokens) y Qwen-VL (Alibaba, modelo open-source más fuerte para escenarios en chino)."
+        },
+        "id": {
+          "title": "Pemahaman Visual",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision mempertahankan kepemimpinan tujuan umum; Gemini Vision memimpin dalam pemahaman video dan parsing dokumen panjang.",
+          "geoSnippet": "Per 2026-04-29, GPT-4o Vision (OpenAI) memimpin pemahaman visual tujuan umum dengan parsing UI dan percakapan visual real-time terkuat, diikuti Gemini Vision (Google, pemimpin pemahaman dokumen panjang dan video dengan 1M-token) dan Qwen-VL (Alibaba, model open-source terkuat untuk skenario bahasa Mandarin)."
+        },
+        "fr": {
+          "title": "Compréhension Visuelle",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision garde la tête en usage général ; Gemini Vision domine en compréhension vidéo et analyse de documents longs.",
+          "geoSnippet": "Au 24/04/2026, GPT-4o Vision (OpenAI) domine la compréhension visuelle généraliste avec la plus forte analyse d'UI et conversation visuelle en temps réel, suivi par Gemini Vision (Google, leader en compréhension vidéo et documents longs avec 1M tokens) et Qwen-VL (Alibaba, modèle open-source le plus fort pour scénarios chinois)."
+        },
+        "tr": {
+          "title": "Görsel Anlama",
+          "subtitle": "Vision Understanding",
+          "description": "GPT-4o Vision genel amaçlı liderliğini sürdürüyor; Gemini Vision video anlama ve uzun belge ayrıştırmada lider.",
+          "geoSnippet": "2026-04-29 itibarıyla, GPT-4o Vision (OpenAI) en güçlü UI ayrıştırma ve canlı görsel konuşmayla genel amaçlı görsel anlamada liderlik ediyor; Gemini Vision (Google, 1M-token uzun belge ve video anlama lideri) ve Qwen-VL (Alibaba, Çince senaryolar için en güçlü açık kaynak model) onu izliyor."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "GPT-4o Vision",
+          "company": "OpenAI",
+          "i18n": {
+            "en": {
+              "highlight": "Strongest general-purpose vision understanding.",
+              "strengths": [
+                "UI parsing",
+                "Chart understanding",
+                "Live visual conversation",
+                "Multimodal fusion"
+              ]
+            },
+            "zh": {
+              "highlight": "通用视觉理解最强。",
+              "strengths": [
+                "UI 界面解析",
+                "图表理解",
+                "实时视觉对话",
+                "多模态融合"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Gemini Vision",
+          "company": "Google",
+          "i18n": {
+            "en": {
+              "highlight": "Leader for video and long-document understanding.",
+              "strengths": [
+                "1M-token long documents",
+                "Leading video understanding",
+                "Multi-frame analysis",
+                "Search integration"
+              ]
+            },
+            "zh": {
+              "highlight": "视频理解与长文档第一。",
+              "strengths": [
+                "百万 token 长文档",
+                "视频理解领先",
+                "多帧分析",
+                "与搜索集成"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Qwen-VL",
+          "company": "Alibaba",
+          "i18n": {
+            "en": {
+              "highlight": "Top open-source Chinese-scenario vision model.",
+              "strengths": [
+                "Optimized for Chinese scenarios",
+                "Open-source, commercial use",
+                "Multimodal reasoning",
+                "Local deployment"
+              ]
+            },
+            "zh": {
+              "highlight": "国产视觉模型第一。",
+              "strengths": [
+                "中文场景优化",
+                "开源可商用",
+                "多模态推理",
+                "本地部署"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "Live vision",
+          "zh": "实时视觉"
+        },
+        {
+          "en": "Long-document parsing",
+          "zh": "长文档解析"
+        },
+        {
+          "en": "UI parsing",
+          "zh": "UI 解析"
+        },
+        {
+          "en": "Multilingual",
+          "zh": "多语言"
+        }
+      ]
+    },
+    {
+      "id": "open-source",
+      "icon": "GitBranch",
+      "currentLeader": "Llama 4",
+      "leaderCompany": "Meta",
+      "previousLeader": "Llama 3",
+      "i18n": {
+        "en": {
+          "title": "Open Source",
+          "subtitle": "Open Source",
+          "description": "Open-source models are closing the gap with closed-source on several benchmarks. Llama 4, DeepSeek V4, and Qwen3 form the leading tier.",
+          "changeNote": "Released in 2026, with major multimodal improvements.",
+          "marketNote": "Llama 4 has the largest ecosystem; DeepSeek is strongest at reasoning and the cheapest; Qwen3 leads in Chinese and agent capability.",
+          "geoSnippet": "As of 2026-04-29, Llama 4 (Meta) leads open-source models by ecosystem with multimodal support and commercial-friendly licensing, followed by DeepSeek V4 (DeepSeek, strongest open-source reasoning with MoE architecture and lowest API price) and Qwen3 (Alibaba, leading open-source Chinese-language and agent-capability model)."
+        },
+        "zh": {
+          "title": "开源模型",
+          "subtitle": "Open Source",
+          "description": "开源模型快速追赶闭源模型，在部分基准已接近甚至超越。Llama 4、DeepSeek V4、Qwen3 是第一梯队。",
+          "changeNote": "2026 年发布，多模态能力大幅提升。",
+          "marketNote": "Llama 4 生态最大，DeepSeek 推理最强且最便宜，Qwen3 中文和 Agent 能力最优。",
+          "geoSnippet": "截至 2026-04-29，Llama 4（Meta）以最完善的开源生态在开源模型领域领先（支持多模态、可商用许可），亚军为 DeepSeek V4（DeepSeek，开源推理最强、MoE 架构、API 价格极低）和 Qwen3（阿里巴巴，国产开源中文与 Agent 能力第一）。"
+        },
+        "ar": {
+          "title": "المصادر المفتوحة",
+          "subtitle": "Open Source",
+          "description": "تقترب النماذج مفتوحة المصدر بسرعة من النماذج المغلقة في عدة معايير. Llama 4، DeepSeek V4، وQwen3 يشكلون الفئة الأولى.",
+          "geoSnippet": "حتى 2026-04-29، يتصدر Llama 4 (Meta) النماذج مفتوحة المصدر من حيث النظام البيئي بدعم متعدد الوسائط وترخيص تجاري ودود، يليه DeepSeek V4 (DeepSeek، أقوى استدلال مفتوح المصدر مع بنية MoE وأقل سعر API) وQwen3 (علي بابا، النموذج الرائد مفتوح المصدر للغة الصينية وقدرات الوكيل)."
+        },
+        "pt": {
+          "title": "Código Aberto",
+          "subtitle": "Open Source",
+          "description": "Modelos open-source estão alcançando os closed-source em vários benchmarks. Llama 4, DeepSeek V4 e Qwen3 formam o primeiro escalão.",
+          "geoSnippet": "Em 24/04/2026, Llama 4 (Meta) lidera os modelos open-source por ecossistema com suporte multimodal e licenciamento comercial-amigável, seguido por DeepSeek V4 (DeepSeek, raciocínio open-source mais forte com arquitetura MoE e menor preço de API) e Qwen3 (Alibaba, modelo open-source líder em idioma chinês e capacidade de agente)."
+        },
+        "es": {
+          "title": "Código Abierto",
+          "subtitle": "Open Source",
+          "description": "Los modelos open-source están alcanzando a los closed-source en varios benchmarks. Llama 4, DeepSeek V4 y Qwen3 forman la primera línea.",
+          "geoSnippet": "Al 24/04/2026, Llama 4 (Meta) lidera los modelos open-source por ecosistema con soporte multimodal y licencia comercial-amigable, seguido por DeepSeek V4 (DeepSeek, razonamiento open-source más fuerte con arquitectura MoE y menor precio de API) y Qwen3 (Alibaba, modelo open-source líder en idioma chino y capacidad de agente)."
+        },
+        "id": {
+          "title": "Sumber Terbuka",
+          "subtitle": "Open Source",
+          "description": "Model open-source mengejar cepat closed-source di beberapa benchmark. Llama 4, DeepSeek V4, dan Qwen3 membentuk tier pertama.",
+          "geoSnippet": "Per 2026-04-29, Llama 4 (Meta) memimpin model open-source berdasarkan ekosistem dengan dukungan multimodal dan lisensi commercial-friendly, diikuti DeepSeek V4 (DeepSeek, penalaran open-source terkuat dengan arsitektur MoE dan harga API terendah) dan Qwen3 (Alibaba, model open-source pemimpin untuk bahasa Mandarin dan kemampuan agen)."
+        },
+        "fr": {
+          "title": "Open Source",
+          "subtitle": "Open Source",
+          "description": "Les modèles open-source rattrapent rapidement les closed-source sur plusieurs benchmarks. Llama 4, DeepSeek V4 et Qwen3 forment le premier rang.",
+          "geoSnippet": "Au 24/04/2026, Llama 4 (Meta) domine les modèles open-source par écosystème avec support multimodal et licence commercial-friendly, suivi par DeepSeek V4 (DeepSeek, raisonnement open-source le plus fort avec architecture MoE et le prix d'API le plus bas) et Qwen3 (Alibaba, modèle open-source leader en langue chinoise et capacité d'agent)."
+        },
+        "tr": {
+          "title": "Açık Kaynak",
+          "subtitle": "Open Source",
+          "description": "Açık kaynak modeller, kapalı kaynak modellere birkaç kıyaslamada hızla yetişiyor. Llama 4, DeepSeek V4 ve Qwen3 ilk kademeyi oluşturuyor.",
+          "geoSnippet": "2026-04-29 itibarıyla, Llama 4 (Meta) ekosistem açısından çok modlu destek ve ticari-dostu lisanslamayla açık kaynak modellere liderlik ediyor; DeepSeek V4 (DeepSeek, MoE mimarili en güçlü açık kaynak akıl yürütme ve en düşük API fiyatı) ve Qwen3 (Alibaba, Çince dil ve ajan yeteneklerinde lider açık kaynak model) onu izliyor."
+        }
+      },
+      "models": [
+        {
+          "rank": 1,
+          "name": "Llama 4",
+          "company": "Meta",
+          "i18n": {
+            "en": {
+              "highlight": "Most complete open-source ecosystem.",
+              "strengths": [
+                "Multimodal support",
+                "Largest community ecosystem",
+                "Commercial-use license",
+                "Multiple sizes"
+              ]
+            },
+            "zh": {
+              "highlight": "开源生态最完善。",
+              "strengths": [
+                "多模态支持",
+                "社区生态最大",
+                "可商用许可",
+                "多尺寸选择"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "name": "DeepSeek V4",
+          "company": "DeepSeek",
+          "i18n": {
+            "en": {
+              "highlight": "Strongest open-source reasoning, upgraded architecture.",
+              "strengths": [
+                "Superior math and reasoning",
+                "Best-in-class coding ability",
+                "Efficient MoE architecture",
+                "Extremely low API price"
+              ]
+            },
+            "zh": {
+              "highlight": "推理与代码能力全面进化的开源旗舰。",
+              "strengths": [
+                "数学与推理能力显著提升",
+                "代码生成业界最强",
+                "MoE 架构高效",
+                "API 价格极低"
+              ]
+            }
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Qwen3",
+          "company": "Alibaba",
+          "i18n": {
+            "en": {
+              "highlight": "Top open-source Chinese model.",
+              "strengths": [
+                "Strongest Chinese understanding",
+                "Multimodal support",
+                "Agent capability",
+                "Full size coverage"
+              ]
+            },
+            "zh": {
+              "highlight": "中文开源模型第一。",
+              "strengths": [
+                "中文理解最强",
+                "多模态支持",
+                "Agent 能力",
+                "全尺寸覆盖"
+              ]
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "en": "Multimodal",
+          "zh": "多模态"
+        },
+        {
+          "en": "Commercial use",
+          "zh": "可商用"
+        },
+        {
+          "en": "Local deployment",
+          "zh": "本地部署"
+        },
+        {
+          "en": "Low cost",
+          "zh": "低成本"
+        }
+      ]
+    }
+  ],
+  "trendInsights": [
+    {
+      "id": "fragmentation",
+      "i18n": {
+        "en": {
+          "title": "From single dominance to specialist competition",
+          "description": "In 2026 AI has shifted from one general-purpose model to a 'pick the model for the task' paradigm. Every niche has its specialist; multi-model routing is now the enterprise standard architecture."
+        },
+        "zh": {
+          "title": "从一家独大到群雄割据",
+          "description": "2026 年 AI 已从单一模型通用转向\"按任务选模型\"。每个细分领域都有 specialist 模型，多模型路由成为企业标准架构。"
+        },
+        "ar": {
+          "title": "من الهيمنة الفردية إلى منافسة المتخصصين",
+          "description": "في 2026 انتقل الذكاء الاصطناعي من نموذج واحد عام الأغراض إلى نموذج 'اختر النموذج للمهمة'. كل مكان متخصص له نموذج خبير؛ التوجيه متعدد النماذج هو الآن العمارة المعيارية للمؤسسات."
+        },
+        "pt": {
+          "title": "Do domínio único à competição de especialistas",
+          "description": "Em 2026 a IA mudou de um modelo geral único para um paradigma 'escolha o modelo para a tarefa'. Cada nicho tem seu especialista; roteamento multi-modelo é agora a arquitetura padrão empresarial."
+        },
+        "es": {
+          "title": "Del dominio único a la competición de especialistas",
+          "description": "En 2026 la IA ha cambiado de un modelo único de propósito general al paradigma 'elige el modelo para la tarea'. Cada nicho tiene su especialista; el enrutamiento multi-modelo es ahora la arquitectura estándar empresarial."
+        },
+        "id": {
+          "title": "Dari dominasi tunggal ke kompetisi spesialis",
+          "description": "Pada 2026 AI bergeser dari satu model tujuan umum ke paradigma 'pilih model untuk tugas'. Setiap niche memiliki spesialisnya; routing multi-model kini menjadi arsitektur standar enterprise."
+        },
+        "fr": {
+          "title": "De la dominance unique à la compétition de spécialistes",
+          "description": "En 2026 l'IA est passée d'un modèle unique généraliste à un paradigme 'choisir le modèle pour la tâche'. Chaque niche a son spécialiste ; le routage multi-modèle est désormais l'architecture standard en entreprise."
+        },
+        "tr": {
+          "title": "Tek hâkimiyetten uzman rekabetine",
+          "description": "2026'da AI, tek genel amaçlı modelden 'göreve göre model seç' paradigmasına geçti. Her niş kendi uzmanına sahip; çoklu-model yönlendirme artık kurumsal standart mimari."
+        }
+      }
+    },
+    {
+      "id": "duopoly",
+      "i18n": {
+        "en": {
+          "title": "GPT-5.5 and Claude Opus 4.7 — the dual frontier",
+          "description": "Released April 16 and April 23, 2026 respectively, the two now define the cutting edge. GPT-5.5 wins on agentic coding and terminal use; Claude wins on code review and refactoring."
+        },
+        "zh": {
+          "title": "GPT-5.5 与 Claude Opus 4.7 双雄格局",
+          "description": "两者在 4 月 16 日和 23 日相继发布，形成当前最前沿的双雄竞争。GPT-5.5 强在 Agentic 编码和终端使用，Claude 强在代码审查和重构。"
+        },
+        "ar": {
+          "title": "GPT-5.5 وClaude Opus 4.7 — الحدود المزدوجة",
+          "description": "صدرا في 16 و23 أبريل 2026 على التوالي، الاثنان يحددان الآن أحدث ما توصل إليه. يفوز GPT-5.5 في البرمجة الوكيلية واستخدام الطرفية؛ يفوز Claude في مراجعة الكود وإعادة البناء."
+        },
+        "pt": {
+          "title": "GPT-5.5 e Claude Opus 4.7 — a fronteira dupla",
+          "description": "Lançados em 16 e 23 de abril de 2026 respectivamente, os dois agora definem o estado da arte. GPT-5.5 vence em codificação agente e uso de terminal; Claude vence em revisão de código e refatoração."
+        },
+        "es": {
+          "title": "GPT-5.5 y Claude Opus 4.7 — la frontera dual",
+          "description": "Lanzados el 16 y 23 de abril de 2026 respectivamente, los dos definen ahora el estado del arte. GPT-5.5 gana en codificación agente y uso de terminal; Claude gana en revisión de código y refactorización."
+        },
+        "id": {
+          "title": "GPT-5.5 dan Claude Opus 4.7 — frontier ganda",
+          "description": "Diluncurkan pada 16 dan 23 April 2026 secara berurutan, keduanya kini menentukan ujung tombak. GPT-5.5 menang pada coding agentik dan penggunaan terminal; Claude menang pada review kode dan refactoring."
+        },
+        "fr": {
+          "title": "GPT-5.5 et Claude Opus 4.7 — la double frontière",
+          "description": "Sortis respectivement les 16 et 23 avril 2026, les deux définissent désormais l'état de l'art. GPT-5.5 gagne en codage agentique et usage du terminal ; Claude gagne en revue de code et refactoring."
+        },
+        "tr": {
+          "title": "GPT-5.5 ve Claude Opus 4.7 — ikili sınır",
+          "description": "16 ve 23 Nisan 2026'da sırasıyla yayınlanan ikisi şimdi en üst düzeyi tanımlıyor. GPT-5.5 ajantik kodlama ve terminal kullanımında kazanıyor; Claude kod incelemesi ve refaktöringde kazanıyor."
+        }
+      }
+    },
+    {
+      "id": "context-1m",
+      "i18n": {
+        "en": {
+          "title": "1M context becomes the new standard",
+          "description": "From 128K to 1M tokens — Gemini 3.1 Pro, Claude Opus 4.7, and GPT-5.5 all now support 1M+ context, making whole-repository analysis possible."
+        },
+        "zh": {
+          "title": "1M 上下文成为新标准",
+          "description": "从 128K 快速迈向 100 万 token 上下文，Gemini 3.1 Pro、Claude Opus 4.7、GPT-5.5 均支持 1M+，全仓库级分析成为可能。"
+        },
+        "ar": {
+          "title": "أصبح سياق 1M المعيار الجديد",
+          "description": "من 128K إلى 1M token — يدعم Gemini 3.1 Pro وClaude Opus 4.7 وGPT-5.5 الآن جميعها سياق 1M+، مما يجعل تحليل المستودع الكامل ممكنًا."
+        },
+        "pt": {
+          "title": "Contexto de 1M se torna o novo padrão",
+          "description": "De 128K para 1M tokens — Gemini 3.1 Pro, Claude Opus 4.7 e GPT-5.5 agora suportam contexto de 1M+, tornando análise de repositório completo possível."
+        },
+        "es": {
+          "title": "El contexto de 1M se convierte en el nuevo estándar",
+          "description": "De 128K a 1M tokens — Gemini 3.1 Pro, Claude Opus 4.7 y GPT-5.5 ahora soportan contexto de 1M+, haciendo posible el análisis de repositorio completo."
+        },
+        "id": {
+          "title": "Konteks 1M menjadi standar baru",
+          "description": "Dari 128K ke 1M token — Gemini 3.1 Pro, Claude Opus 4.7, dan GPT-5.5 kini mendukung konteks 1M+, memungkinkan analisis repositori penuh."
+        },
+        "fr": {
+          "title": "Le contexte de 1M devient le nouveau standard",
+          "description": "De 128K à 1M tokens — Gemini 3.1 Pro, Claude Opus 4.7 et GPT-5.5 supportent désormais un contexte de 1M+, rendant l'analyse de dépôt complet possible."
+        },
+        "tr": {
+          "title": "1M bağlam yeni standart oluyor",
+          "description": "128K'dan 1M token'a — Gemini 3.1 Pro, Claude Opus 4.7 ve GPT-5.5 artık 1M+ bağlam destekliyor, tüm-repo analizini mümkün kılıyor."
+        }
+      }
+    },
+    {
+      "id": "open-source-catchup",
+      "i18n": {
+        "en": {
+          "title": "Open source catches up fast",
+          "description": "Llama 4, DeepSeek V4, and Qwen3 now match closed-source on several benchmarks at 1/10 of the price or less."
+        },
+        "zh": {
+          "title": "开源快速追赶",
+          "description": "Llama 4、DeepSeek V4、Qwen3 在部分基准已接近闭源模型，且价格仅为闭源模型的 1/10 甚至更低。"
+        },
+        "ar": {
+          "title": "النماذج مفتوحة المصدر تلحق بسرعة",
+          "description": "Llama 4 وDeepSeek V4 وQwen3 يطابقون الآن النماذج المغلقة في عدة معايير بـ 1/10 من السعر أو أقل."
+        },
+        "pt": {
+          "title": "Open source alcança rapidamente",
+          "description": "Llama 4, DeepSeek V4 e Qwen3 agora igualam closed-source em vários benchmarks por 1/10 do preço ou menos."
+        },
+        "es": {
+          "title": "Open source alcanza rápidamente",
+          "description": "Llama 4, DeepSeek V4 y Qwen3 ahora igualan a closed-source en varios benchmarks por 1/10 del precio o menos."
+        },
+        "id": {
+          "title": "Open source mengejar cepat",
+          "description": "Llama 4, DeepSeek V4, dan Qwen3 kini menyamai closed-source di beberapa benchmark dengan 1/10 harga atau kurang."
+        },
+        "fr": {
+          "title": "L'open source rattrape vite",
+          "description": "Llama 4, DeepSeek V4 et Qwen3 égalent désormais closed-source sur plusieurs benchmarks à 1/10 du prix ou moins."
+        },
+        "tr": {
+          "title": "Açık kaynak hızla yetişiyor",
+          "description": "Llama 4, DeepSeek V4 ve Qwen3 artık fiyatın 1/10'una veya daha azına birkaç kıyaslamada kapalı kaynakla eşleşiyor."
+        }
+      }
+    },
+    {
+      "id": "domestic-rise",
+      "i18n": {
+        "en": {
+          "title": "Domestic Chinese models break through globally",
+          "description": "Seedance 2.0 (video), Qwen3 (open source), Kling 3.0 (video), and Qwen-VL (vision) have all entered the global top three in their respective domains."
+        },
+        "zh": {
+          "title": "国产模型全面崛起",
+          "description": "Seedance 2.0（视频）、Qwen3（开源）、Kling 3.0（视频）、Qwen-VL（视觉）在各自领域进入全球前三。"
+        },
+        "ar": {
+          "title": "النماذج الصينية المحلية تخترق عالميًا",
+          "description": "Seedance 2.0 (فيديو) وQwen3 (مفتوح المصدر) وKling 3.0 (فيديو) وQwen-VL (رؤية) دخلوا جميعًا أعلى ثلاثة عالميًا في مجالاتهم."
+        },
+        "pt": {
+          "title": "Modelos chineses domésticos rompem globalmente",
+          "description": "Seedance 2.0 (vídeo), Qwen3 (open source), Kling 3.0 (vídeo) e Qwen-VL (visão) entraram no top três global em seus respectivos domínios."
+        },
+        "es": {
+          "title": "Los modelos chinos domésticos rompen globalmente",
+          "description": "Seedance 2.0 (vídeo), Qwen3 (open source), Kling 3.0 (vídeo) y Qwen-VL (visión) han entrado en el top tres global en sus respectivos dominios."
+        },
+        "id": {
+          "title": "Model Tiongkok domestik menembus global",
+          "description": "Seedance 2.0 (video), Qwen3 (open source), Kling 3.0 (video), dan Qwen-VL (vision) semuanya masuk top tiga global di domain masing-masing."
+        },
+        "fr": {
+          "title": "Les modèles chinois domestiques percent mondialement",
+          "description": "Seedance 2.0 (vidéo), Qwen3 (open source), Kling 3.0 (vidéo) et Qwen-VL (vision) sont tous entrés dans le top trois mondial dans leurs domaines respectifs."
+        },
+        "tr": {
+          "title": "Yerli Çin modelleri küresel atılım yapıyor",
+          "description": "Seedance 2.0 (video), Qwen3 (açık kaynak), Kling 3.0 (video) ve Qwen-VL (görsel) hepsi kendi alanlarında küresel ilk üçe girdi."
+        }
+      }
+    },
+    {
+      "id": "price-collapse",
+      "i18n": {
+        "en": {
+          "title": "API prices keep falling",
+          "description": "LLM API prices have dropped roughly 80% in 2025-2026. Gemini 2.0 Flash at $0.10 / 1M tokens has dramatically lowered the barrier to AI applications."
+        },
+        "zh": {
+          "title": "API 价格持续下降",
+          "description": "LLM API 价格 2025-2026 年下降约 80%，Gemini 2.0 Flash 仅 $0.10/1M tokens，AI 应用门槛大幅降低。"
+        },
+        "ar": {
+          "title": "أسعار API تستمر في الانخفاض",
+          "description": "انخفضت أسعار LLM API بنحو 80% في 2025-2026. خفض Gemini 2.0 Flash بسعر $0.10/1M tokens حاجز تطبيقات الذكاء الاصطناعي بشكل كبير."
+        },
+        "pt": {
+          "title": "Preços de API continuam caindo",
+          "description": "Preços de LLM API caíram aproximadamente 80% em 2025-2026. Gemini 2.0 Flash a $0,10 / 1M tokens reduziu drasticamente a barreira para aplicações de IA."
+        },
+        "es": {
+          "title": "Los precios de API siguen cayendo",
+          "description": "Los precios de LLM API han caído aproximadamente 80% en 2025-2026. Gemini 2.0 Flash a $0,10 / 1M tokens ha reducido drásticamente la barrera para aplicaciones de IA."
+        },
+        "id": {
+          "title": "Harga API terus turun",
+          "description": "Harga LLM API telah turun sekitar 80% pada 2025-2026. Gemini 2.0 Flash dengan $0,10 / 1M token secara dramatis menurunkan barrier untuk aplikasi AI."
+        },
+        "fr": {
+          "title": "Les prix API continuent de baisser",
+          "description": "Les prix LLM API ont baissé d'environ 80 % en 2025-2026. Gemini 2.0 Flash à $0,10 / 1M tokens a considérablement abaissé la barrière aux applications IA."
+        },
+        "tr": {
+          "title": "API fiyatları düşmeye devam ediyor",
+          "description": "LLM API fiyatları 2025-2026'da yaklaşık %80 düştü. Gemini 2.0 Flash $0,10 / 1M token ile AI uygulamalarına engeli dramatik şekilde düşürdü."
+        }
+      }
+    }
+  ]
+}

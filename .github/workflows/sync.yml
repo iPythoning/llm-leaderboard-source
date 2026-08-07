@@ -1,0 +1,30 @@
+name: Sync leaderboard to platforms
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/**']
+  workflow_dispatch: {}
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: node scripts/validate.mjs
+      - name: Push snapshots to platform ingest endpoints
+        env:
+          PULSEAGENT_INGEST_URL: ${{ vars.PULSEAGENT_INGEST_URL }}
+          PULSEAGENT_INGEST_TOKEN: ${{ secrets.PULSEAGENT_INGEST_TOKEN }}
+          PAIBAO_INGEST_URL: ${{ vars.PAIBAO_INGEST_URL }}
+          PAIBAO_INGEST_TOKEN: ${{ secrets.PAIBAO_INGEST_TOKEN }}
+        run: node scripts/sync.mjs
