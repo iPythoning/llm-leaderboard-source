@@ -15,7 +15,20 @@ const TARGETS = [
   { name: 'paibaowork.com', url: process.env.PAIBAOWORK_INGEST_URL, token: process.env.PAIBAOWORK_INGEST_TOKEN },
 ]
 
-const files = readdirSync(DATA_DIR).filter((f) => /^\d{4}-\d{2}\.json$/.test(f)).sort()
+// ONLY_MONTH=YYYY-MM limits the push (useful when Cloudflare 429s burst POSTs).
+// ONLY_TARGETS=comma-separated target names (pulseagent.io,paibao-portal,paibaowork.com).
+const onlyMonth = process.env.ONLY_MONTH || ''
+const onlyTargets = new Set(
+  (process.env.ONLY_TARGETS || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean),
+)
+const files = readdirSync(DATA_DIR)
+  .filter((f) => /^\d{4}-\d{2}\.json$/.test(f))
+  .filter((f) => !onlyMonth || f === `${onlyMonth}.json`)
+  .sort()
+if (!files.length) throw new Error(onlyMonth ? `no data/${onlyMonth}.json` : 'no snapshots in data/')
 const snapshots = files.map((f) => monthlySnapshotSchema.parse(JSON.parse(readFileSync(join(DATA_DIR, f), 'utf8'))))
 
 async function postOnce(url, token, snap) {
@@ -34,14 +47,14 @@ async function postOnce(url, token, snap) {
 
 async function postWithRetry(target, snap) {
   let lastErr
-  for (let attempt = 0; attempt < 5; attempt++) {
+  for (let attempt = 0; attempt < 6; attempt++) {
     try {
       await postOnce(target.url, target.token, snap)
       return
     } catch (err) {
       lastErr = err
       if (err.status === 429 || err.status >= 500) {
-        const wait = 1500 * 2 ** attempt
+        const wait = Math.min(60_000, 3000 * 2 ** attempt)
         console.warn(`retry ${target.name} ${snap.month} after ${err.status} (wait ${wait}ms)`)
         await sleep(wait)
         continue
@@ -54,6 +67,10 @@ async function postWithRetry(target, snap) {
 
 let failed = false
 for (const target of TARGETS) {
+  if (onlyTargets.size && !onlyTargets.has(target.name)) {
+    console.warn(`skip ${target.name}: not in ONLY_TARGETS`)
+    continue
+  }
   if (!target.url || !target.token) {
     console.warn(`skip ${target.name}: URL/token not configured`)
     continue
@@ -62,7 +79,7 @@ for (const target of TARGETS) {
     try {
       await postWithRetry(target, snap)
       console.log(`ok   ${target.name} ${snap.month}`)
-      await sleep(400)
+      await sleep(2000)
     } catch (err) {
       failed = true
       console.error(`FAIL ${target.name} ${snap.month}: ${err.message}`)

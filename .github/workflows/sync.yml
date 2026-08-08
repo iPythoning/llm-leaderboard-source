@@ -4,7 +4,16 @@ on:
   push:
     branches: [main]
     paths: ['data/**']
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      only_month:
+        description: 'Optional YYYY-MM to sync a single month (avoids CF 429 bursts)'
+        required: false
+        default: ''
+      only_targets:
+        description: 'Optional comma-separated targets (pulseagent.io,paibao-portal,paibaowork.com)'
+        required: false
+        default: ''
 
 concurrency:
   group: sync
@@ -13,7 +22,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,4 +38,6 @@ jobs:
           PAIBAO_INGEST_TOKEN: ${{ secrets.PAIBAO_INGEST_TOKEN }}
           PAIBAOWORK_INGEST_URL: ${{ vars.PAIBAOWORK_INGEST_URL }}
           PAIBAOWORK_INGEST_TOKEN: ${{ secrets.PAIBAOWORK_INGEST_TOKEN }}
+          ONLY_MONTH: ${{ inputs.only_month }}
+          ONLY_TARGETS: ${{ inputs.only_targets }}
         run: node scripts/sync.mjs
