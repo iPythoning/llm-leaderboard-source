@@ -17,10 +17,15 @@ import { research, chatJSON } from './omni-client.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
-const RESEARCH_MODEL = process.env.RESEARCH_MODEL ?? 'tllm/sonar-pro'
-const SYNTH_MODEL = process.env.SYNTH_MODEL ?? 'deepseek/deepseek-v4-flash'
+// `||` not `??`: GitHub Actions renders an unset `vars.X` as an empty string
+// (not undefined), which `??` would happily pass through.
+const RESEARCH_MODEL = process.env.RESEARCH_MODEL || 'tllm/sonar-pro'
+const SYNTH_MODEL = process.env.SYNTH_MODEL || 'deepseek/deepseek-v4-flash'
 
-const month = process.env.MONTH ?? new Date().toISOString().slice(0, 7)
+// `||` not `??`: on the scheduled (non-dispatch) trigger, `inputs.month` is
+// empty string, not absent — the workflow's MONTH env is `""`, which `??`
+// would pass through instead of falling back to the current month.
+const month = process.env.MONTH || new Date().toISOString().slice(0, 7)
 const today = new Date().toISOString().slice(0, 10)
 
 const existing = readdirSync(DATA_DIR).filter((f) => /^\d{4}-\d{2}\.json$/.test(f)).sort()

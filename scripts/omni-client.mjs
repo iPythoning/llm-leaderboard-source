@@ -1,6 +1,8 @@
 // Minimal OpenAI-compatible client for the OmniRoute gateway (self-hosted,
 // server 47). No SDK needed — plain fetch, Node 22 has it built in.
-const BASE = process.env.OMNI_BASE_URL ?? 'https://omni.paibao.ai/v1'
+// `||` not `??`: GitHub Actions renders an unset `vars.X` as an empty string
+// (not undefined), which `??` would happily pass through.
+const BASE = process.env.OMNI_BASE_URL || 'https://omni.paibao.ai/v1'
 const KEY = process.env.OMNI_API_KEY
 
 function stripJsonFences(text) {
