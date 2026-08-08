@@ -8,7 +8,6 @@
     "sync": "node scripts/sync.mjs"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.110.0",
     "zod": "^3.25.0"
   }
 }

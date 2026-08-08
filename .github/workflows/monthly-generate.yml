@@ -28,7 +28,10 @@ jobs:
       - run: npm ci
       - name: Generate monthly snapshot
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OMNI_API_KEY: ${{ secrets.OMNI_API_KEY }}
+          OMNI_BASE_URL: ${{ vars.OMNI_BASE_URL }}
+          RESEARCH_MODEL: ${{ vars.RESEARCH_MODEL }}
+          SYNTH_MODEL: ${{ vars.SYNTH_MODEL }}
           MONTH: ${{ inputs.month }}
         run: node scripts/generate.mjs
       - name: Validate all snapshots
