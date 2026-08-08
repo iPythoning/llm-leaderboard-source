@@ -11,6 +11,7 @@ const DATA_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'data')
 const TARGETS = [
   { name: 'pulseagent.io', url: process.env.PULSEAGENT_INGEST_URL, token: process.env.PULSEAGENT_INGEST_TOKEN },
   { name: 'paibao-portal', url: process.env.PAIBAO_INGEST_URL, token: process.env.PAIBAO_INGEST_TOKEN },
+  { name: 'paibaowork.com', url: process.env.PAIBAOWORK_INGEST_URL, token: process.env.PAIBAOWORK_INGEST_TOKEN },
 ]
 
 const files = readdirSync(DATA_DIR).filter((f) => /^\d{4}-\d{2}\.json$/.test(f)).sort()

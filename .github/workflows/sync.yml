@@ -27,4 +27,6 @@ jobs:
           PULSEAGENT_INGEST_TOKEN: ${{ secrets.PULSEAGENT_INGEST_TOKEN }}
           PAIBAO_INGEST_URL: ${{ vars.PAIBAO_INGEST_URL }}
           PAIBAO_INGEST_TOKEN: ${{ secrets.PAIBAO_INGEST_TOKEN }}
+          PAIBAOWORK_INGEST_URL: ${{ vars.PAIBAOWORK_INGEST_URL }}
+          PAIBAOWORK_INGEST_TOKEN: ${{ secrets.PAIBAOWORK_INGEST_TOKEN }}
         run: node scripts/sync.mjs
