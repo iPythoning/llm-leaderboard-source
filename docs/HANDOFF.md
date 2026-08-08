@@ -30,10 +30,12 @@
 
 ## 待办 / 已知坑
 
-- **`OMNI_API_KEY` secret 未设**——月度生成在设好前会红（sync 不受影响）。老板在 OmniRoute
-  dashboard（47 内网 `127.0.0.1:20128/dashboard`）新建一把专用 key（命名建议
-  `llm-leaderboard-source`，与 PulseAgent 生产 key 隔离），拿到后：
-  `gh secret set OMNI_API_KEY -R iPythoning/llm-leaderboard-source`
+- **8 月同步残留（2026-08-09）**：
+  - ✅ `paibaowork.com` 已 ingest 2026-08（GHA sync 日志 `ok`）。
+  - ❌ `pulseagent.io` Cloudflare **硬 429**（GHA 与本机 egress 均中；需等 CF 解封或从非封锁 IP / Worker 内网推）。可用：
+    `gh workflow run "Sync leaderboard to platforms" -f only_month=2026-08 -f only_targets=pulseagent.io`
+  - ❌ `paibao-portal` **401** Invalid token——`PAIBAO_INGEST_TOKEN` 与生产 `LEADERBOARD_API_KEY` 不一致，需在 47 核对后 `gh secret set PAIBAO_INGEST_TOKEN`。
+- **`OMNI_API_KEY` 已设**，但默认 `deepseek/deepseek-v4-flash` 仍报无 provider 凭证；生成可走 `oc/deepseek-v4-flash-free` 或继续 memo→程序化落盘。
 - **`scripts/generate.mjs` 重写后尚未跑过真实一轮**——首次务必 workflow_dispatch 手动触发
   一次，重点核对：① Sonar Pro 备忘录里的 URL 是否真实可打开（不是编的）；② DeepSeek 整理出
   的 JSON 是否忠实于备忘录，没有超出备忘录范围编造数字；③ 6 语言翻译数量/顺序与 en 对齐
