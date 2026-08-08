@@ -16,10 +16,15 @@
 
 - `ANTHROPIC_API_KEY` secret 未设——月度生成在设好前会红（sync 不受影响）。老板一条命令：
   `gh secret set ANTHROPIC_API_KEY -R iPythoning/llm-leaderboard-source`
-- 消费端已接线：pulseagent.io `POST /api/leaderboard/ingest`（已上线，D1 已灌 3 期并线上验证）；
-  paibao-portal 复用既有 `POST /api/leaderboard/publish`（PR #8，写 overlay 卷）——**47 生产的
-  `LEADERBOARD_API_KEY` env 必须与本仓 secret `PAIBAO_INGEST_TOKEN` 同值**，portal 发布前
-  sync 的 paibao 腿会红（这是预期信号，不是要修的 bug）。
+- 消费端三条腿：
+  ① pulseagent.io `POST /api/leaderboard/ingest`（D1，已上线，3 期已灌并线上验证）；
+  ② paibao-portal 复用既有 `POST /api/leaderboard/publish`（overlay 卷，PR #8 已合并；47 生产
+  `LEADERBOARD_API_KEY` 已注入=本仓 `PAIBAO_INGEST_TOKEN`；发布门探针修复 PR #9 后随
+  wechat-golive.sh 发布，未发布前该腿红=预期）；
+  ③ **paibaowork.com（用户实际访问的中文 URL 真身：阿里云 EmDash 站
+  `02-emdash-client-sites/client-sites/paibaowork`）** `POST /api/leaderboard/ingest`
+  （sqlite /data 卷，已上线，3 期已灌并线上验证；token 在服务器 cms/.env.runtime =
+  本仓 `PAIBAOWORK_INGEST_TOKEN`）。
 - 生成器尚未跑过真实一轮（首月建议 workflow_dispatch 手动触发一次核对内容质量）。
 
 ## 验证方式
