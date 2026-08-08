@@ -9,7 +9,7 @@
 // Env: OMNI_API_KEY (required), OMNI_BASE_URL (default https://omni.paibao.ai/v1),
 // RESEARCH_MODEL (default tllm/sonar-pro), SYNTH_MODEL (default deepseek/deepseek-v4-flash),
 // MONTH=YYYY-MM overrides the target month.
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { monthlySnapshotSchema, EXTRA_LOCALES, ALLOWED_ICONS } from '../schema/schema.mjs'
@@ -17,6 +17,7 @@ import { research, chatJSON } from './omni-client.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
+const RESEARCH_DIR = join(ROOT, 'research')
 // `||` not `??`: GitHub Actions renders an unset `vars.X` as an empty string
 // (not undefined), which `??` would happily pass through.
 const RESEARCH_MODEL = process.env.RESEARCH_MODEL || 'tllm/sonar-pro'
@@ -60,19 +61,27 @@ Also report 3-5 cross-category trend observations for the month, and list every 
 
 Write in English, structured with clear headers per category. Be concrete and numeric. Do not pad with generic commentary.`
 
-const memo = await withRetry('research', () =>
-  research({
-    model: RESEARCH_MODEL,
-    system: RESEARCH_SYSTEM,
-    user: `Reference issue (${reference.month}) for continuity — current leaders and category structure:\n\n${JSON.stringify(
-      reference.categories.map((c) => ({ id: c.id, currentLeader: c.currentLeader, leaderCompany: c.leaderCompany })),
-      null,
-      1,
-    )}\n\nResearch the current state of each category for the ${month} issue now.`,
-    maxTokens: 8000,
-  }),
-)
-console.log(`research memo: ${memo.length} chars`)
+const memoPath = join(RESEARCH_DIR, `${month}.md`)
+let memo
+if (existsSync(memoPath)) {
+  memo = readFileSync(memoPath, 'utf8')
+  console.log(`research memo: read ${memo.length} chars from ${memoPath}`)
+} else {
+  console.warn(`${memoPath} not found — falling back to ${RESEARCH_MODEL}`)
+  memo = await withRetry('research', () =>
+    research({
+      model: RESEARCH_MODEL,
+      system: RESEARCH_SYSTEM,
+      user: `Reference issue (${reference.month}) for continuity — current leaders and category structure:\n\n${JSON.stringify(
+        reference.categories.map((c) => ({ id: c.id, currentLeader: c.currentLeader, leaderCompany: c.leaderCompany })),
+        null,
+        1,
+      )}\n\nResearch the current state of each category for the ${month} issue now.`,
+      maxTokens: 8000,
+    }),
+  )
+  console.log(`research memo: ${memo.length} chars (live API call)`)
+}
 
 // ---------- phase 2: core en+zh snapshot, structured from the memo ----------
 const CORE_SYSTEM = `You are the editor of a monthly LLM leaderboard published on commercial AI-platform websites (English and Chinese editions). You are given a research memo already grounded in real web search — use ONLY the facts and URLs it contains. Do not invent models, scores, dates, or URLs beyond what the memo states.

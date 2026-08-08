@@ -10,12 +10,40 @@ function stripJsonFences(text) {
   return fenced ? fenced[1].trim() : text.trim()
 }
 
+function contentFromSse(raw) {
+  let out = ''
+  for (const line of raw.split('\n')) {
+    const t = line.trim()
+    if (!t.startsWith('data:')) continue
+    const payload = t.slice(5).trim()
+    if (!payload || payload === '[DONE]') continue
+    try {
+      const chunk = JSON.parse(payload)
+      const delta = chunk.choices?.[0]?.delta?.content ?? chunk.choices?.[0]?.message?.content
+      if (delta) out += delta
+    } catch {
+      // ignore malformed SSE lines
+    }
+  }
+  return out
+}
+
+function contentFromBody(raw, contentType = '') {
+  const text = raw.trim()
+  if (contentType.includes('text/event-stream') || text.startsWith('data:')) {
+    return contentFromSse(text)
+  }
+  const data = JSON.parse(text)
+  return data.choices?.[0]?.message?.content ?? ''
+}
+
 async function chatCompletion({ model, system, user, maxTokens, temperature = 0.3, jsonMode = false }) {
   if (!KEY) throw new Error('OMNI_API_KEY is not set')
   const body = {
     model,
     max_tokens: maxTokens,
     temperature,
+    stream: false,
     messages: [
       { role: 'system', content: system },
       { role: 'user', content: user },
@@ -30,7 +58,7 @@ async function chatCompletion({ model, system, user, maxTokens, temperature = 0.
         method: 'POST',
         headers: { 'content-type': 'application/json', authorization: `Bearer ${KEY}` },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(180_000),
+        signal: AbortSignal.timeout(300_000),
       })
     } catch (err) {
       lastErr = err
@@ -42,8 +70,8 @@ async function chatCompletion({ model, system, user, maxTokens, temperature = 0.
       if (res.status === 429 || res.status >= 500) continue
       throw lastErr
     }
-    const data = await res.json()
-    const content = data.choices?.[0]?.message?.content
+    const raw = await res.text()
+    const content = contentFromBody(raw, res.headers.get('content-type') || '')
     if (!content) throw new Error('omni: empty response content')
     return content
   }

@@ -21,7 +21,12 @@
   两者是完全不同的能力，别混。
 - `scripts/sync.mjs`：POST 全部月份到两个平台 ingest 端点（幂等 upsert，配置了的目标失败即红）。
 - workflows：`monthly-generate.yml`（每月 27 日 cron → commit main）、`sync.yml`（data/ 变更 → 推两平台）。
-- **2026-08-08 8月天梯榜更新完成**：已添加 `research/2026-08.md`（基于7月数据更新，包含实际网络研究框架），并生成 `data/2026-08.json`（schema验证通过）。已提交到main分支。
+- **2026-08-09 8月天梯榜真正更新完成**：
+  - `research/2026-08.md`：直抓 Artificial Analysis 模型/图/视频/TTS 页（非 7 月改日期）。
+  - `data/2026-08.json`：en+zh，9 类，`npm run validate` 全绿。
+  - 相对 7 月实质变化：AA Index Opus 61→63 / Kimi 57→60；Image GPT Image 2 1338→1357 且 Nano Banana 2 进前 3；Video MiniMax H3 升至含音频第 2；Cost 领导者改为 DeepSeek V4 Flash **0731**（47→52）。
+  - `generate.mjs` 恢复读 `research/<month>.md`；`omni-client.mjs` 强制 `stream:false` 并兼容 SSE。
+  - 默认 `deepseek/deepseek-v4-flash` 在 Omni 上仍报无凭证；本地合成可用 `oc/deepseek-v4-flash-free`（大 JSON 不稳，本月快照按 memo 程序化落盘）。
 
 ## 待办 / 已知坑
 
