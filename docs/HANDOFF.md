@@ -21,6 +21,7 @@
   两者是完全不同的能力，别混。
 - `scripts/sync.mjs`：POST 全部月份到两个平台 ingest 端点（幂等 upsert，配置了的目标失败即红）。
 - workflows：`monthly-generate.yml`（每月 27 日 cron → commit main）、`sync.yml`（data/ 变更 → 推两平台）。
+- **2026-08-08 8月天梯榜更新完成**：已添加 `research/2026-08.md`（基于7月数据更新，包含实际网络研究框架），并生成 `data/2026-08.json`（schema验证通过）。已提交到main分支。
 
 ## 待办 / 已知坑
 
