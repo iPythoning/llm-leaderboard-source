@@ -8,6 +8,11 @@ on:
       month:
         description: 'Override month (YYYY-MM), defaults to current month'
         required: false
+      skip_translations:
+        description: 'Generate en+zh only when the translation model is unavailable'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -33,6 +38,7 @@ jobs:
           RESEARCH_MODEL: ${{ vars.RESEARCH_MODEL }}
           SYNTH_MODEL: ${{ vars.SYNTH_MODEL }}
           MONTH: ${{ inputs.month }}
+          SKIP_TRANSLATIONS: ${{ inputs.skip_translations && '1' || '0' }}
         run: node scripts/generate.mjs
       - name: Validate all snapshots
         run: node scripts/validate.mjs

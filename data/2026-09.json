@@ -1,0 +1,1392 @@
+{
+ "month": "2026-09",
+ "publishedAt": "2026-09-24T13:12:09.940Z",
+ "asOf": "2026-09-24",
+ "sources": [
+  {
+   "name": "Artificial Analysis Intelligence Index",
+   "url": "https://artificialanalysis.ai/leaderboards/models",
+   "asOf": "2026-09-24",
+   "type": "community-leaderboard"
+  },
+  {
+   "name": "Artificial Analysis Text to Image Arena",
+   "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+   "asOf": "2026-09-24",
+   "type": "benchmark"
+  },
+  {
+   "name": "Artificial Analysis Text to Video Leaderboard",
+   "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+   "asOf": "2026-09-24",
+   "type": "benchmark"
+  },
+  {
+   "name": "Artificial Analysis Terminal-Bench 2.1",
+   "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+   "asOf": "2026-09-24",
+   "type": "benchmark"
+  },
+  {
+   "name": "Artificial Analysis Provider Voice Arena",
+   "url": "https://artificialanalysis.ai/text-to-speech/leaderboard/provider-voice",
+   "asOf": "2026-09-24",
+   "type": "community-leaderboard"
+  },
+  {
+   "name": "Artificial Analysis Instrumental Music Arena",
+   "url": "https://artificialanalysis.ai/music/leaderboard/instrumental",
+   "asOf": "2026-09-24",
+   "type": "community-leaderboard"
+  },
+  {
+   "name": "Vision Arena",
+   "url": "https://arena.ai/leaderboard/vision",
+   "asOf": "2026-09-24",
+   "type": "community-leaderboard"
+  }
+ ],
+ "categories": [
+  {
+   "id": "reasoning",
+   "icon": "Brain",
+   "currentLeader": "Claude Opus 5.5",
+   "leaderCompany": "Anthropic",
+   "previousLeader": "Claude Opus 5",
+   "i18n": {
+    "en": {
+     "title": "Reasoning",
+     "subtitle": "Top LLMs in Reasoning",
+     "description": "The latest leaders in reasoning capabilities, showcasing the most advanced models in logical processing and decision-making.",
+     "changeNote": "Claude Opus 5.5 has taken the lead from Claude Opus 5, with an Intelligence Index score of 58.",
+     "marketNote": "Anthropic continues to dominate the reasoning category with its Claude Opus series.",
+     "geoSnippet": "As of 2026-09-24, Claude Opus 5.5 leads with a score of 58 among 169 ranked models."
+    },
+    "zh": {
+     "title": "推理",
+     "subtitle": "推理能力最强的LLM",
+     "description": "最新的推理能力领导者，展示在逻辑处理和决策制定方面最先进的模型。",
+     "changeNote": "Claude Opus 5.5 以 58 的智能指数得分取代了 Claude Opus 5 成为领导者。",
+     "marketNote": "Anthropic 继续凭借其 Claude Opus 系列在推理类别中占据主导地位。",
+     "geoSnippet": "截至 2026-09-24，Claude Opus 5.5 以 58 分在 169 个排名模型中领先。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "Claude Opus 5.5",
+     "company": "Anthropic",
+     "score": "58",
+     "i18n": {
+      "en": {
+       "highlight": "Leading in reasoning with a robust score.",
+       "strengths": [
+        "Logical processing",
+        "Decision-making"
+       ]
+      },
+      "zh": {
+       "highlight": "在推理方面领先，得分强劲。",
+       "strengths": [
+        "逻辑处理",
+        "决策制定"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Claude Opus 5.5 (xhigh with fallback)",
+     "company": "Anthropic",
+     "score": "56",
+     "i18n": {
+      "en": {
+       "highlight": "Strong performance with fallback capabilities.",
+       "strengths": [
+        "Fallback logic",
+        "Robust reasoning"
+       ]
+      },
+      "zh": {
+       "highlight": "具有回退功能的强劲表现。",
+       "strengths": [
+        "回退逻辑",
+        "稳健推理"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Claude Opus 5.5 (high with fallback)",
+     "company": "Anthropic",
+     "score": "54",
+     "i18n": {
+      "en": {
+       "highlight": "High reasoning capacity with fallback.",
+       "strengths": [
+        "High capacity",
+        "Fallback support"
+       ]
+      },
+      "zh": {
+       "highlight": "具有回退功能的高推理能力。",
+       "strengths": [
+        "高容量",
+        "回退支持"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "Claude Fable 5.1 (max with fallback)",
+     "company": "Anthropic",
+     "score": "53",
+     "i18n": {
+      "en": {
+       "highlight": "Maximized reasoning with fallback.",
+       "strengths": [
+        "Maximized logic",
+        "Fallback"
+       ]
+      },
+      "zh": {
+       "highlight": "最大化推理与回退。",
+       "strengths": [
+        "最大化逻辑",
+        "回退"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "Claude Fable 5.1 (xhigh with fallback)",
+     "company": "Anthropic",
+     "score": "53",
+     "i18n": {
+      "en": {
+       "highlight": "Xhigh reasoning with fallback.",
+       "strengths": [
+        "Xhigh logic",
+        "Fallback"
+       ]
+      },
+      "zh": {
+       "highlight": "X高推理与回退。",
+       "strengths": [
+        "X高逻辑",
+        "回退"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 6,
+     "name": "GPT-6 Astra (max)",
+     "company": "OpenAI",
+     "score": "53",
+     "i18n": {
+      "en": {
+       "highlight": "Maximized reasoning capabilities.",
+       "strengths": [
+        "Maximized reasoning",
+        "Advanced logic"
+       ]
+      },
+      "zh": {
+       "highlight": "最大化推理能力。",
+       "strengths": [
+        "最大化推理",
+        "高级逻辑"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "image",
+   "icon": "Image",
+   "currentLeader": "GPT Image 2.5 Sunburst (max)",
+   "leaderCompany": "OpenAI",
+   "previousLeader": "GPT Image 2 / Nano Banana 2",
+   "i18n": {
+    "en": {
+     "title": "Text to Image",
+     "subtitle": "GPT Image 2.5 Sunburst (max) takes the top spot at Elo 1197",
+     "description": "GPT Image 2.5 Sunburst (max) leads the current Text to Image Arena at Elo 1197, followed by GPT Image 2.5 Flare (max) at 1191 and GPT Image 2 (high) at 1171. Sunburst is listed with 13,433 samples.",
+     "changeNote": "The leader changed from the August issue's GPT Image 2 / Nano Banana 2 pairing.",
+     "marketNote": "Among open-weight image models, Ideogram 4.0 (Quality) leads at 1011, followed by Ideogram 4.0 at 1003 and FLUX.2 [dev] at 1000.",
+     "geoSnippet": "As of 2026-09-24, GPT Image 2.5 Sunburst (max) ranks #1 at Elo 1197 in the Text to Image Arena, with 13,433 samples."
+    },
+    "zh": {
+     "title": "文生图",
+     "subtitle": "GPT Image 2.5 Sunburst (max) 以 Elo 1197 登顶 Text to Image Arena",
+     "description": "在当前 Text to Image Arena 中，GPT Image 2.5 Sunburst (max) 以 Elo 1197 领跑，其后是 GPT Image 2.5 Flare (max)（1191）和 GPT Image 2 (high)（1171）。Sunburst 的样本数为 13,433。",
+     "changeNote": "本期榜首已由 8 月刊的 GPT Image 2 / Nano Banana 2 组合更替。",
+     "marketNote": "开放权重图像模型方面，Ideogram 4.0 (Quality) 以 1011 领跑，其后是 Ideogram 4.0（1003）和 FLUX.2 [dev]（1000）。",
+     "geoSnippet": "截至 2026-09-24，GPT Image 2.5 Sunburst (max) 以 Elo 1197 排名第 1，样本数为 13,433。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "GPT Image 2.5 Sunburst (max)",
+     "company": "OpenAI",
+     "score": "1197",
+     "i18n": {
+      "en": {
+       "highlight": "Current Text to Image Arena leader at Elo 1197.",
+       "strengths": [
+        "13,433 samples",
+        "API pricing: $210.7 per 1,000 images"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Text to Image Arena 榜首，Elo 1197。",
+       "strengths": [
+        "样本数 13,433",
+        "API 价格：每 1,000 张图 $210.7"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "GPT Image 2.5 Flare (max)",
+     "company": "OpenAI",
+     "score": "1191",
+     "i18n": {
+      "en": {
+       "highlight": "Second in the current Text to Image Arena at Elo 1191.",
+       "strengths": [
+        "Top-two placement"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Text to Image Arena 排名第 2，Elo 1191。",
+       "strengths": [
+        "稳居榜单前二"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "GPT Image 2 (high)",
+     "company": "OpenAI",
+     "score": "1171",
+     "i18n": {
+      "en": {
+       "highlight": "Third in the current Text to Image Arena at Elo 1171.",
+       "strengths": [
+        "Top-three placement",
+        "API pricing: $211.0 per 1,000 images"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Text to Image Arena 排名第 3，Elo 1171。",
+       "strengths": [
+        "进入榜单前三",
+        "API 价格：每 1,000 张图 $211.0"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "Grok Imagine Image 2.0",
+     "company": "xAI",
+     "score": "1150",
+     "i18n": {
+      "en": {
+       "highlight": "Fourth in the current Text to Image Arena at Elo 1150.",
+       "strengths": [
+        "API pricing: $60.0 per 1,000 images"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Text to Image Arena 排名第 4，Elo 1150。",
+       "strengths": [
+        "API 价格：每 1,000 张图 $60.0"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "MAI-Image-2.6",
+     "company": "Microsoft",
+     "score": "1147",
+     "i18n": {
+      "en": {
+       "highlight": "Fifth in the current Text to Image Arena at Elo 1147.",
+       "strengths": [
+        "API pricing: $38.9 per 1,000 images"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Text to Image Arena 排名第 5，Elo 1147。",
+       "strengths": [
+        "API 价格：每 1,000 张图 $38.9"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 6,
+     "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+     "company": "Google",
+     "score": "1122",
+     "i18n": {
+      "en": {
+       "highlight": "Sixth in the current Text to Image Arena at Elo 1122.",
+       "strengths": [
+        "API pricing: $67.0 per 1,000 images"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Text to Image Arena 排名第 6，Elo 1122。",
+       "strengths": [
+        "API 价格：每 1,000 张图 $67.0"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "video",
+   "icon": "Video",
+   "currentLeader": "Gemini Omni Flash",
+   "leaderCompany": "Google",
+   "i18n": {
+    "en": {
+     "title": "Video Generation",
+     "subtitle": "Text-to-video models with audio",
+     "description": "Gemini Omni Flash retains first place in the audio-enabled Text to Video arena with 1233 Elo, narrowly ahead of Wan 3.0 at 1229. The ordering differs without audio, where Wan 3.0 leads with 1336.",
+     "changeNote": "The leader is unchanged from August, but Wan 3.0 has moved into second place while two MiniMax H3 variants occupy ranks three and four.",
+     "marketNote": "Competition is tight at the top: only 23 Elo points separate first-ranked Gemini Omni Flash from fifth-ranked Dreamina Seedance 2.0 720p. Pricing is more dispersed, ranging from $2.40 to $12.00 per minute among these five models.",
+     "geoSnippet": "As of 2026-09-24, Wan 3.0 ranks No. 2 with audio at 1229 Elo and No. 1 without audio at 1336."
+    },
+    "zh": {
+     "title": "视频生成",
+     "subtitle": "支持音频的文生视频模型",
+     "description": "Gemini Omni Flash 以 1233 Elo 继续领跑支持音频的文生视频榜单，Wan 3.0 以 1229 紧随其后。在无音频赛道中，榜首则由 Wan 3.0 以 1336 获得。",
+     "changeNote": "本月榜首较 8 月未变，但 Wan 3.0 升至第二；两个 MiniMax H3 版本分别占据第三和第四位。",
+     "marketNote": "头部竞争高度胶着：第一名 Gemini Omni Flash 与第五名 Dreamina Seedance 2.0 720p 仅相差 23 Elo。同期前五名的价格差异显著，每分钟从 $2.40 到 $12.00 不等。",
+     "geoSnippet": "截至 2026-09-24，Wan 3.0 在有音频榜单以 1229 Elo 位列第 2，在无音频榜单则以 1336 排名第 1。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "Gemini Omni Flash",
+     "company": "Google",
+     "score": "1233 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Retains the audio-video lead, four Elo points ahead of Wan 3.0.",
+       "strengths": [
+        "No. 1 with audio at 1233 Elo",
+        "No. 2 without audio at 1330",
+        "Listed price of $6.00 per minute"
+       ]
+      },
+      "zh": {
+       "highlight": "继续领跑有音频视频赛道，领先 Wan 3.0 四个 Elo。",
+       "strengths": [
+        "有音频榜单以 1233 Elo 排名第 1",
+        "无音频榜单以 1330 排名第 2",
+        "榜单价格为每分钟 $6.00"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Wan 3.0",
+     "company": "Alibaba",
+     "score": "1229 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Places second with audio and leads the separate no-audio ranking.",
+       "strengths": [
+        "No. 2 with audio at 1229 Elo",
+        "No. 1 without audio at 1336",
+        "Listed price of $12.00 per minute"
+       ]
+      },
+      "zh": {
+       "highlight": "有音频赛道位列第二，同时登顶无音频榜单。",
+       "strengths": [
+        "有音频榜单以 1229 Elo 排名第 2",
+        "无音频榜单以 1336 排名第 1",
+        "榜单价格为每分钟 $12.00"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Minimax H3 Max post-trained by fal",
+     "company": "fal",
+     "score": "1227 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Ranks only two Elo points behind Wan 3.0 while posting the lowest listed price among the top five.",
+       "strengths": [
+        "No. 3 with audio at 1227 Elo",
+        "Two Elo points behind second place",
+        "Listed price of $2.40 per minute"
+       ]
+      },
+      "zh": {
+       "highlight": "仅落后第二名 Wan 3.0 两个 Elo，并拥有前五名中最低的榜单价格。",
+       "strengths": [
+        "有音频榜单以 1227 Elo 排名第 3",
+        "与第二名仅相差 2 Elo",
+        "榜单价格为每分钟 $2.40"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "MiniMax H3 Open Weights",
+     "company": "MiniMax",
+     "score": "1220 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "The highest-ranked open-weights video model with audio.",
+       "strengths": [
+        "Open-weights leader with audio at 1220 Elo",
+        "No. 4 in the overall audio ranking",
+        "Listed price of $7.80 per minute"
+       ]
+      },
+      "zh": {
+       "highlight": "当前支持音频的视频模型中排名最高的开放权重方案。",
+       "strengths": [
+        "以 1220 Elo 领跑有音频开放权重模型",
+        "有音频总榜排名第 4",
+        "榜单价格为每分钟 $7.80"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "Dreamina Seedance 2.0 720p",
+     "company": "ByteDance",
+     "score": "1210 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Completes a tightly grouped top five, 23 Elo points behind the leader.",
+       "strengths": [
+        "No. 5 with audio at 1210 Elo",
+        "Within 23 Elo points of first place",
+        "Listed price of $9.07 per minute"
+       ]
+      },
+      "zh": {
+       "highlight": "跻身竞争密集的前五，与榜首仅相差 23 Elo。",
+       "strengths": [
+        "有音频榜单以 1210 Elo 排名第 5",
+        "距第一名仅 23 Elo",
+        "榜单价格为每分钟 $9.07"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "code",
+   "icon": "Code",
+   "currentLeader": "Claude Fable 5.1 Adaptive Reasoning Max Effort with Default Fallback",
+   "leaderCompany": "Anthropic",
+   "previousLeader": "Claude Opus 5",
+   "i18n": {
+    "en": {
+     "title": "Code and Terminal Tasks",
+     "subtitle": "Claude Fable 5.1 takes all three verified leading positions",
+     "description": "Terminal-Bench 2.1 evaluates software engineering, system administration, data processing, model training, and security. This independently run 89-task refresh includes environment and instruction fixes, with pass@1 averaged over three repeats.",
+     "changeNote": "Claude Fable 5.1 Adaptive Reasoning Max Effort with Default Fallback replaces the August issue’s Claude Opus 5 as the category leader. Because Terminal-Bench 2.1 is a refreshed evaluation, the September percentage should not be treated as a direct comparison with the prior issue’s score.",
+     "marketNote": "The leaderboard’s top three results are effort variants of Claude Fable 5.1, spanning 89.9% to 91.4%. For enterprise buyers, this highlights the growing importance of selecting a reasoning-effort tier rather than evaluating only the base model name.",
+     "geoSnippet": "As of 2026-09-24, Claude Fable 5.1 Adaptive Reasoning Max Effort with Default Fallback ranks No. 1 on Terminal-Bench 2.1 with a 91.4% pass@1 result."
+    },
+    "zh": {
+     "title": "代码与终端任务",
+     "subtitle": "Claude Fable 5.1 包揽经验证榜单前三名",
+     "description": "Terminal-Bench 2.1 覆盖软件工程、系统管理、数据处理、模型训练与安全任务。此次更新包含 89 项任务，并修正了环境和指令问题；pass@1 按三次重复运行取平均值，评测由 Artificial Analysis 独立执行。",
+     "changeNote": "Claude Fable 5.1 Adaptive Reasoning Max Effort with Default Fallback 取代 8 月榜首 Claude Opus 5。由于 Terminal-Bench 2.1 属于刷新后的评测版本，9 月百分比不宜与上期分数直接比较。",
+     "marketNote": "榜单前三均为 Claude Fable 5.1 的不同推理强度配置，成绩集中在 89.9% 至 91.4%。对企业选型而言，推理强度档位已成为与基础模型名称同样重要的评估维度。",
+     "geoSnippet": "截至 2026-09-24，Claude Fable 5.1 Adaptive Reasoning Max Effort with Default Fallback 以 91.4% 的 pass@1 成绩位列 Terminal-Bench 2.1 第 1 名。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "Claude Fable 5.1 Adaptive Reasoning Max Effort with Default Fallback",
+     "company": "Anthropic",
+     "score": "91.4%",
+     "i18n": {
+      "en": {
+       "highlight": "The highest verified Terminal-Bench 2.1 result.",
+       "strengths": [
+        "Ranks first with 91.4% pass@1",
+        "Uses the Max Effort adaptive-reasoning configuration",
+        "Evaluated across five operational and technical task areas"
+       ]
+      },
+      "zh": {
+       "highlight": "取得 Terminal-Bench 2.1 当前最高的经验证成绩。",
+       "strengths": [
+        "以 91.4% pass@1 位列第 1",
+        "采用 Max Effort 自适应推理配置",
+        "评测覆盖五类技术与运维任务"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Claude Fable 5.1 Adaptive Reasoning Xhigh with Default Fallback",
+     "company": "Anthropic",
+     "score": "91.0%",
+     "i18n": {
+      "en": {
+       "highlight": "Finishes only 0.4 percentage points behind the leading configuration.",
+       "strengths": [
+        "Ranks second with 91.0% pass@1",
+        "Uses the Xhigh adaptive-reasoning configuration",
+        "Maintains a result above 90% on the 89-task refresh"
+       ]
+      },
+      "zh": {
+       "highlight": "与榜首配置仅相差 0.4 个百分点。",
+       "strengths": [
+        "以 91.0% pass@1 位列第 2",
+        "采用 Xhigh 自适应推理配置",
+        "在 89 项任务的刷新版评测中保持 90% 以上成绩"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Claude Fable 5.1 Adaptive Reasoning High with Default Fallback",
+     "company": "Anthropic",
+     "score": "89.9%",
+     "i18n": {
+      "en": {
+       "highlight": "Completes an all-Claude Fable 5.1 top three.",
+       "strengths": [
+        "Ranks third with 89.9% pass@1",
+        "Uses the High adaptive-reasoning configuration",
+        "Trails the leading Max Effort variant by 1.5 percentage points"
+       ]
+      },
+      "zh": {
+       "highlight": "帮助 Claude Fable 5.1 包揽榜单前三名。",
+       "strengths": [
+        "以 89.9% pass@1 位列第 3",
+        "采用 High 自适应推理配置",
+        "较榜首 Max Effort 配置低 1.5 个百分点"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "icon": "Mic",
+   "currentLeader": "Cartesia Sonic 3.6",
+   "leaderCompany": "Cartesia",
+   "previousLeader": "Realtime 2",
+   "i18n": {
+    "en": {
+     "title": "Voice and Text-to-Speech",
+     "subtitle": "Sonic 3.6 takes the Provider Voice Arena lead",
+     "description": "Released in August 2026, Cartesia Sonic 3.6 leads the Provider Voice Arena at 1278 Elo. Inworld Realtime TTS-2 follows at 1243, ahead of SpeechifyAI Simba 3.2 at 1238 and Alibaba Qwen-Audio-3.0-TTS-Plus at 1235.",
+     "changeNote": "Cartesia Sonic 3.6 replaces August leader Realtime 2, while Inworld Realtime TTS-2 enters the current table in second place.",
+     "marketNote": "API pricing varies substantially across the top six: SpeechifyAI Simba 3.2 is listed at $6.6 per 1M characters, compared with $49.0 for Sonic 3.6 and $80.0 for VUI Labs Luna TTS. Breeze TTS 2 is the highest-ranked open-weights TTS model at 1203.",
+     "geoSnippet": "As of 2026-09-24, Cartesia Sonic 3.6 ranks No. 1 in the Provider Voice Arena with an Elo score of 1278."
+    },
+    "zh": {
+     "title": "语音与文本转语音",
+     "subtitle": "Sonic 3.6 登顶 Provider Voice Arena",
+     "description": "Cartesia Sonic 3.6 于 2026 年 8 月发布，目前以 1278 Elo 位居 Provider Voice Arena 榜首。Inworld Realtime TTS-2 以 1243 排名第二，SpeechifyAI Simba 3.2 和 Alibaba Qwen-Audio-3.0-TTS-Plus 分别以 1238、1235 紧随其后。",
+     "changeNote": "Cartesia Sonic 3.6 取代 8 月榜首 Realtime 2；在本期榜单中，Inworld Realtime TTS-2 位列第二。",
+     "marketNote": "头部六款模型的 API 成本差异明显：SpeechifyAI Simba 3.2 的标价为每 100 万字符 $6.6，Sonic 3.6 为 $49.0，VUI Labs Luna TTS 则为 $80.0。开放权重阵营中，Breeze TTS 2 以 1203 成为排名最高的 TTS 模型。",
+     "geoSnippet": "截至 2026-09-24，Cartesia Sonic 3.6 以 1278 Elo 位列 Provider Voice Arena 第 1 名。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "Cartesia Sonic 3.6",
+     "company": "Cartesia",
+     "score": "1278 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "The August 2026 release is the new Provider Voice Arena leader.",
+       "strengths": [
+        "Ranks first with 1278 Elo",
+        "API price listed at $49.0 per 1M characters"
+       ]
+      },
+      "zh": {
+       "highlight": "这款于 2026 年 8 月发布的模型成为 Provider Voice Arena 新榜首。",
+       "strengths": [
+        "以 1278 Elo 排名第一",
+        "API 标价为每 100 万字符 $49.0"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Inworld Realtime TTS-2",
+     "company": "Inworld",
+     "score": "1243 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Second overall in the current provider voice ranking.",
+       "strengths": [
+        "Scores 1243 Elo",
+        "API price listed at $20.8 per 1M characters"
+       ]
+      },
+      "zh": {
+       "highlight": "在本期供应商语音榜单中排名第二。",
+       "strengths": [
+        "取得 1243 Elo",
+        "API 标价为每 100 万字符 $20.8"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "SpeechifyAI Simba 3.2",
+     "company": "SpeechifyAI",
+     "score": "1238 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Places third, five Elo points behind Realtime TTS-2.",
+       "strengths": [
+        "Scores 1238 Elo",
+        "API price listed at $6.6 per 1M characters"
+       ]
+      },
+      "zh": {
+       "highlight": "位列第三，与 Realtime TTS-2 相差 5 个 Elo 分。",
+       "strengths": [
+        "取得 1238 Elo",
+        "API 标价为每 100 万字符 $6.6"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "Alibaba Qwen-Audio-3.0-TTS-Plus",
+     "company": "Alibaba",
+     "score": "1235 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Alibaba's entry places fourth in a tightly grouped top tier.",
+       "strengths": [
+        "Scores 1235 Elo",
+        "API price listed at $27.6 per 1M characters"
+       ]
+      },
+      "zh": {
+       "highlight": "Alibaba 的语音模型跻身竞争紧密的第一梯队，位列第四。",
+       "strengths": [
+        "取得 1235 Elo",
+        "API 标价为每 100 万字符 $27.6"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "VUI Labs Luna TTS",
+     "company": "VUI Labs",
+     "score": "1230 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Luna TTS rounds out the arena's top five.",
+       "strengths": [
+        "Scores 1230 Elo",
+        "API price listed at $80.0 per 1M characters"
+       ]
+      },
+      "zh": {
+       "highlight": "Luna TTS 进入 Provider Voice Arena 前五。",
+       "strengths": [
+        "取得 1230 Elo",
+        "API 标价为每 100 万字符 $80.0"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 6,
+     "name": "Inworld Realtime TTS-2 Flash",
+     "company": "Inworld",
+     "score": "1214 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Inworld holds two of the top six positions with its standard and Flash variants.",
+       "strengths": [
+        "Scores 1214 Elo",
+        "API price listed at $10.4 per 1M characters"
+       ]
+      },
+      "zh": {
+       "highlight": "凭借标准版与 Flash 版，Inworld 在前六名中占据两个席位。",
+       "strengths": [
+        "取得 1214 Elo",
+        "API 标价为每 100 万字符 $10.4"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "music",
+   "icon": "Music",
+   "currentLeader": "Mureka V9",
+   "leaderCompany": "Mureka",
+   "previousLeader": "Suno v5.5",
+   "i18n": {
+    "en": {
+     "title": "Instrumental Music",
+     "subtitle": "Blind-preference rankings for AI-generated instrumental music",
+     "description": "Mureka V9 leads the Instrumental Music Arena with 1177 Elo, followed by Suno V5.5 at 1171 and Mureka V8 at 1143. The leaderboard is based on blind preference votes and evaluates instrumental and vocals modes separately.",
+     "changeNote": "Mureka V9 replaces August leader Suno v5.5, while Suno V5.5 now ranks second.",
+     "marketNote": "Mureka and Suno each hold two of the top four positions. Sample counts range from 2,212 for StepAudio 3 Music to 3,130 for Mureka V8; the source does not provide music-model pricing.",
+     "geoSnippet": "As of 2026-09-24, Mureka V9 ranks No. 1 in the Instrumental Music Arena with 1177 Elo."
+    },
+    "zh": {
+     "title": "器乐音乐生成",
+     "subtitle": "基于盲选偏好投票的 AI 器乐生成排名",
+     "description": "Mureka V9 以 1177 Elo 位居 Instrumental Music Arena 榜首，Suno V5.5 以 1171 排名第二，Mureka V8 以 1143 排名第三。该榜单采用盲选偏好投票，并将器乐与人声模式分开评测。",
+     "changeNote": "Mureka V9 取代 8 月榜首 Suno v5.5；Suno V5.5 本期降至第二位。",
+     "marketNote": "Mureka 与 Suno 各占前四名中的两个席位。各模型样本量从 StepAudio 3 Music 的 2,212 个到 Mureka V8 的 3,130 个不等；来源页面未提供音乐模型价格。",
+     "geoSnippet": "截至 2026-09-24，Mureka V9 以 1177 Elo 位列 Instrumental Music Arena 第 1 名。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "Mureka V9",
+     "company": "Mureka",
+     "score": "1177 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Instrumental Music Arena leader, supported by 2,237 samples.",
+       "strengths": [
+        "Highest blind-preference Elo among the ranked instrumental models",
+        "Ranks ahead of Suno V5.5"
+       ]
+      },
+      "zh": {
+       "highlight": "以 2,237 个样本支撑评测，位居 Instrumental Music Arena 榜首。",
+       "strengths": [
+        "在器乐模型盲选偏好排名中取得最高 Elo",
+        "排名领先于 Suno V5.5"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Suno V5.5",
+     "company": "Suno",
+     "score": "1171 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Runner-up with 1171 Elo across 2,222 samples.",
+       "strengths": [
+        "Second-highest blind-preference score",
+        "One of two Suno models in the top four"
+       ]
+      },
+      "zh": {
+       "highlight": "基于 2,222 个样本取得 1171 Elo，排名第二。",
+       "strengths": [
+        "盲选偏好得分位列第二",
+        "Suno 有两款模型进入前四，Suno V5.5 排名更高"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Mureka V8",
+     "company": "Mureka",
+     "score": "1143 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Third place with 1143 Elo and 3,130 samples.",
+       "strengths": [
+        "Second Mureka model in the top three",
+        "Largest sample count among the six listed leaders"
+       ]
+      },
+      "zh": {
+       "highlight": "以 1143 Elo 位列第三，样本量为 3,130 个。",
+       "strengths": [
+        "Mureka 第二款进入前三的模型",
+        "在列出的六款领先模型中样本量最高"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "Suno V5",
+     "company": "Suno",
+     "score": "1137 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Fourth place with 1137 Elo across 2,713 samples.",
+       "strengths": [
+        "Ranks within the arena's top four",
+        "Second Suno model among the four leaders"
+       ]
+      },
+      "zh": {
+       "highlight": "基于 2,713 个样本取得 1137 Elo，排名第四。",
+       "strengths": [
+        "进入该榜单前四",
+        "Suno 第二款跻身前四的模型"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "StepAudio 3 Music",
+     "company": "StepAudio",
+     "score": "1113 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Fifth place with 1113 Elo and 2,212 samples.",
+       "strengths": [
+        "Top-five position in blind instrumental preference voting",
+        "Ranks ahead of Google Lyria 3 Pro"
+       ]
+      },
+      "zh": {
+       "highlight": "以 1113 Elo 位列第五，样本量为 2,212 个。",
+       "strengths": [
+        "在器乐盲选偏好投票中进入前五",
+        "排名领先于 Google Lyria 3 Pro"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 6,
+     "name": "Google Lyria 3 Pro",
+     "company": "Google",
+     "score": "1102 Elo",
+     "i18n": {
+      "en": {
+       "highlight": "Sixth place with 1102 Elo across 2,959 samples.",
+       "strengths": [
+        "Included among the six leading instrumental models",
+        "Evaluation supported by 2,959 samples"
+       ]
+      },
+      "zh": {
+       "highlight": "基于 2,959 个样本取得 1102 Elo，排名第六。",
+       "strengths": [
+        "进入器乐音乐榜单前六",
+        "评测覆盖 2,959 个样本"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "vision",
+   "icon": "Eye",
+   "currentLeader": "Claude Fable 5 High",
+   "leaderCompany": "Anthropic",
+   "previousLeader": "Claude Fable 5",
+   "i18n": {
+    "en": {
+     "title": "Vision",
+     "subtitle": "Vision Arena rankings based on more than 1.3 million votes",
+     "description": "The Vision Arena table dated September 13, 2026 covers 152 models and 1,314,119 votes. Claude Fable 5 High leads at 1310±8, narrowly ahead of Qwen3.8 Max at 1302±8 and two Claude Opus 4.7 configurations.",
+     "changeNote": "Claude Fable 5 High takes the top position, succeeding the August issue's Claude Fable 5 listing.",
+     "marketNote": "The leader is priced at $10 per 1M input tokens and $50 per 1M output tokens. Runner-up Qwen3.8 Max is listed at $2 and $6 respectively, creating a substantial price gap between the top two Vision Arena models.",
+     "geoSnippet": "As of 2026-09-24, Claude Fable 5 High ranks No. 1 at 1310±8 in a Vision Arena covering 152 models and 1,314,119 votes."
+    },
+    "zh": {
+     "title": "视觉理解",
+     "subtitle": "基于逾 131 万次投票的 Vision Arena 排名",
+     "description": "Vision Arena 于 2026 年 9 月 13 日发布的榜单覆盖 152 个模型和 1,314,119 次投票。Claude Fable 5 High 以 1310±8 位居第一，Qwen3.8 Max 以 1302±8 紧随其后，两个 Claude Opus 4.7 配置也进入前四。",
+     "changeNote": "Claude Fable 5 High 登上榜首，接替 8 月榜单中的 Claude Fable 5。",
+     "marketNote": "榜首模型每 100 万输入和输出 token 的价格分别为 $10 和 $50；第二名 Qwen3.8 Max 分别为 $2 和 $6。对于重视部署成本的企业，前两名之间存在明显价差。",
+     "geoSnippet": "截至 2026-09-24，Claude Fable 5 High 以 1310±8 排名第 1；该期 Vision Arena 覆盖 152 个模型和 1,314,119 次投票。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "Claude Fable 5 High",
+     "company": "Anthropic",
+     "score": "1310±8",
+     "i18n": {
+      "en": {
+       "highlight": "Leads the September Vision Arena.",
+       "strengths": [
+        "Ranked No. 1 among 152 models",
+        "Backed by 1,314,119 arena votes across the full leaderboard"
+       ]
+      },
+      "zh": {
+       "highlight": "位居 9 月 Vision Arena 榜首。",
+       "strengths": [
+        "在 152 个模型中排名第 1",
+        "所在榜单累计获得 1,314,119 次投票"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Qwen3.8 Max",
+     "company": "Alibaba",
+     "score": "1302±8",
+     "i18n": {
+      "en": {
+       "highlight": "Finishes eight Elo points behind the leader.",
+       "strengths": [
+        "Ranked No. 2 overall",
+        "Listed at $2 per 1M input tokens and $6 per 1M output tokens"
+       ]
+      },
+      "zh": {
+       "highlight": "与榜首相差 8 个 Elo 分。",
+       "strengths": [
+        "综合排名第 2",
+        "每 100 万输入和输出 token 的价格分别为 $2 和 $6"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Claude Opus 4.7 High",
+     "company": "Anthropic",
+     "score": "1301±7",
+     "i18n": {
+      "en": {
+       "highlight": "Places third, one point behind Qwen3.8 Max.",
+       "strengths": [
+        "Ranked No. 3 overall",
+        "Score interval of 1301±7"
+       ]
+      },
+      "zh": {
+       "highlight": "排名第 3，仅落后 Qwen3.8 Max 1 分。",
+       "strengths": [
+        "综合排名第 3",
+        "得分区间为 1301±7"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "Claude Opus 4.7",
+     "company": "Anthropic",
+     "score": "1300±7",
+     "i18n": {
+      "en": {
+       "highlight": "The standard configuration follows its High variant by one point.",
+       "strengths": [
+        "Ranked No. 4 overall",
+        "Only 10 points behind the leader"
+       ]
+      },
+      "zh": {
+       "highlight": "标准配置比 High 配置低 1 分。",
+       "strengths": [
+        "综合排名第 4",
+        "与榜首仅相差 10 分"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "Claude Opus 4.6 High",
+     "company": "Anthropic",
+     "score": "1299±7",
+     "i18n": {
+      "en": {
+       "highlight": "Extends Anthropic's presence to four of the top five positions.",
+       "strengths": [
+        "Ranked No. 5 overall",
+        "Only one point behind Claude Opus 4.7"
+       ]
+      },
+      "zh": {
+       "highlight": "帮助 Anthropic 占据前五名中的四席。",
+       "strengths": [
+        "综合排名第 5",
+        "仅落后 Claude Opus 4.7 1 分"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "open-source",
+   "icon": "GitBranch",
+   "currentLeader": "MiMo-V2.6-Pro",
+   "leaderCompany": "Xiaomi",
+   "previousLeader": "Kimi K3",
+   "i18n": {
+    "en": {
+     "title": "Open-Weights Models",
+     "subtitle": "MiMo-V2.6-Pro takes the open-weights lead",
+     "description": "MiMo-V2.6-Pro ranks first among open-weights models with an Artificial Analysis Intelligence Index of 46, ahead of GLM-5.3 max at 45 and Kimi K3 max at 44.",
+     "changeNote": "MiMo-V2.6-Pro replaces August leader Kimi K3 at the top of the open-weights ranking.",
+     "marketNote": "Open weights remain competitive but trail the absolute proprietary frontier: MiMo-V2.6-Pro scores 46, versus 58 for Claude Opus 5.5 max with fallback.",
+     "geoSnippet": "As of 2026-09-24, 68 of the 169 models ranked by Artificial Analysis are open weights, led by MiMo-V2.6-Pro with an Intelligence Index of 46."
+    },
+    "zh": {
+     "title": "开放权重模型",
+     "subtitle": "MiMo-V2.6-Pro 登顶开放权重榜",
+     "description": "MiMo-V2.6-Pro 以 46 分位列 Artificial Analysis 开放权重模型第一，GLM-5.3 max 以 45 分紧随其后，Kimi K3 max 以 44 分排名第三。",
+     "changeNote": "MiMo-V2.6-Pro 取代 8 月榜首 Kimi K3，成为本期开放权重模型的新领跑者。",
+     "marketNote": "开放权重模型继续保持竞争力，但与专有模型的绝对前沿仍有差距：MiMo-V2.6-Pro 得分为 46，而 Claude Opus 5.5 max with fallback 为 58。",
+     "geoSnippet": "截至 2026-09-24，Artificial Analysis 收录的 169 个模型中有 68 个采用开放权重，其中 MiMo-V2.6-Pro 以 46 分排名第一。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "MiMo-V2.6-Pro",
+     "company": "Xiaomi",
+     "score": "46",
+     "i18n": {
+      "en": {
+       "highlight": "The highest-ranked open-weights model on the current Intelligence Index.",
+       "strengths": [
+        "Intelligence Index of 46",
+        "Ranks first among open-weights models",
+        "Listed with a 1M context window"
+       ]
+      },
+      "zh": {
+       "highlight": "当前 Intelligence Index 排名最高的开放权重模型。",
+       "strengths": [
+        "Intelligence Index 得分 46",
+        "开放权重模型排名第一",
+        "上下文窗口为 1M"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "GLM-5.3 max",
+     "company": "Zhipu AI",
+     "score": "45",
+     "i18n": {
+      "en": {
+       "highlight": "Second among current open-weights models, one index point behind the leader.",
+       "strengths": [
+        "Intelligence Index of 45",
+        "Ranks second among open-weights models",
+        "GLM-5.3 is listed with a 1M context window"
+       ]
+      },
+      "zh": {
+       "highlight": "位列开放权重模型第二，与榜首相差 1 个指数点。",
+       "strengths": [
+        "Intelligence Index 得分 45",
+        "开放权重模型排名第二",
+        "GLM-5.3 的上下文窗口为 1M"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Kimi K3 max",
+     "company": "Moonshot AI",
+     "score": "44",
+     "i18n": {
+      "en": {
+       "highlight": "The August leader now ranks third in the open-weights table.",
+       "strengths": [
+        "Intelligence Index of 44",
+        "Ranks third among open-weights models",
+        "Listed with a 1M context window"
+       ]
+      },
+      "zh": {
+       "highlight": "8 月榜首本期位列开放权重模型第三。",
+       "strengths": [
+        "Intelligence Index 得分 44",
+        "开放权重模型排名第三",
+        "上下文窗口为 1M"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 4,
+     "name": "GLM-5.3-Flash",
+     "company": "Zhipu AI",
+     "score": "42",
+     "i18n": {
+      "en": {
+       "highlight": "GLM-5.3-Flash holds fourth place in the current open-weights ranking.",
+       "strengths": [
+        "Intelligence Index of 42",
+        "Ranks fourth among open-weights models"
+       ]
+      },
+      "zh": {
+       "highlight": "GLM-5.3-Flash 位列当前开放权重榜第四。",
+       "strengths": [
+        "Intelligence Index 得分 42",
+        "开放权重模型排名第四"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 5,
+     "name": "Qwen3.8 2.4T A95B",
+     "company": "Alibaba",
+     "score": "40",
+     "i18n": {
+      "en": {
+       "highlight": "Qwen3.8 2.4T A95B records an Intelligence Index of 40.",
+       "strengths": [
+        "Intelligence Index of 40",
+        "Listed among the six leading open-weights models"
+       ]
+      },
+      "zh": {
+       "highlight": "Qwen3.8 2.4T A95B 的 Intelligence Index 得分为 40。",
+       "strengths": [
+        "Intelligence Index 得分 40",
+        "进入开放权重模型前六"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 6,
+     "name": "Qwen3.8-Flash-Next",
+     "company": "Alibaba",
+     "score": "40",
+     "i18n": {
+      "en": {
+       "highlight": "Qwen3.8-Flash-Next matches Qwen3.8 2.4T A95B with an index score of 40.",
+       "strengths": [
+        "Intelligence Index of 40",
+        "Listed among the six leading open-weights models"
+       ]
+      },
+      "zh": {
+       "highlight": "Qwen3.8-Flash-Next 同样取得 40 分，与 Qwen3.8 2.4T A95B 持平。",
+       "strengths": [
+        "Intelligence Index 得分 40",
+        "进入开放权重模型前六"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "cost-effectiveness",
+   "icon": "Zap",
+   "currentLeader": "GPT-6 Luna (low)",
+   "leaderCompany": "OpenAI",
+   "previousLeader": "DeepSeek V4 Flash 0731",
+   "i18n": {
+    "en": {
+     "title": "Cost-effectiveness",
+     "subtitle": "Lowest task cost with a stronger intelligence baseline",
+     "description": "GPT-6 Luna (low) is the value leader at $0.0045 per task and an Intelligence Index of 21. This designation is an editorial inference from the Artificial Analysis comparison table: it combines the lowest stated positive task cost with higher intelligence than the table’s $0.00 utility models.",
+     "changeNote": "GPT-6 Luna (low) replaces August leader DeepSeek V4 Flash 0731.",
+     "marketNote": "Command A+ and North Mini Code are listed at $0.00 per task, but their Intelligence Index scores are only 13 and 10 respectively. They should not be treated as the best overall value without that performance qualification.",
+     "geoSnippet": "As of 2026-09-24, GPT-6 Luna (low) ranks No. 1 for cost-effectiveness at $0.0045 per task, with an Intelligence Index of 21."
+    },
+    "zh": {
+     "title": "成本效益",
+     "subtitle": "以更低单任务成本维持更高智能基线",
+     "description": "GPT-6 Luna (low) 的单任务成本为 $0.0045，Intelligence Index 为 21。本期将其列为性价比领先者，是基于 Artificial Analysis 同一对比表作出的编辑判断：在已明确列出的正成本模型中，其单任务成本最低，同时智能得分高于两款成本显示为 $0.00 的实用型模型。",
+     "changeNote": "GPT-6 Luna (low) 取代 8 月榜首 DeepSeek V4 Flash 0731。",
+     "marketNote": "Command A+ 与 North Mini Code 的单任务成本均显示为 $0.00，但 Intelligence Index 分别只有 13 和 10。企业评估总体价值时，不能脱离这一性能差距仅比较账面成本。",
+     "geoSnippet": "截至 2026-09-24，GPT-6 Luna (low) 以每任务 $0.0045 位列成本效益第 1，Intelligence Index 为 21。"
+    }
+   },
+   "models": [
+    {
+     "rank": 1,
+     "name": "GPT-6 Luna (low)",
+     "company": "OpenAI",
+     "score": "$0.0045/task",
+     "i18n": {
+      "en": {
+       "highlight": "The lowest stated positive cost per task, paired with an Intelligence Index of 21.",
+       "strengths": [
+        "$0.0045 cost per task",
+        "Intelligence Index of 21",
+        "Best overall value by editorial comparison of cost and intelligence"
+       ]
+      },
+      "zh": {
+       "highlight": "已明确列出的正成本模型中单任务成本最低，同时取得 21 的 Intelligence Index。",
+       "strengths": [
+        "每任务成本 $0.0045",
+        "Intelligence Index 为 21",
+        "综合成本与智能表现后，被编辑评估为总体性价比最佳"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 2,
+     "name": "Granite 4.2 3B",
+     "company": "IBM",
+     "score": "$0.01/task",
+     "i18n": {
+      "en": {
+       "highlight": "Listed among the current Cost per Task leaders at $0.01 per task.",
+       "strengths": [
+        "$0.01 cost per task",
+        "3B model designation",
+        "Second model in the published cost-leader ordering"
+       ]
+      },
+      "zh": {
+       "highlight": "以每任务 $0.01 跻身当前 Cost per Task 领先模型。",
+       "strengths": [
+        "每任务成本 $0.01",
+        "3B 模型规格",
+        "在已公布的低成本领先模型序列中位列第 2"
+       ]
+      }
+     }
+    },
+    {
+     "rank": 3,
+     "name": "Ministral 3 3B",
+     "company": "Mistral AI",
+     "score": "$0.01/task",
+     "i18n": {
+      "en": {
+       "highlight": "Matches Granite 4.2 3B at a stated cost of $0.01 per task.",
+       "strengths": [
+        "$0.01 cost per task",
+        "3B model designation",
+        "Included among the three current cost leaders"
+       ]
+      },
+      "zh": {
+       "highlight": "单任务成本同为 $0.01，与 Granite 4.2 3B 持平。",
+       "strengths": [
+        "每任务成本 $0.01",
+        "3B 模型规格",
+        "进入当前三款低成本领先模型名单"
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "trendInsights": [
+  {
+   "id": "frontier-rebase",
+   "i18n": {
+    "en": {
+     "title": "Frontier Rebase",
+     "description": "The frontier text leader has shifted from Claude Opus 5 to Claude Opus 5.5, reflecting ongoing advancements in reasoning capabilities."
+    },
+    "zh": {
+     "title": "前沿重置",
+     "description": "前沿文本领导者已从 Claude Opus 5 转移到 Claude Opus 5.5，反映了推理能力的持续进步。"
+    }
+   }
+  },
+  {
+   "id": "deepseek-flash-0731",
+   "i18n": {
+    "en": {
+     "title": "No verified September update for deepseek-flash-0731",
+     "description": "The cited material contains no verified factual entry or URL for deepseek-flash-0731, so this issue makes no model, score, release-date, or ranking claim."
+    },
+    "zh": {
+     "title": "deepseek-flash-0731：暂无已核实的 9 月更新",
+     "description": "所引用材料未包含 deepseek-flash-0731 的已核实事实条目或 URL，因此本期不对其模型、分数、发布日期或排名作出判断。"
+    }
+   }
+  },
+  {
+   "id": "minimax-h3-video",
+   "i18n": {
+    "en": {
+     "title": "MiniMax H3 expands across open and post-trained video tiers",
+     "description": "The H3 family holds two consecutive positions in the audio-video top four: Minimax H3 Max post-trained by fal ranks third at 1227 Elo and costs $2.40 per minute, while MiniMax H3 Open Weights ranks fourth at 1220 and leads the open-weights segment with audio."
+    },
+    "zh": {
+     "title": "MiniMax H3 同时覆盖开放权重与后训练视频层级",
+     "description": "H3 系列在有音频视频榜单前四名中连续占据两个席位：Minimax H3 Max post-trained by fal 以 1227 Elo 排名第三，价格为每分钟 $2.40；MiniMax H3 Open Weights 以 1220 排名第四，并位居有音频开放权重模型首位。"
+    }
+   }
+  },
+  {
+   "id": "google-image-preview",
+   "i18n": {
+    "en": {
+     "title": "Nano Banana 2 ranks sixth in a reshaped image leaderboard",
+     "description": "Nano Banana 2 (Gemini 3.1 Flash Image) records an Elo score of 1122 and ranks sixth in the current Text to Image Arena. GPT Image 2.5 Sunburst leads at 1197, leaving a 75-point gap between the two models."
+    },
+    "zh": {
+     "title": "图像榜单洗牌，Nano Banana 2 位列第六",
+     "description": "Nano Banana 2 (Gemini 3.1 Flash Image) 在当前 Text to Image Arena 中以 1122 Elo 排名第 6。榜首 GPT Image 2.5 Sunburst 达到 1197，两者相差 75 分。"
+    }
+   }
+  },
+  {
+   "id": "sora-sunset-clock",
+   "i18n": {
+    "en": {
+     "title": "Media leadership is increasingly modality-specific",
+     "description": "No single vendor leads every generative-media category. GPT Image 2.5 Sunburst tops text-to-image at 1197 Elo, Gemini Omni Flash leads text-to-video with audio at 1233, Cartesia Sonic 3.6 leads TTS at 1278, and Mureka V9 leads instrumental music at 1177."
+    },
+    "zh": {
+     "title": "生成式媒体的领先优势正按模态分化",
+     "description": "当前没有一家厂商横扫所有生成式媒体赛道：GPT Image 2.5 Sunburst 以 1197 Elo 领跑文生图，Gemini Omni Flash 以 1233 位居有声文生视频第一，Cartesia Sonic 3.6 以 1278 登顶 TTS，Mureka V9 则以 1177 领先纯音乐生成。"
+    }
+   }
+  }
+ ]
+}

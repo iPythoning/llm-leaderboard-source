@@ -86,35 +86,58 @@ if (existsSync(memoPath)) {
 // ---------- phase 2: core en+zh snapshot, structured from the memo ----------
 const CORE_SYSTEM = `You are the editor of a monthly LLM leaderboard published on commercial AI-platform websites (English and Chinese editions). You are given a research memo already grounded in real web search — use ONLY the facts and URLs it contains. Do not invent models, scores, dates, or URLs beyond what the memo states.
 
-Produce ONE JSON object with this exact shape (no markdown fences, no commentary):
+For this request, produce ONE JSON object with this exact shape (no markdown fences, no commentary):
 {
-  "month": "${month}",
-  "publishedAt": "<ISO 8601 timestamp with Z, now>",
-  "asOf": "${today}",
   "sources": [{"name": string, "url": string, "asOf": "YYYY-MM-DD", "type": "benchmark"|"official-changelog"|"community-leaderboard"|"editorial"}, ...],
-  "categories": [
-    {
-      "id": one of [${CATEGORY_IDS.map((c) => `"${c}"`).join(', ')}] — all 9, in this exact order,
-      "icon": one of [${ALLOWED_ICONS.join(', ')}],
-      "currentLeader": string, "leaderCompany": string, "previousLeader": string (omit if unchanged),
-      "i18n": { "en": {...}, "zh": {...} } — each with "title","subtitle","description","changeNote","marketNote","geoSnippet" (geoSnippet must start with "As of ${today}" in en / "截至 ${today}" in zh, and cite a concrete number/rank),
-      "models": [{"rank": int, "name": string, "company": string, "score": string, "i18n": {"en": {"highlight": string, "strengths": [string,...]}, "zh": {...}}}, ...] (4-6 models)
-    }, ...
-  ],
-  "trendInsights": [{"id": "kebab-case-id", "i18n": {"en": {"title","description"}, "zh": {...}}}, ...] (3-5 items)
+  "categories": [{"id": string, "icon": string, "currentLeader": string, "leaderCompany": string, "previousLeader": string (omit if unchanged), "i18n": {"en": {"title","subtitle","description","changeNote","marketNote","geoSnippet"}, "zh": {...}}, "models": [{"rank": int, "name": string, "company": string, "score": string, "i18n": {"en": {"highlight": string, "strengths": [string,...]}, "zh": {...}}}]}],
+  "trendInsights": [{"id": string, "i18n": {"en": {"title","description"}, "zh": {...}}}]
 }
 
-zh content is written natively for Chinese B2B readers, not a literal translation — but the facts, numbers, and URLs must match the en version exactly. Model names, company names, and scores stay in their original (usually English/Latin) form in both locales. Never mention this leaderboard's publisher or any internal tooling in the content.`
+Return only the requested category and trend ids, in the requested order. The English geoSnippet must start with "As of ${today}" and the Chinese geoSnippet with "截至 ${today}", each citing a concrete number or rank. Chinese content is written natively for B2B readers, not as a literal translation; facts, numbers, and URLs must match the English version exactly. Model names, company names, and scores stay in their original (usually English/Latin) form in both locales. Never mention this leaderboard's publisher or any internal tooling in the content.`
 
-const core = await withRetry('synth', async () => {
-  const draft = await chatJSON({
-    model: SYNTH_MODEL,
-    system: CORE_SYSTEM,
-    user: `Research memo:\n\n${memo}\n\nReference issue (${reference.month}) for structure/tone continuity:\n\n${JSON.stringify(reference, null, 1)}\n\nProduce the ${month} issue JSON now.`,
-    maxTokens: 16000,
+const coreCategories = []
+const coreTrendInsights = []
+const coreSources = []
+for (const [index, referenceCategory] of reference.categories.entries()) {
+  const referenceTrend = reference.trendInsights[index]
+  const draft = await withRetry(`synth:${referenceCategory.id}`, async () => {
+    const requestedIds = [referenceCategory.id]
+    const requestedTrendIds = referenceTrend ? [referenceTrend.id] : []
+    const result = await chatJSON({
+      model: SYNTH_MODEL,
+      system: `${CORE_SYSTEM}\nRequested category ids: ${JSON.stringify(requestedIds)}. Requested trend ids: ${JSON.stringify(requestedTrendIds)}.`,
+      user: `Research memo:\n\n${memo}\n\nReference issue (${reference.month}) for structure/tone continuity:\n\n${JSON.stringify({
+        category: {
+          id: referenceCategory.id,
+          currentLeader: referenceCategory.currentLeader,
+          leaderCompany: referenceCategory.leaderCompany,
+          previousLeader: referenceCategory.previousLeader,
+          models: referenceCategory.models.map((m) => ({ rank: m.rank, name: m.name, company: m.company, score: m.score })),
+        },
+        trend: referenceTrend ? { id: referenceTrend.id } : null,
+      }, null, 1)}\n\nProduce the ${month} issue JSON for only the requested ids.`,
+      maxTokens: 7000,
+    })
+    if (!Array.isArray(result.categories) || result.categories.length !== 1 || result.categories[0]?.id !== referenceCategory.id)
+      throw new Error(`synth:${referenceCategory.id}: expected exactly one matching category`)
+    result.categories[0].icon = referenceCategory.icon
+    if (referenceTrend && (!Array.isArray(result.trendInsights) || result.trendInsights.length !== 1 || result.trendInsights[0]?.id !== referenceTrend.id))
+      throw new Error(`synth:${referenceCategory.id}: expected matching trend insight`)
+    return result
   })
-  draft.month = month
-  return monthlySnapshotSchema.parse(draft)
+  coreCategories.push(draft.categories[0])
+  if (draft.trendInsights?.[0]) coreTrendInsights.push(draft.trendInsights[0])
+  for (const source of draft.sources ?? []) {
+    if (!coreSources.some((existing) => existing.url === source.url)) coreSources.push(source)
+  }
+}
+const core = monthlySnapshotSchema.parse({
+  month,
+  publishedAt: new Date().toISOString(),
+  asOf: today,
+  sources: coreSources,
+  categories: coreCategories,
+  trendInsights: coreTrendInsights,
 })
 console.log(`core ok: ${core.categories.length} categories, ${core.sources.length} sources`)
 
@@ -131,33 +154,44 @@ const enOnly = {
   trendInsights: core.trendInsights.map((t) => ({ id: t.id, i18n: t.i18n.en })),
 }
 
+const translationChunks = []
+for (let start = 0; start < enOnly.categories.length; start += 3) {
+  const trendStart = Math.floor(start / 3) * 2
+  translationChunks.push({
+    categories: enOnly.categories.slice(start, start + 3),
+    trendInsights: enOnly.trendInsights.slice(trendStart, trendStart + 2),
+  })
+}
+
 async function translate(locale) {
   return withRetry(`translate:${locale}`, async () => {
-    const patch = await chatJSON({
-      model: SYNTH_MODEL,
-      system: `You are a professional localizer for a monthly LLM leaderboard. Translate the provided English editorial content into ${LOCALE_NAMES[locale]} for B2B readers. Keep model names, company names, scores, dates and numbers unchanged. geoSnippet keeps its "As of ${today}" time anchor translated naturally into ${LOCALE_NAMES[locale]}. Preserve every id and rank exactly; translate every category (title/subtitle/description/changeNote/marketNote/geoSnippet), every model (highlight/strengths, same count and order), every feature string (same count and order) and every trend insight (title/description). Output ONE JSON object: {"categories":[{"id":str,"i18n":{...},"models":[{"rank":int,"i18n":{...}}],"features":[str,...]?}],"trendInsights":[{"id":str,"i18n":{...}}]} — no markdown fences, no commentary.`,
-      user: JSON.stringify(enOnly, null, 1),
-      maxTokens: 12000,
-    })
-    for (const pc of patch.categories) {
-      const c = core.categories.find((x) => x.id === pc.id)
-      if (!c) throw new Error(`${locale}: unknown category ${pc.id}`)
-      c.i18n[locale] = pc.i18n
-      for (const pm of pc.models) {
-        const m = c.models.find((x) => x.rank === pm.rank)
-        if (!m) throw new Error(`${locale}: ${pc.id} unknown rank ${pm.rank}`)
-        m.i18n[locale] = pm.i18n
+    for (const chunk of translationChunks) {
+      const patch = await chatJSON({
+        model: SYNTH_MODEL,
+        system: `You are a professional localizer for a monthly LLM leaderboard. Translate the provided English editorial content into ${LOCALE_NAMES[locale]} for B2B readers. Keep model names, company names, scores, dates and numbers unchanged. geoSnippet keeps its "As of ${today}" time anchor translated naturally into ${LOCALE_NAMES[locale]}. Preserve every id and rank exactly; translate every category (title/subtitle/description/changeNote/marketNote/geoSnippet), every model (highlight/strengths, same count and order), every feature string (same count and order) and every trend insight (title/description). Output ONE JSON object: {"categories":[{"id":str,"i18n":{...},"models":[{"rank":int,"i18n":{...}}],"features":[str,...]?}],"trendInsights":[{"id":str,"i18n":{"title":str,"description":str}}]}`,
+        user: JSON.stringify(chunk, null, 1),
+        maxTokens: 7000,
+      })
+      for (const pc of patch.categories ?? []) {
+        const c = core.categories.find((x) => x.id === pc.id)
+        if (!c) throw new Error(`${locale}: unknown category ${pc.id}`)
+        c.i18n[locale] = pc.i18n
+        for (const pm of pc.models ?? []) {
+          const m = c.models.find((x) => x.rank === pm.rank)
+          if (!m) throw new Error(`${locale}: ${pc.id} unknown rank ${pm.rank}`)
+          m.i18n[locale] = pm.i18n
+        }
+        if (c.features) {
+          if (!pc.features || pc.features.length !== c.features.length)
+            throw new Error(`${locale}: ${pc.id} features count mismatch`)
+          c.features.forEach((f, i) => { f[locale] = pc.features[i] })
+        }
       }
-      if (c.features) {
-        if (!pc.features || pc.features.length !== c.features.length)
-          throw new Error(`${locale}: ${pc.id} features count mismatch`)
-        c.features.forEach((f, i) => { f[locale] = pc.features[i] })
+      for (const pt of patch.trendInsights ?? []) {
+        const t = core.trendInsights.find((x) => x.id === pt.id)
+        if (!t) throw new Error(`${locale}: unknown trend ${pt.id}`)
+        t.i18n[locale] = pt.i18n
       }
-    }
-    for (const pt of patch.trendInsights) {
-      const t = core.trendInsights.find((x) => x.id === pt.id)
-      if (!t) throw new Error(`${locale}: unknown trend ${pt.id}`)
-      t.i18n[locale] = pt.i18n
     }
     console.log(`translate ok: ${locale}`)
   })
