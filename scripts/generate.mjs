@@ -120,6 +120,7 @@ for (const [index, referenceCategory] of reference.categories.entries()) {
     })
     if (!Array.isArray(result.categories) || result.categories.length !== 1 || result.categories[0]?.id !== referenceCategory.id)
       throw new Error(`synth:${referenceCategory.id}: expected exactly one matching category`)
+    result.categories[0].icon = referenceCategory.icon
     if (referenceTrend && (!Array.isArray(result.trendInsights) || result.trendInsights.length !== 1 || result.trendInsights[0]?.id !== referenceTrend.id))
       throw new Error(`synth:${referenceCategory.id}: expected matching trend insight`)
     return result
