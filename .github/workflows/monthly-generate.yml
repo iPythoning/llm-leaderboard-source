@@ -13,11 +13,6 @@ on:
         type: boolean
         required: false
         default: false
-      translate_only:
-        description: 'Translate an existing snapshot without regenerating the core'
-        type: boolean
-        required: false
-        default: false
 
 permissions:
   contents: write
@@ -37,7 +32,6 @@ jobs:
           node-version: 22
       - run: npm ci
       - name: Generate monthly snapshot
-        if: ${{ !inputs.translate_only }}
         env:
           OMNI_API_KEY: ${{ secrets.OMNI_API_KEY }}
           OMNI_BASE_URL: ${{ vars.OMNI_BASE_URL }}
@@ -46,14 +40,6 @@ jobs:
           MONTH: ${{ inputs.month }}
           SKIP_TRANSLATIONS: ${{ inputs.skip_translations && '1' || '0' }}
         run: node scripts/generate.mjs
-      - name: Translate existing snapshot
-        if: ${{ inputs.translate_only }}
-        env:
-          OMNI_API_KEY: ${{ secrets.OMNI_API_KEY }}
-          OMNI_BASE_URL: ${{ vars.OMNI_BASE_URL }}
-          SYNTH_MODEL: ${{ vars.SYNTH_MODEL }}
-          MONTH: ${{ inputs.month }}
-        run: node scripts/translate.mjs
       - name: Validate all snapshots
         run: node scripts/validate.mjs
       - name: Commit to main
