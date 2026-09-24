@@ -24,6 +24,7 @@ concurrency:
 jobs:
   generate:
     runs-on: [self-hosted, xserver]
+    container: node:22-bookworm
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
