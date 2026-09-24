@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, xserver]
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
