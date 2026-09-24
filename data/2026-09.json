@@ -1061,7 +1061,7 @@
    "id": "open-source",
    "icon": "GitBranch",
    "currentLeader": "MiMo-V2.6-Pro",
-   "leaderCompany": "Not specified",
+   "leaderCompany": "Xiaomi",
    "previousLeader": "Kimi K3",
    "i18n": {
     "en": {
@@ -1085,7 +1085,7 @@
     {
      "rank": 1,
      "name": "MiMo-V2.6-Pro",
-     "company": "Not specified",
+     "company": "Xiaomi",
      "score": "46",
      "i18n": {
       "en": {
