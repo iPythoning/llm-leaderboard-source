@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: List web-search model IDs
+      - name: List OmniRoute model IDs
         if: ${{ inputs.inspect_models }}
         env:
           OMNI_API_KEY: ${{ secrets.OMNI_API_KEY }}
@@ -41,7 +41,7 @@ jobs:
           if (!res.ok) throw new Error(`models: HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`)
           const body = await res.json()
           for (const model of body.data ?? []) {
-            if (/sonar|perplex|search|felo/i.test(model.id)) console.log(model.id)
+            console.log(model.id)
           }
           NODE
       - run: npm ci
