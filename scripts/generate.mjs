@@ -131,33 +131,44 @@ const enOnly = {
   trendInsights: core.trendInsights.map((t) => ({ id: t.id, i18n: t.i18n.en })),
 }
 
+const translationChunks = []
+for (let start = 0; start < enOnly.categories.length; start += 3) {
+  const trendStart = Math.floor(start / 3) * 2
+  translationChunks.push({
+    categories: enOnly.categories.slice(start, start + 3),
+    trendInsights: enOnly.trendInsights.slice(trendStart, trendStart + 2),
+  })
+}
+
 async function translate(locale) {
   return withRetry(`translate:${locale}`, async () => {
-    const patch = await chatJSON({
-      model: SYNTH_MODEL,
-      system: `You are a professional localizer for a monthly LLM leaderboard. Translate the provided English editorial content into ${LOCALE_NAMES[locale]} for B2B readers. Keep model names, company names, scores, dates and numbers unchanged. geoSnippet keeps its "As of ${today}" time anchor translated naturally into ${LOCALE_NAMES[locale]}. Preserve every id and rank exactly; translate every category (title/subtitle/description/changeNote/marketNote/geoSnippet), every model (highlight/strengths, same count and order), every feature string (same count and order) and every trend insight (title/description). Output ONE JSON object: {"categories":[{"id":str,"i18n":{...},"models":[{"rank":int,"i18n":{...}}],"features":[str,...]?}],"trendInsights":[{"id":str,"i18n":{...}}]} — no markdown fences, no commentary.`,
-      user: JSON.stringify(enOnly, null, 1),
-      maxTokens: 12000,
-    })
-    for (const pc of patch.categories) {
-      const c = core.categories.find((x) => x.id === pc.id)
-      if (!c) throw new Error(`${locale}: unknown category ${pc.id}`)
-      c.i18n[locale] = pc.i18n
-      for (const pm of pc.models) {
-        const m = c.models.find((x) => x.rank === pm.rank)
-        if (!m) throw new Error(`${locale}: ${pc.id} unknown rank ${pm.rank}`)
-        m.i18n[locale] = pm.i18n
+    for (const chunk of translationChunks) {
+      const patch = await chatJSON({
+        model: SYNTH_MODEL,
+        system: `You are a professional localizer for a monthly LLM leaderboard. Translate the provided English editorial content into ${LOCALE_NAMES[locale]} for B2B readers. Keep model names, company names, scores, dates and numbers unchanged. geoSnippet keeps its "As of ${today}" time anchor translated naturally into ${LOCALE_NAMES[locale]}. Preserve every id and rank exactly; translate every category (title/subtitle/description/changeNote/marketNote/geoSnippet), every model (highlight/strengths, same count and order), every feature string (same count and order) and every trend insight (title/description). Output ONE JSON object: {"categories":[{"id":str,"i18n":{...},"models":[{"rank":int,"i18n":{...}}],"features":[str,...]?}],"trendInsights":[{"id":str,"i18n":{"title":str,"description":str}}]}`,
+        user: JSON.stringify(chunk, null, 1),
+        maxTokens: 7000,
+      })
+      for (const pc of patch.categories ?? []) {
+        const c = core.categories.find((x) => x.id === pc.id)
+        if (!c) throw new Error(`${locale}: unknown category ${pc.id}`)
+        c.i18n[locale] = pc.i18n
+        for (const pm of pc.models ?? []) {
+          const m = c.models.find((x) => x.rank === pm.rank)
+          if (!m) throw new Error(`${locale}: ${pc.id} unknown rank ${pm.rank}`)
+          m.i18n[locale] = pm.i18n
+        }
+        if (c.features) {
+          if (!pc.features || pc.features.length !== c.features.length)
+            throw new Error(`${locale}: ${pc.id} features count mismatch`)
+          c.features.forEach((f, i) => { f[locale] = pc.features[i] })
+        }
       }
-      if (c.features) {
-        if (!pc.features || pc.features.length !== c.features.length)
-          throw new Error(`${locale}: ${pc.id} features count mismatch`)
-        c.features.forEach((f, i) => { f[locale] = pc.features[i] })
+      for (const pt of patch.trendInsights ?? []) {
+        const t = core.trendInsights.find((x) => x.id === pt.id)
+        if (!t) throw new Error(`${locale}: unknown trend ${pt.id}`)
+        t.i18n[locale] = pt.i18n
       }
-    }
-    for (const pt of patch.trendInsights) {
-      const t = core.trendInsights.find((x) => x.id === pt.id)
-      if (!t) throw new Error(`${locale}: unknown trend ${pt.id}`)
-      t.i18n[locale] = pt.i18n
     }
     console.log(`translate ok: ${locale}`)
   })
