@@ -23,11 +23,13 @@ concurrency:
 
 jobs:
   generate:
-    runs-on: [self-hosted, xserver]
-    container: node:22-bookworm
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: List web-search model IDs
         if: ${{ inputs.inspect_models }}
         env:
