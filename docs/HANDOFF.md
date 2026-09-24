@@ -21,33 +21,24 @@
   两者是完全不同的能力，别混。
 - `scripts/sync.mjs`：POST 全部月份到两个平台 ingest 端点（幂等 upsert，配置了的目标失败即红）。
 - workflows：`monthly-generate.yml`（每月 27 日 cron → commit main）、`sync.yml`（data/ 变更 → 推两平台）。
-- **2026-08-09 8月天梯榜真正更新完成**：
-  - `research/2026-08.md`：直抓 Artificial Analysis 模型/图/视频/TTS 页（非 7 月改日期）。
-  - `data/2026-08.json`：en+zh，9 类，`npm run validate` 全绿。
-  - 相对 7 月实质变化：AA Index Opus 61→63 / Kimi 57→60；Image GPT Image 2 1338→1357 且 Nano Banana 2 进前 3；Video MiniMax H3 升至含音频第 2；Cost 领导者改为 DeepSeek V4 Flash **0731**（47→52）。
-  - `generate.mjs` 恢复读 `research/<month>.md`；`omni-client.mjs` 强制 `stream:false` 并兼容 SSE。
-  - 默认 `deepseek/deepseek-v4-flash` 在 Omni 上仍报无凭证；本地合成可用 `oc/deepseek-v4-flash-free`（大 JSON 不稳，本月快照按 memo 程序化落盘）。
+- **2026-09-24 9月天梯榜真正更新完成**：
+  - `research/2026-09.md`：核对 Artificial Analysis LLM/Image/Video/TTS/Music、Terminal-Bench 2.1、Vision Arena、MMMU-Pro 与 GDPval-AA 页面。
+  - `data/2026-09.json`：9 类、7 个来源、en+zh，`npm run validate` 全绿；六个可选语言按 schema 约定缺失时回退 en。
+  - 9 月主要变化：Claude Opus 5.5 以 Intelligence Index 58 取代 Opus 5；GPT Image 2.5 Sunburst 以 Elo 1197 领先图像；Gemini Omni Flash 以 Elo 1233 领先含音频视频；Sonic 3.6 以 Elo 1278 领先 TTS；Mureka V9 以 Elo 1177 领先器乐；Claude Fable 5 High 以 Vision Arena 1310±8 领先视觉；MiMo-V2.6-Pro 以 46 领先开源权重；GPT-6 Luna (low) 以 $0.0045/task 领先成本。
+  - `scripts/generate.mjs` 改为按分类独立合成核心 JSON，并将图标固定回 schema 合同；翻译请求按小块发送，避免网关截断。
+  - 三端同步：pulseagent.io 与 paibao.ai 已在首次 push ingest 成功；paibaowork.com 因远端 `LEADERBOARD_INGEST_TOKEN` 缺失返回 503，已备份 `.env.runtime`、轮换 GitHub `PAIBAOWORK_INGEST_TOKEN`、注入远端 env，并用原生产镜像 digest 重建容器后定向同步成功。
 
-## 待办 / 已知坑
-
-- **8 月同步（2026-08-09 收口）**：三端均已 ingest 真实 2026-08，并在公开页核对到 Opus 63 / Flash 0731 / MiniMax H3 / Nano Banana 2。
+- **2026-09 同步（2026-09-24 收口）**：三端均已 ingest 真实 2026-09，并在公开页核对到 2026-09、Claude Opus 5.5 与 GPT Image 2.5 Sunburst。
   - ✅ pulseagent.io `/tools/llm-leaderboard` + `/zh/tools/llm-leaderboard`
-  - ✅ paibao.ai `/zh|en/tools/llm-leaderboard`（并已用 47 生产 `LEADERBOARD_API_KEY` 重写 GH secret `PAIBAO_INGEST_TOKEN`）
-  - ✅ paibaowork.com `/tools/llm-leaderboard`
-- **`OMNI_API_KEY` 已设**，但默认 `deepseek/deepseek-v4-flash` 仍报无 provider 凭证；生成可走 `oc/deepseek-v4-flash-free` 或 memo→程序化落盘。
-- **`scripts/generate.mjs` 重写后尚未跑过真实一轮**——首次务必 workflow_dispatch 手动触发
-  一次，重点核对：① Sonar Pro 备忘录里的 URL 是否真实可打开（不是编的）；② DeepSeek 整理出
-  的 JSON 是否忠实于备忘录，没有超出备忘录范围编造数字；③ 6 语言翻译数量/顺序与 en 对齐
-  （`npm run validate` 只查 schema 形状，不查语义忠实度，这块靠人工抽查）。
+  - ✅ paibao.ai `/zh|en/tools/llm-leaderboard`（当前公网跳转至 paibaowork 页面，内容已核对）
+  - ✅ paibaowork.com `/tools/llm-leaderboard`（定向 sync run 成功）
+- 本期使用 `SKIP_TRANSLATIONS=1` 生成并交付 en+zh 核心快照；现有 2026-06～2026-08 也采用 en+zh，六语言由消费端回退 en。首次完整翻译仍需在翻译模型稳定后单独抽查。
+- `OMNI_API_KEY` 已设；GitHub `SYNTH_MODEL` 当前为 `auto/smart`，`RESEARCH_MODEL` 未覆盖时回退 `tllm/sonar-pro`。GitHub hosted runner 对部分搜索路由有 egress/认证限制，真实月度运行前先验证模型可用性。
+- `generate.mjs` 现在按分类生成核心快照并按 schema 固定 icon；`skip_translations` 是翻译供应商故障时的显式手动降级开关，不应作为常规路径。
 - 消费端三条腿：
-  ① pulseagent.io `POST /api/leaderboard/ingest`（D1，已上线，3 期已灌并线上验证）；
-  ② paibao-portal 复用既有 `POST /api/leaderboard/publish`（overlay 卷，PR #8 已合并；47 生产
-  `LEADERBOARD_API_KEY` 已注入=本仓 `PAIBAO_INGEST_TOKEN`；发布门探针修复 PR #9 后随
-  wechat-golive.sh 发布，未发布前该腿红=预期）；
-  ③ **paibaowork.com（用户实际访问的中文 URL 真身：阿里云 EmDash 站
-  `02-emdash-client-sites/client-sites/paibaowork`）** `POST /api/leaderboard/ingest`
-  （sqlite /data 卷，已上线，3 期已灌并线上验证；token 在服务器 cms/.env.runtime =
-  本仓 `PAIBAOWORK_INGEST_TOKEN`）。
+  ① pulseagent.io `POST /api/leaderboard/ingest`（D1，已上线）；
+  ② paibao-portal `POST /api/leaderboard/publish`（overlay 卷，已上线）；
+  ③ paibaowork.com `POST /api/leaderboard/ingest`（sqlite `/data` 卷，已恢复 `LEADERBOARD_INGEST_TOKEN` 并完成 2026-09 ingest）。
 
 ## 验证方式
 
