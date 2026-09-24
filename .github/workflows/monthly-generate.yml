@@ -8,6 +8,11 @@ on:
       month:
         description: 'Override month (YYYY-MM), defaults to current month'
         required: false
+      inspect_models:
+        description: 'Inspect available OmniRoute search models'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -25,6 +30,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: List web-search model IDs
+        if: ${{ inputs.inspect_models }}
+        env:
+          OMNI_API_KEY: ${{ secrets.OMNI_API_KEY }}
+        run: |
+          node --input-type=module <<'NODE'
+          const base = process.env.OMNI_BASE_URL || 'https://omni.paibao.ai/v1'
+          const res = await fetch(`${base}/models`, { headers: { authorization: `Bearer ${process.env.OMNI_API_KEY}` } })
+          if (!res.ok) throw new Error(`models: HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`)
+          const body = await res.json()
+          for (const model of body.data ?? []) {
+            if (/sonar|perplex|search|felo/i.test(model.id)) console.log(model.id)
+          }
+          NODE
       - run: npm ci
       - name: Generate monthly snapshot
         env:
